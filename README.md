@@ -1,2 +1,2 @@
 # repository 
-first public beta version.
+·first public beta version.
