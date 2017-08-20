@@ -67,6 +67,9 @@ docs/_build/
 # PyBuilder
 target/
 
+# plus
+repo_maker.py
+
 # Jupyter Notebook
 .ipynb_checkpoints
 
