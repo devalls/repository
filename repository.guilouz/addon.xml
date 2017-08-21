@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <addon id="repository.guilouz" name="Guilouz Repository" version="1.0.3" provider-name="Guilouz">
+        <requires>
+            <import addon="xbmc.addon" version="12.0.0"/>
+        </requires>
+        <extension point="xbmc.addon.repository" name="Guilouz Repository">
+                <info compressed="false">https://raw.githubusercontent.com/Guilouz/repository.guilouz/master/_repo/addons.xml</info>
+                <checksum>https://raw.githubusercontent.com/Guilouz/repository.guilouz/master/_repo/addons.xml.md5</checksum>
+                <datadir zip="true">https://github.com/Guilouz/repository.guilouz/raw/master/_repo</datadir>
+                <hashes>false</hashes> 
+        </extension>
+        <extension point="xbmc.addon.metadata">
+            <summary lang="en">Guilouz's addons repository</summary>
+            <summary lang="fr">Extensions du dépôt de Guilouz.</summary>
+            <description lang="en">Download and install Guilouz's addons repository.</description>
+            <description lang="fr">Téléchargez et installez les extensions du dépôt de Guilouz.</description>
+            <platform>all</platform>
+            <assets>
+ 			   <icon>resources/icon.png</icon>
+ 			   <fanart>resources/fanart.jpg</fanart>
+ 			   <screenshot>resources/screenshot-01.jpg</screenshot>
+ 			   <screenshot>resources/screenshot-02.jpg</screenshot>
+ 			   <screenshot>resources/screenshot-03.jpg</screenshot>
+ 		    </assets>
+            <news>[B]1.0.3[/B][CR]• Changes for Kodi Krypton[CR][CR][B]1.0.2[/B][CR]• Fixes[CR][CR][B]1.0.1[/B][CR]• Changes for Kodi Krypton[CR][CR][B]1.0.0[/B][CR]• Initial release</news>
+    </extension>
+</addon>

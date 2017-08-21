@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.devalls" name="devalls Repo" version="1.0.8" provider-name="devalls">
+<addon id="repository.devalls" name="devalls Repo" version="1.5.0" provider-name="devalls">
     <extension point="xbmc.addon.repository" name="devalls Repo">
         <info compressed="false">https://raw.githubusercontent.com/devalls/repository/master/addons.xml</info>
         <checksum>https://raw.githubusercontent.com/devalls/repository/master/addons.xml.md5</checksum>
         <datadir zip="true">https://raw.githubusercontent.com/devalls/repository/master</datadir>
     </extension>
     <extension point="xbmc.addon.metadata">
-        <summary>Repositorio devalls</summary>
-        <description></description>
+        <summary lang="ca_ES">Repositori devalls</summary>
+	<summary lang="es_ES">Repositorio devalls</summary>
+	<summary lang="en_GB">devalls' repository</summary>
+        <description lang="ca_ES">Descarga i instal·la complements des del repositori devalls</description>
+	<description lang="es_ES">Descarga e instala addons desde el repositorio devalls</description>
+	<description lang="en_GB">Download and install addons fron devalls' repository</description>
         <disclaimer>The owners and submitters to this repository do not host or distribute any of the content displayed by these addons nor do they have any affiliation with the content providers.</disclaimer>
-        <platform>Ubuntu and Scripts</platform>
+        <platform>all</platform>
     </extension>
 </addon>
