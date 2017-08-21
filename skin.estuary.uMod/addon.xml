@@ -20,7 +20,7 @@
 		<disclaimer lang="ca_ES">Estuary uMod és una aparença modificada per a Kodi (només per Ubuntu mes scripts), i pot causar problemes.</disclaimer>
 		<disclaimer lang="en_GB">Estuary uMod is a mod skin for Kodi (only for Ubuntu with scripts), and it may cause issues</disclaimer>
 		<disclaimer lang="es_ES">Estuary uMod es un mod del skin para Kodi (solo para Ubuntu mas scripts), y puede causar problemas.</disclaimer>
-		<platform>all</platform>
+		<platform>linux</platform>
 		<license>CC BY-SA 4.0, GNU GENERAL PUBLIC LICENSE Version 2.0</license>
 		<forum>https://github.com/devalls/skin-mod/issues/new</forum>
 		<source>https://github.com/devalls/skin-mod</source>
