@@ -14,6 +14,25 @@
     </extension>
 </addon>
 
+<addon id='script.module.libtorrent' version='1.1.1g' name='python-libtorrent' provider-name='DiMartino, srg70, RussakHH, aisman, inpos'>
+  <requires>
+    <import addon='xbmc.python' version='2.1.0'/>
+  </requires>
+  <extension point="xbmc.python.script" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.python.module" library="python_libtorrent"/>
+  <extension point='xbmc.addon.metadata'>
+    <platform>all</platform>
+    <summary lang='en'>script.module.libtorrent is a Kodi module that makes easy import of python-libtorrent for you.</summary>
+    <summary lang='ru'>script.module.libtorrent - модуль Kodi, который упрощает импорт библиотеки python-libtorrent.</summary>
+    <summary lang='es'>script.module.libtorrent es un módulo de Kodi que facilita la importación de la librería python-libtorrent.</summary>
+    <license>MIT License</license>
+    <source>https://github.com/DiMartinoXBMC/script.module.libtorrent</source>
+  </extension>
+  <extension point='xbmc.python.module'/>
+</addon>
+
 <addon id="plugin.program.simply.launcher"
     name="Simply Launcher" version="1.0.0" provider-name="Tocinillo">
   <requires>
@@ -46,7 +65,42 @@
 	<description lang="en_GB">Download and install addons fron devalls' repository</description>
         <disclaimer>The owners and submitters to this repository do not host or distribute any of the content displayed by these addons nor do they have any affiliation with the content providers.</disclaimer>
         <platform>all</platform>
+	<assets>
+ 			   <icon>resources/icon.png</icon>
+ 			   <fanart>resources/fanart.jpg</fanart>
+ 			   <screenshot>resources/screenshot-01.jpg</screenshot>
+ 			   <screenshot>resources/screenshot-02.jpg</screenshot>
+ 			   <screenshot>resources/screenshot-03.jpg</screenshot>
+ 		    </assets>
+            <news>[B]1.5.0[/B][CR]• First public release[CR][CR][B]1.0.0[/B][CR]• Initial release</news>
     </extension>
+</addon>
+
+<addon id="plugin.video.pelisalacarta"
+    name="pelisalacarta"
+    version="4.2.0~beta3"
+    provider-name="tvalacarta">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.libtorrent" optional="true"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="es">Películas y series a la carta</summary>
+    <description lang="es">Películas, series, documentales, anime, ... todo lo que puedas encontrar en Internet ahora desde tu media center. Incluye canales en Español, Italiano e Inglés.</description>
+    <summary lang="en">Movies and TV Shows on demand</summary>
+    <description lang="en">Movies, Series, Documentaries, Anime, ... everything you can find on Internet now on your media center. Includes channels in Spanish, Italian and English.</description>
+    <platform>all</platform>
+    <license>GNU GPL v3</license>
+    <forum>http://www.mimediacenter.info/foro</forum>
+    <website>http://blog.tvalacarta.info/plugin-xbmc/pelisalacarta</website>
+    <email>tvalacarta@gmail.com</email>
+    <source>https://github.com/tvalacarta/pelisalacarta</source>
+  </extension>
+  <extension point="xbmc.service" library="library_service.py" start="login|startup">
+  </extension>
 </addon>
 
 <addon id="plugin.video.xbmctorrent" name="XBMCtorrent" version="0.7.3.ru" provider-name="steeve, nightik">
@@ -78,27 +132,18 @@ XBMC HUB: j.mp/xbmctorrent]]></description>
     </extension>
 </addon>
 
-<addon id="plugin.video.tv3.cat" name="TV3cat" version="1.3.7" provider-name="jqandreu">
-    <requires>
-        <import addon="xbmc.python" version="2.14.0"/>
-		<import addon="script.module.beautifulsoup" version="3.2.1"/>
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <platform>all</platform>
-        <summary lang="en">Entertainment, news, documentaries, etc from catalan television www.tv3.cat</summary>
-        <description lang="en">Entertainment, news, documentaries, etc from catalan television www.tv3.cat. [CR]Featured shows, most viewed, A to Z programs. [CR]Live channels: TV3cat, K33, Super3, News 3/24, Esport3</description>
-        <summary lang="ca">Tots els programes de TV3 a la carta.</summary>
-        <description lang="ca">Tota la programació de TV3 a la carta. [CR]Les llistes dels més vistos, destacats, programes ordenats per ordre alfabètic. [CR]Els canals en directe: TV3cat, K33, Super3, 3/24 i Esport3 </description>
-        <summary lang="es">Toda la programación de TV3 a la carta</summary>
-        <description lang="es">Toda la programación de TV3 a la carta.[CR]Las listas de los más vistos, destacados, programas ordenados de la A a la Z. [CR]Canales en directo: TV3cat, K33, Super3, 3/24, Esport3</description>
-        <language>ca</language>
-        <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-        <source>https://github.com/jqandreu/plugin.video.tv3.cat</source>
-        <website>http://www.tv3.cat</website>
-    </extension>
+<addon id="repository.marcelveldt" version="1.0.1" name="Marcelveldt's BETA repository" provider-name="marcelveldt">
+
+	<extension point="xbmc.addon.repository" name="Marcelveldt's BETA repository">
+		<info compressed="false">https://raw.githubusercontent.com/marcelveldt/repository.marcelveldt/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/marcelveldt/repository.marcelveldt/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/marcelveldt/repository.marcelveldt/master/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Kodi repository for beta/test versions of Marcelveldt's addons</summary>
+		<description lang="en">Kodi repository for beta/test versions of Marcelveldt's addons, for stable versions please just use the official Kodi repository. This repo is for test/beta versions of my work only</description>
+		<platform>all</platform>
+	</extension>
 </addon>
 
 <addon id="skin.estuary.uMod" version="2.7.0" name="Estuary uMod" provider-name="darkozma, devalls, phil65, Ichabod Fletchman">
