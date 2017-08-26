@@ -7,7 +7,7 @@
     </extension>
     <extension point="xbmc.addon.metadata">
         <summary>Repositorio para Alfa-Addon</summary>
-        <description></description>
+        <description>Descarga e instala Alfa desde este repo.</description>
         <disclaimer>The owners and submitters to this repository do not host or distribute any of the content displayed by these addons nor do they have any affiliation with the content providers.</disclaimer>
         <platform>all</platform>
     </extension>

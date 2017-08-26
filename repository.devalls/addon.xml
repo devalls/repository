@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.devalls" name="devalls Repo" version="1.5.0" provider-name="devalls">
-    <extension point="xbmc.addon.repository" name="devalls Repo">
+<addon id="repository.devalls" name="devalls' Repository" version="1.8.0" provider-name="devalls">
+    <extension point="xbmc.addon.repository" name="devalls' Repository">
         <info compressed="false">https://raw.githubusercontent.com/devalls/repository/master/addons.xml</info>
         <checksum>https://raw.githubusercontent.com/devalls/repository/master/addons.xml.md5</checksum>
         <datadir zip="true">https://raw.githubusercontent.com/devalls/repository/master</datadir>
@@ -9,18 +9,18 @@
         <summary lang="ca_ES">Repositori devalls</summary>
 	<summary lang="es_ES">Repositorio devalls</summary>
 	<summary lang="en_GB">devalls' repository</summary>
-        <description lang="ca_ES">Descarga i instal·la complements des del repositori devalls</description>
+        <description lang="ca_ES">Descarrega i instal·la complements des del repositori devalls</description>
 	<description lang="es_ES">Descarga e instala addons desde el repositorio devalls</description>
 	<description lang="en_GB">Download and install addons fron devalls' repository</description>
         <disclaimer>The owners and submitters to this repository do not host or distribute any of the content displayed by these addons nor do they have any affiliation with the content providers.</disclaimer>
         <platform>all</platform>
 	<assets>
- 			   <icon>resources/icon.png</icon>
- 			   <fanart>resources/fanart.jpg</fanart>
- 			   <screenshot>resources/screenshot-01.jpg</screenshot>
- 			   <screenshot>resources/screenshot-02.jpg</screenshot>
- 			   <screenshot>resources/screenshot-03.jpg</screenshot>
- 		    </assets>
-            <news>[B]1.5.0[/B][CR]• First public release[CR][CR][B]1.0.0[/B][CR]• Initial release</news>
+		<icon>resources/icon.png</icon>
+		<fanart>resources/fanart.jpg</fanart>
+		<screenshot>resources/screenshot-01.png</screenshot>
+		<screenshot>resources/screenshot-02.png</screenshot>
+		<screenshot>resources/screenshot-03.png</screenshot>
+	</assets>
+	<news>Official devalls' repository</news>
     </extension>
 </addon>

@@ -8,7 +8,7 @@
     </extension>
     <extension point="xbmc.addon.metadata">
         <summary>Repositorio para Alfa-Addon</summary>
-        <description></description>
+        <description>Descarga e instala Alfa desde este repo.</description>
         <disclaimer>The owners and submitters to this repository do not host or distribute any of the content displayed by these addons nor do they have any affiliation with the content providers.</disclaimer>
         <platform>all</platform>
     </extension>
@@ -34,7 +34,7 @@
 </addon>
 
 <addon id="plugin.program.simply.launcher"
-    name="Simply Launcher" version="1.0.0" provider-name="Tocinillo">
+    name="Simply Launcher" version="1.0.1" provider-name="Tocinillo">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
@@ -42,16 +42,16 @@
     <provides>executable</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary lang="en">Simply plugin for executing external programs, without any problem with sound or Lirc. Only for SalonDigital customers.</summary>
-    <summary lang="es">Sencillo addon para ejecutar programas externos, sin problemas de sonido ni con Lirc. Exlusivo para clientes de SalonDigital.</summary>
-    <description lang="en">Simply Launcher es un fork de Executor. En él, al lanzarse un programa externo, el audio de Kodi es deshabilitado, los sonidos de la interfaz deshabilitados y Lirc congelado. Al cerrarse la aplicación externa, el sonido se activa automáticamente, igual que Lirc.</description>
+    <summary lang="en">Simply plugin for executing external programs, without any problem with sound or Lirc.</summary>
+    <summary lang="es">Sencillo addon para ejecutar programas externos, sin problemas de sonido ni con Lirc.</summary>
+    <description lang="en">Simply Launcher is an Executor fork. In it, when launching an external program, the Kodi audio is disabled, the interface sounds disabled and Lirc frozen. When the external application is closed, the sound is automatically activated, just like Lirc.</description>
     <description lang="es">Simply Launcher es un fork de Executor. En él, al lanzarse un programa externo, el audio de Kodi es deshabilitado, los sonidos de la interfaz deshabilitados y Lirc congelado. Al cerrarse la aplicación externa, el sonido se activa automáticamente, igual que Lirc.</description>
     <platform>linux</platform>
   </extension>
 </addon>
 
-<addon id="repository.devalls" name="devalls Repo" version="1.5.0" provider-name="devalls">
-    <extension point="xbmc.addon.repository" name="devalls Repo">
+<addon id="repository.devalls" name="devalls' Repository" version="1.8.0" provider-name="devalls">
+    <extension point="xbmc.addon.repository" name="devalls' Repository">
         <info compressed="false">https://raw.githubusercontent.com/devalls/repository/master/addons.xml</info>
         <checksum>https://raw.githubusercontent.com/devalls/repository/master/addons.xml.md5</checksum>
         <datadir zip="true">https://raw.githubusercontent.com/devalls/repository/master</datadir>
@@ -60,19 +60,19 @@
         <summary lang="ca_ES">Repositori devalls</summary>
 	<summary lang="es_ES">Repositorio devalls</summary>
 	<summary lang="en_GB">devalls' repository</summary>
-        <description lang="ca_ES">Descarga i instal·la complements des del repositori devalls</description>
+        <description lang="ca_ES">Descarrega i instal·la complements des del repositori devalls</description>
 	<description lang="es_ES">Descarga e instala addons desde el repositorio devalls</description>
 	<description lang="en_GB">Download and install addons fron devalls' repository</description>
         <disclaimer>The owners and submitters to this repository do not host or distribute any of the content displayed by these addons nor do they have any affiliation with the content providers.</disclaimer>
         <platform>all</platform>
 	<assets>
- 			   <icon>resources/icon.png</icon>
- 			   <fanart>resources/fanart.jpg</fanart>
- 			   <screenshot>resources/screenshot-01.jpg</screenshot>
- 			   <screenshot>resources/screenshot-02.jpg</screenshot>
- 			   <screenshot>resources/screenshot-03.jpg</screenshot>
- 		    </assets>
-            <news>[B]1.5.0[/B][CR]• First public release[CR][CR][B]1.0.0[/B][CR]• Initial release</news>
+		<icon>resources/icon.png</icon>
+		<fanart>resources/fanart.jpg</fanart>
+		<screenshot>resources/screenshot-01.png</screenshot>
+		<screenshot>resources/screenshot-02.png</screenshot>
+		<screenshot>resources/screenshot-03.png</screenshot>
+	</assets>
+	<news>Official devalls' repository</news>
     </extension>
 </addon>
 
@@ -123,12 +123,7 @@
         <language></language>
         <license><![CDATA[GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007]]></license>
         <summary><![CDATA[XBMCtorrent: Torrent streaming for XBMC.]]></summary>
-        <description><![CDATA[Watch torrents directly from XBMC, without waiting.
-
-To get the latest updates:
-Twitter: twitter.com/xbmctorrent
-Facebook: facebook.com/xbmctorrent
-XBMC HUB: j.mp/xbmctorrent]]></description>
+        <description><![CDATA[Watch torrents directly from XBMC, without waiting.]]></description>
     </extension>
 </addon>
 

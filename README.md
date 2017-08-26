@@ -1,2 +1,3 @@
-# repository 
-·first public beta version.
+# repository.devalls
+·devalls' addons repository
+·first public beta repository

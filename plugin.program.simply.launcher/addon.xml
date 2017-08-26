@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="plugin.program.simply.launcher"
-    name="Simply Launcher" version="1.0.0" provider-name="Tocinillo">
+    name="Simply Launcher" version="1.0.1" provider-name="Tocinillo">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
   </requires>
@@ -8,9 +8,9 @@
     <provides>executable</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary lang="en">Simply plugin for executing external programs, without any problem with sound or Lirc. Only for SalonDigital customers.</summary>
-    <summary lang="es">Sencillo addon para ejecutar programas externos, sin problemas de sonido ni con Lirc. Exlusivo para clientes de SalonDigital.</summary>
-    <description lang="en">Simply Launcher es un fork de Executor. En él, al lanzarse un programa externo, el audio de Kodi es deshabilitado, los sonidos de la interfaz deshabilitados y Lirc congelado. Al cerrarse la aplicación externa, el sonido se activa automáticamente, igual que Lirc.</description>
+    <summary lang="en">Simply plugin for executing external programs, without any problem with sound or Lirc.</summary>
+    <summary lang="es">Sencillo addon para ejecutar programas externos, sin problemas de sonido ni con Lirc.</summary>
+    <description lang="en">Simply Launcher is an Executor fork. In it, when launching an external program, the Kodi audio is disabled, the interface sounds disabled and Lirc frozen. When the external application is closed, the sound is automatically activated, just like Lirc.</description>
     <description lang="es">Simply Launcher es un fork de Executor. En él, al lanzarse un programa externo, el audio de Kodi es deshabilitado, los sonidos de la interfaz deshabilitados y Lirc congelado. Al cerrarse la aplicación externa, el sonido se activa automáticamente, igual que Lirc.</description>
     <platform>linux</platform>
   </extension>
