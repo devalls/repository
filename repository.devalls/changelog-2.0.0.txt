@@ -1,0 +1,5 @@
+[COLOR blue][B]Official devalls' repository[/B][/COLOR]
+	[COLOR green][I][B]·2.0.0 First public release.[/B][/COLOR]
+	
+	[COLOR yellow][B]·1.8.0 Final Beta release.[/B][/COLOR]
+	[COLOR yellow][B]·1.0.0 Initial release.[/B][/COLOR][/I]
