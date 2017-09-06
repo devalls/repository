@@ -50,7 +50,7 @@
   </extension>
 </addon>
 
-<addon id="repository.devalls" name="devalls' Repository" version="2.0.0" provider-name="devalls">
+<addon id="repository.devalls" name="devalls' Repository" version="2.0.1" provider-name="devalls">
     <extension point="xbmc.addon.repository" name="devalls' Repository">
         <info compressed="false">https://raw.githubusercontent.com/devalls/repository/master/addons.xml</info>
         <checksum>https://raw.githubusercontent.com/devalls/repository/master/addons.xml.md5</checksum>
@@ -73,7 +73,8 @@
 		<screenshot>resources/screenshot-03.jpg</screenshot>
 	</assets>
 	<news>[COLOR blue][B]Official devalls' repository[/B][/COLOR]
-[COLOR green][B]·2.0.0[/B] First public release.[/COLOR]
+[COLOR green][B]·2.0.1[/B] Minor bug fix.[/COLOR]
+[COLOR yellow][B]·2.0.0[/B] First public release.[/COLOR]
 [COLOR yellow][B]·1.8.0[/B] Final Beta release.[/COLOR]
 [COLOR yellow][B]·1.0.0[/B] Initial release.[/COLOR]</news>
     </extension>
@@ -144,7 +145,7 @@
 	</extension>
 </addon>
 
-<addon id="skin.estuary.uMod" version="2.7.0" name="Estuary uMod" provider-name="darkozma, devalls, phil65, Ichabod Fletchman">
+<addon id="skin.estuary.uMod" version="2.7.5" name="Estuary uMod" provider-name="darkozma, devalls, phil65, Ichabod Fletchman">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0"/>
 	</requires>
@@ -182,7 +183,7 @@
 			<screenshot>resources/screenshot-08.png</screenshot>
 			<screenshot>resources/screenshot-09.png</screenshot>
 		</assets>
-		<news>[B]2.7.0[/B][CR]• Platform fix[CR][CR][B]2.5.0[/B][CR]• Bug fix[CR][CR][B]2.3.3[/B][CR]• Minor fix[CR][CR][B]2.2.8[/B][CR]• Initial beta test[CR][CR][B]2.2.5[/B][CR]• Initial beta[CR][CR][B]2.0.2[/B][CR]• Home modded[CR][CR][B]1.4.2[/B][CR]• DialogButtonMenu modded[CR][CR][B]0.2.1[/B][CR]• Initial alpha[CR][CR][B]0.0.1[/B][CR]• Mod Estuary (0.8.5) for Ubuntu + Scripts[CR]</news>
+		<news>[B]2.7.5[/B] • Home fix[CR][B]2.7.0[/B] • Platform fix[CR][B]2.5.0[/B] • Bug fix[CR][B]2.3.3[/B] • Minor fix[CR][B]2.2.8[/B] • Initial beta test[CR][B]2.2.5[/B] • Initial beta[CR][B]2.0.2[/B] • Home modded[CR][B]1.4.2[/B] • DialogButtonMenu modded[CR][B]0.2.1[/B] • Initial alpha[CR][B]0.0.1[/B] • Mod Estuary (0.8.5) for Ubuntu + Scripts[CR]</news>
 	</extension>
 </addon>
 
