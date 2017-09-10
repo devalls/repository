@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.estuary.uMod" version="2.7.5" name="Estuary uMod" provider-name="darkozma, devalls, phil65, Ichabod Fletchman">
+<addon id="skin.estuary.uMod" version="2.7.6" name="Estuary uMod" provider-name="darkozma, devalls, phil65, Ichabod Fletchman">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0"/>
 	</requires>
@@ -17,9 +17,9 @@
 		<description lang="ca_ES">Estuary uMod és una modificació de l'aparença predeterminada de Kodi 17.0 i posteriors (només per Ubuntu mes scripts).</description>
 		<description lang="en_GB">Estuary uMod is a mod of the default skin for Kodi 17.0 and above (only for Ubuntu with scripts).</description>
 		<description lang="es_ES">Estuary uMod es un mod del skin por defecto para Kodi 17.0 o superior (solo para Ubuntu mas scripts).</description>
-		<disclaimer lang="ca_ES">Estuary uMod és una aparença modificada per a Kodi (només per Ubuntu mes scripts), i pot causar problemes.</disclaimer>
-		<disclaimer lang="en_GB">Estuary uMod is a mod skin for Kodi (only for Ubuntu with scripts), and it may cause issues</disclaimer>
-		<disclaimer lang="es_ES">Estuary uMod es un mod del skin para Kodi (solo para Ubuntu mas scripts), y puede causar problemas.</disclaimer>
+		<disclaimer lang="ca_ES">[COLOR red]Estuary uMod és una aparença modificada per a Kodi. Només per Ubuntu i requereix scripts adicionals o podria causar problemes.[/COLOR]</disclaimer>
+		<disclaimer lang="en_GB">[COLOR red]Estuary uMod is a mod skin for Kodi. Only for Ubuntu and require addicional scripts- or it may cause issues.[/COLOR]</disclaimer>
+		<disclaimer lang="es_ES">[COLOR red]Estuary uMod es una modificación del skin para Kodi. Solo para Ubuntu y requiere scripts adicionales o podría causar problemas.[/COLOR]</disclaimer>
 		<platform>linux</platform>
 		<license>CC BY-SA 4.0, GNU GENERAL PUBLIC LICENSE Version 2.0</license>
 		<forum>https://github.com/devalls/skin-mod/issues/new</forum>
@@ -37,6 +37,17 @@
 			<screenshot>resources/screenshot-08.png</screenshot>
 			<screenshot>resources/screenshot-09.png</screenshot>
 		</assets>
-		<news>[B]2.7.5[/B] • Home fix[CR][B]2.7.0[/B] • Platform fix[CR][B]2.5.0[/B] • Bug fix[CR][B]2.3.3[/B] • Minor fix[CR][B]2.2.8[/B] • Initial beta test[CR][B]2.2.5[/B] • Initial beta[CR][B]2.0.2[/B] • Home modded[CR][B]1.4.2[/B] • DialogButtonMenu modded[CR][B]0.2.1[/B] • Initial alpha[CR][B]0.0.1[/B] • Mod Estuary (0.8.5) for Ubuntu + Scripts[CR]</news>
+		<news>[COLOR blue][B]Skin Estuary uMod[/B][/COLOR]
+[COLOR green][B]·2.7.6[/B] Minor bug fix.[/COLOR]
+[COLOR yellow][B]•2.7.5[/B] Home fix[/COLOR]
+[COLOR yellow][B]•2.7.0[/B] Platform fix[/COLOR]
+[COLOR yellow][B]•2.5.0[/B] Bug fix[/COLOR]
+[COLOR yellow][B]•2.3.3[/B] Minor fix[/COLOR]
+[COLOR yellow][B]•2.2.8[/B] Initial beta test[/COLOR]
+[COLOR yellow][B]•2.2.5[/B] Initial beta[/COLOR]
+[COLOR yellow][B]•2.0.2[/B] Home modded[/COLOR]
+[COLOR yellow][B]•1.4.2[/B] DialogButtonMenu modded[/COLOR]
+[COLOR yellow][B]•0.2.1[/B] Initial alpha[/COLOR]
+[COLOR yellow][B]•0.0.1[/B] Mod Estuary (0.8.5) for Ubuntu + Scripts[/COLOR]</news>
 	</extension>
 </addon>
