@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.devalls" name="devalls' Repository" version="2.0.1" provider-name="devalls">
+<addon id="repository.devalls" name="devalls' Repository" version="2.0.2" provider-name="devalls">
     <extension point="xbmc.addon.repository" name="devalls' Repository">
         <info compressed="false">https://raw.githubusercontent.com/devalls/repository/master/addons.xml</info>
         <checksum>https://raw.githubusercontent.com/devalls/repository/master/addons.xml.md5</checksum>
@@ -22,9 +22,10 @@
 		<screenshot>resources/screenshot-03.jpg</screenshot>
 	</assets>
 	<news>[COLOR blue][B]Official devalls' repository[/B][/COLOR]
-[COLOR green][B]·2.0.1[/B] Minor bug fix.[/COLOR]
-[COLOR yellow][B]·2.0.0[/B] First public release.[/COLOR]
-[COLOR yellow][B]·1.8.0[/B] Final Beta release.[/COLOR]
-[COLOR yellow][B]·1.0.0[/B] Initial release.[/COLOR]</news>
+[COLOR green][B]•2.0.2[/B] Cleaning code.[/COLOR]
+[COLOR yellow][B]•2.0.1[/B] Minor bug fix.[/COLOR]
+[COLOR yellow][B]•2.0.0[/B] First public release.[/COLOR]
+[COLOR yellow][B]•1.8.0[/B] Final Beta release.[/COLOR]
+[COLOR yellow][B]•1.0.0[/B] Initial release.[/COLOR]</news>
     </extension>
 </addon>
