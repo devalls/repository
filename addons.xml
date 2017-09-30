@@ -14,7 +14,7 @@
     </extension>
 </addon>
 
-<addon id="plugin.video.omega" name="Omega" version="2.0.4" provider-name="Omega fork">
+<addon id="plugin.video.omega" name="Omega" version="2.1.1" provider-name="Omega fork">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
     <import addon="script.module.libtorrent" optional="true"/>
@@ -32,7 +32,8 @@
       <screenshot>resources/media/general/ss/4.jpg</screenshot>
     </assets>
       <news>[B]Omega fork:[/B]
-[COLOR green][B]•2.0.4[/B] Update resources[/COLOR]
+[COLOR green][B]•2.1.1[/B] Update fork[/COLOR]
+[COLOR yellow][B]•2.0.4[/B] Update resources[/COLOR]
 [COLOR yellow][B]•2.0.1[/B] Initial Beta Omega fork[/COLOR]</news>
     <summary lang="es">Navega con Kodi por páginas web.</summary>
     <summary lang="en">Browse web pages using Kodi</summary>
@@ -182,7 +183,7 @@
 	</extension>
 </addon>
 
-<addon id="skin.estuary.uMod" version="2.7.9" name="Estuary uMod" provider-name="darkozma, devalls, phil65, Ichabod Fletchman">
+<addon id="skin.estuary.uMod" version="2.8.0" name="Estuary uMod" provider-name="darkozma, devalls, phil65, Ichabod Fletchman">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0"/>
 	</requires>
@@ -221,7 +222,8 @@
 			<screenshot>resources/screenshot-09.png</screenshot>
 		</assets>
 		<news>[COLOR blue][B]Skin Estuary uMod[/B][/COLOR]
-[COLOR green][B]•2.7.9[/B] Cleaning code.[/COLOR]
+[COLOR green][B]•2.8.0[/B] Update code.[/COLOR]
+[COLOR yellow][B]•2.7.9[/B] Cleaning code.[/COLOR]
 [COLOR yellow][B]•2.7.8[/B] Update resources.[/COLOR]
 [COLOR yellow][B]•2.7.6[/B] Minor bug fix.[/COLOR]
 [COLOR yellow][B]•2.7.5[/B] Home fix[/COLOR]
