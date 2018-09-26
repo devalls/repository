@@ -14,85 +14,6 @@
     </extension>
 </addon>
 
-<addon id="plugin.video.omega" name="Omega" version="2.5.9" provider-name="Omega fork">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.libtorrent" optional="true"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <assets>
-      <icon>icon.png</icon>
-      <fanart>fanart.jpg</fanart>
-      <screenshot>resources/media/general/ss/1.jpg</screenshot>
-      <screenshot>resources/media/general/ss/2.jpg</screenshot>
-      <screenshot>resources/media/general/ss/3.jpg</screenshot>
-      <screenshot>resources/media/general/ss/4.jpg</screenshot>
-    </assets>
-      <news>[B]Omega fork:[/B]
-[COLOR green][B]•2.5.9[/B] Update fork[/COLOR]
-[COLOR yellow][B]•2.5.6[/B] Update fork[/COLOR]
-[COLOR yellow][B]•2.2.3[/B] Update fork[/COLOR]
-[COLOR yellow][B]•2.1.1[/B] Update fork[/COLOR]
-[COLOR yellow][B]•2.0.4[/B] Update resources[/COLOR]
-[COLOR yellow][B]•2.0.1[/B] Initial Beta Omega fork[/COLOR]</news>
-    <summary lang="es">Navega con Kodi por páginas web.</summary>
-    <summary lang="en">Browse web pages using Kodi</summary>
-    <description lang="es">Navega con Kodi por páginas web para ver sus videos de manera fácil.</description>
-    <description lang="en">Browse web pages using Kodi, you can easily watch their video content.</description>
-    <disclaimer>[COLOR red]The owners and submitters to this addon do not host or distribute any of the content displayed by these addons nor do they have any affiliation with the content providers.[/COLOR]</disclaimer>
-    <platform>all</platform>
-    <license>GNU GPL v3</license>
-    <forum></forum>
-    <website></website>
-    <email></email>
-    <source></source>
-  </extension>
-  <extension point="xbmc.service" library="videolibrary_service.py" start="login|startup">
-  </extension>
-</addon>
-
-<addon id="plugin.video.mediacarta"
-       name="MediaCarta"
-       version="1.0.3"
-       provider-name="MediaCarta">
-    <requires>
-        <import addon="xbmc.python" version="2.1.0"/>
-        <import addon="script.module.libtorrent" optional="true"/>
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary lang="es">Explorar webs con enlaces de películas y series.</summary>
-        <description lang="es">Disfrute de sus películas y series favoritas navegando de manera fácil, sencilla y segura desde su mediacenter.</description>
-        <disclaimer lang="es">
-            1.- El material disponible a través de MediaExplorer, ha sido recolectado de sitios webs que son públicos (hdfull.tv, plusdede.com, seriesblanco.com, etc...), organizados como canales. Por lo que este material es considerado de libre distribución y su uso indebido no será nunca responsabilidad de los creadores o colaboradores de MediaExplorer.
-            2.- Todos los vídeos que figuran en este addon son solo enlaces que han sido obtenidos de páginas como powvideo.net, openload.co, youtube.com, netu.tv, etc. Por lo tanto MediaExplorer solo se limita a facilitar la visibilidad de los vídeos a través de los enlaces de estos y otros servidores.
-            3.- MediaExplorer, no aloja vídeos ni distribuye ningún tipo de archivo para streaming o descarga. El único material que proporciona son enlaces de webs de libre distribución. Por consiguiente solo los canales y servidores son plenamente responsables de los contenidos que publiquen.
-            4.- Los canales y servidores podrían, en algún caso, publicar vídeos con contenido no apto. MediaExplorer cuenta con un apartado exclusivo para adultos (por defecto deshabilitado), pero no puede garantizar que todo el material de este tipo se filtre correctamente. Usted es responsable de proteger a los menores de esta exposición.
-            5.- Si este tipo de contenido esta prohibido en su país, solamente usted es responsable del uso de MediaExplorer.
-        </disclaimer>
-        <summary lang="en">Explore websites with links to movies and series.</summary>
-        <description lang="en">Enjoy your favorite movies and series by browsing easily and securely from your mediacenter.</description>
-        <disclaimer lang="en">
-            1.- The material available through MediaExplorer, has been collected from websites that are public (hdfull.tv, plusdede.com, seriesblanco.com, etc ...), organized as channels. So this material is considered free distribution and its misuse will never be the responsibility of the creators or collaborators of MediaExplorer.
-            2.- All the videos that appear in this addon are only links that have been obtained from pages like powvideo.net, openload.co, youtube.com, netu.tv, etc. Therefore MediaExplorer is limited to facilitating the visibility of videos through the links of these and other servers.
-            3.- MediaExplorer, does not host videos or distribute any type of file for streaming or downloading. The only material that it provides are free web links. Therefore only channels and servers are fully responsible for the content they publish.
-            4.- The channels and servers could, in some cases, publish videos with unsuitable content. MediaExplorer has an exclusive section for adults (by default disabled), but can not guarantee that all material of this type is filtered correctly. You are responsible for protecting minors from this exposure.
-            5.- If this type of content is prohibited in your country, only you are responsible for the use of MediaExplorer.
-        </disclaimer>
-        <platform>all</platform>
-        <license>GNU GPL v3</license>
-        <website>http://...</website>
-        <email>...</email>
-        <source>https://github.com/...</source>
-    </extension>
-    <extension point="xbmc.service" library="services.py" start="login|startup"/>
-</addon>
-
 <addon id='script.module.libtorrent' version='1.1.1g' name='python-libtorrent' provider-name='DiMartino, srg70, RussakHH, aisman, inpos'>
   <requires>
     <import addon='xbmc.python' version='2.1.0'/>
@@ -264,7 +185,7 @@
     <extension point="xbmc.service" library="services.py" start="login|startup"/>
 </addon>
 
-<addon id="skin.estuary.uMod" version="2.8.0" name="Estuary uMod" provider-name="darkozma, devalls, phil65, Ichabod Fletchman">
+<addon id="skin.estuary.uMod" version="2.8.5" name="Estuary uMod" provider-name="darkozma, devalls, phil65, Ichabod Fletchman">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0"/>
 	</requires>
@@ -303,20 +224,22 @@
 			<screenshot>resources/screenshot-09.png</screenshot>
 		</assets>
 		<news>[COLOR blue][B]Skin Estuary uMod[/B][/COLOR]
-[COLOR green][B]•2.8.0[/B] Update code.[/COLOR]
+[COLOR green][B]•2.8.5[/B] Variables modded.[/COLOR]
+[COLOR yellow][B]•2.8.2[/B] Add new code and icon FibracatTV.[/COLOR]
+[COLOR yellow][B]•2.8.0[/B] Update code.[/COLOR]
 [COLOR yellow][B]•2.7.9[/B] Cleaning code.[/COLOR]
 [COLOR yellow][B]•2.7.8[/B] Update resources.[/COLOR]
 [COLOR yellow][B]•2.7.6[/B] Minor bug fix.[/COLOR]
-[COLOR yellow][B]•2.7.5[/B] Home fix[/COLOR]
-[COLOR yellow][B]•2.7.0[/B] Platform fix[/COLOR]
-[COLOR yellow][B]•2.5.0[/B] Bug fix[/COLOR]
-[COLOR yellow][B]•2.3.3[/B] Minor fix[/COLOR]
-[COLOR yellow][B]•2.2.8[/B] Initial beta test[/COLOR]
-[COLOR yellow][B]•2.2.5[/B] Initial beta[/COLOR]
-[COLOR yellow][B]•2.0.2[/B] Home modded[/COLOR]
-[COLOR yellow][B]•1.4.2[/B] DialogButtonMenu modded[/COLOR]
-[COLOR yellow][B]•0.2.1[/B] Initial alpha[/COLOR]
-[COLOR yellow][B]•0.0.1[/B] Mod Estuary (0.8.5) for Ubuntu + Scripts[/COLOR]</news>
+[COLOR yellow][B]•2.7.5[/B] Home fix.[/COLOR]
+[COLOR yellow][B]•2.7.0[/B] Platform fix.[/COLOR]
+[COLOR yellow][B]•2.5.0[/B] Bug fix.[/COLOR]
+[COLOR yellow][B]•2.3.3[/B] Minor fix.[/COLOR]
+[COLOR yellow][B]•2.2.8[/B] Initial beta test.[/COLOR]
+[COLOR yellow][B]•2.2.5[/B] Initial beta.[/COLOR]
+[COLOR yellow][B]•2.0.2[/B] Home modded.[/COLOR]
+[COLOR yellow][B]•1.4.2[/B] DialogButtonMenu modded.[/COLOR]
+[COLOR yellow][B]•0.2.1[/B] Initial alpha.[/COLOR]
+[COLOR yellow][B]•0.0.1[/B] Mod Estuary (0.8.5) for Ubuntu + Scripts.[/COLOR]</news>
 	</extension>
 </addon>
 
