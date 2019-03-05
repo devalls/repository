@@ -82,11 +82,10 @@
 
 <addon id="plugin.video.mediaexplorer"
        name="MediaExplorer"
-       version="1.1"
+       version="1.1.2"
        provider-name="MediaExplorer">
     <requires>
-        <import addon="xbmc.python" version="2.1.0"/>
-        <import addon="script.module.libtorrent" optional="true"/>
+        <import addon="xbmc.python" version="2.24.0"/>
     </requires>
     <extension point="xbmc.python.pluginsource" library="default.py">
         <provides>video</provides>
@@ -112,9 +111,8 @@
         </disclaimer>
         <platform>all</platform>
         <license>GNU GPL v3</license>
-        <website>http://...</website>
-        <email>...</email>
-        <source>https://github.com/...</source>
+        <website>http://www.mediaexplorer.tk</website>
+        <source>...</source>
     </extension>
     <extension point="xbmc.service" library="services.py" start="login|startup"/>
 </addon>
