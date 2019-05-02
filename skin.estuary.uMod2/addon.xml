@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="skin.estuary.uMod2" version="3.0.1" name="Estuary uMod2" provider-name="darkozma, devalls, phil65, Ichabod Fletchman">
+	<requires>
+		<import addon="xbmc.gui" version="5.14.0"/>
+	</requires>
+	<extension point="xbmc.gui.skin" debugging="false">
+		<res width="1920" height="1440" aspect="4:3" default="false" folder="xml" />
+		<res width="1920" height="1280" aspect="3:2" default="false" folder="xml" />
+		<res width="1920" height="1200" aspect="16:10" default="false" folder="xml" />
+		<res width="2040" height="1080" aspect="17:9" default="false" folder="xml" />
+		<res width="1920" height="1080" aspect="16:9" default="true" folder="xml" />
+		<res width="2560" height="1080" aspect="21:9" default="false" folder="xml" />
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="ca_ES">Aparença Estuary uMod (només per Ubuntu i scripts) per darkozma, devalls, phil65 i Piers.</summary>
+		<summary lang="en_GB">Estuary uMod skin (only for Ubuntu and scripts) by darkozma, devalls, phil65 and Piers.</summary>
+		<summary lang="es_ES">Skin Estuary uMod (solo para Ubuntu y scripts), creado por darkozma, devalls, phil65 and Piers.</summary>
+		<description lang="ca_ES">Estuary uMod és una modificació de l'aparença predeterminada de Kodi 18.0 (només per Ubuntu mes scripts).</description>
+		<description lang="en_GB">Estuary uMod is a mod of the default skin for Kodi 18.0 (only for Ubuntu with scripts).</description>
+		<description lang="es_ES">Estuary uMod es un mod del skin por defecto para Kodi 18.0 (solo para Ubuntu mas scripts).</description>
+		<disclaimer lang="ca_ES">[COLOR red]Estuary uMod és una aparença modificada per a Kodi. Només funciona a Ubuntu i requereix scripts adicionals o podria provocar problemes.[/COLOR]</disclaimer>
+		<disclaimer lang="en_GB">[COLOR red]Estuary uMod is a mod skin for Kodi. Only work on Ubuntu and require addicional scripts or it may cause issues.[/COLOR]</disclaimer>
+		<disclaimer lang="es_ES">[COLOR red]Estuary uMod es una modificación del skin para Kodi. Solo funciona en Ubuntu y requiere scripts adicionales o podría causar problemas.[/COLOR]</disclaimer>
+		<platform>linux</platform>
+		<license>CC BY-SA 4.0, GNU GENERAL PUBLIC LICENSE Version 2.0</license>
+		<forum>https://github.com/devalls/skin-mod/issues/new</forum>
+		<source>https://github.com/devalls/skin-mod</source>
+		<assets>
+			<icon>resources/icon.png</icon>
+			<fanart>resources/fanart.jpg</fanart>
+			<screenshot>resources/screenshot-01.png</screenshot>
+			<screenshot>resources/screenshot-02.png</screenshot>
+			<screenshot>resources/screenshot-03.png</screenshot>
+			<screenshot>resources/screenshot-04.png</screenshot>
+			<screenshot>resources/screenshot-05.png</screenshot>
+			<screenshot>resources/screenshot-06.png</screenshot>		
+			<screenshot>resources/screenshot-07.png</screenshot>
+			<screenshot>resources/screenshot-08.png</screenshot>
+			<screenshot>resources/screenshot-09.png</screenshot>
+		</assets>
+		<news>[COLOR blue][B]Skin Estuary uMod2[/B][/COLOR]
+[COLOR green][B]•3.0.1[/B] Minor bug fix.[/COLOR]
+[COLOR yellow][B]•3.0.0[/B] Skin uMod adapted to Kodi 18.[/COLOR]
+[COLOR yellow][B]•2.9.9[/B] Add icon in sidemenu.[/COLOR]
+[COLOR yellow][B]•2.9.8[/B] Change categories GT/NF.[/COLOR]
+[COLOR yellow][B]•2.9.0[/B] Change categories PM and update Screenshot.[/COLOR]
+[COLOR yellow][B]•2.8.9[/B] Update languages.[/COLOR]
+[COLOR yellow][B]•2.8.8[/B] Change homescreen links.[/COLOR]
+[COLOR yellow][B]•2.8.6[/B] Minor bug fix.[/COLOR]
+[COLOR yellow][B]•2.8.5[/B] Variables modded.[/COLOR]
+[COLOR yellow][B]•2.8.2[/B] Add new code and icon FibracatTV.[/COLOR]
+[COLOR yellow][B]•2.8.0[/B] Update code.[/COLOR]
+[COLOR yellow][B]•2.7.9[/B] Cleaning code.[/COLOR]
+[COLOR yellow][B]•2.7.8[/B] Update resources.[/COLOR]
+[COLOR yellow][B]•2.7.6[/B] Minor bug fix.[/COLOR]
+[COLOR yellow][B]•2.7.5[/B] Home fix.[/COLOR]
+[COLOR yellow][B]•2.7.0[/B] Platform fix.[/COLOR]
+[COLOR yellow][B]•2.5.0[/B] Bug fix.[/COLOR]
+[COLOR yellow][B]•2.3.3[/B] Minor fix.[/COLOR]
+[COLOR yellow][B]•2.2.8[/B] Initial beta test.[/COLOR]
+[COLOR yellow][B]•2.2.5[/B] Initial beta.[/COLOR]
+[COLOR yellow][B]•2.0.2[/B] Home modded.[/COLOR]
+[COLOR yellow][B]•1.4.2[/B] DialogButtonMenu modded.[/COLOR]
+[COLOR yellow][B]•0.2.1[/B] Initial alpha.[/COLOR]
+[COLOR yellow][B]•0.0.1[/B] Mod Estuary (0.8.5) for Ubuntu + Scripts.[/COLOR]</news>
+	</extension>
+</addon>
