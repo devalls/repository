@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.estuary.uMod" version="3.0.0" name="Estuary uMod" provider-name="darkozma, devalls, phil65, Ichabod Fletchman">
+<addon id="skin.estuary.uMod" version="3.0.1" name="Estuary uMod" provider-name="darkozma, devalls, phil65, Ichabod Fletchman">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0"/>
 	</requires>
@@ -38,7 +38,8 @@
 			<screenshot>resources/screenshot-09.png</screenshot>
 		</assets>
 		<news>[COLOR blue][B]Skin Estuary uMod[/B][/COLOR]
-[COLOR green][B]•3.0.0[/B] Changed items menu.[/COLOR]
+[COLOR green][B]•3.0.1[/B] Minor bug fix.[/COLOR]
+[COLOR yellow][B]•3.0.0[/B] Changed items menu.[/COLOR]
 [COLOR yellow][B]•2.9.9[/B] Add icon in sidemenu.[/COLOR]
 [COLOR yellow][B]•2.9.8[/B] Change categories GT/NF.[/COLOR]
 [COLOR yellow][B]•2.9.0[/B] Change categories PM and update Screenshot.[/COLOR]
