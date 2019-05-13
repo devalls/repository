@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="skin.estuary.uMod2" version="3.0.3" name="Estuary uMod2" provider-name="darkozma, devalls, phil65, Ichabod Fletchman">
+<addon id="skin.estuary.uMod2" version="3.0.4" name="Estuary uMod2" provider-name="darkozma, devalls, phil65, Ichabod Fletchman">
 	<requires>
 		<import addon="xbmc.gui" version="5.14.0"/>
 		<import addon="resource.images.skinbackgrounds.clearMod" version="1.0.3"/>
@@ -43,7 +43,7 @@
 			<screenshot>resources/screenshot-09.png</screenshot>
 		</assets>
 		<news>[COLOR blue][B]Skin Estuary uMod2[/B][/COLOR]
-[COLOR green][B]•3.0.3[/B] Minor bug fix.[/COLOR]
+[COLOR green][B]•3.0.4[/B] Minor bug fix.[/COLOR]
 [COLOR yellow][B]•3.0.0[/B] Skin uMod adapted to Kodi 18.[/COLOR]
 [COLOR yellow][B]•2.9.9[/B] Add icon in sidemenu.[/COLOR]
 [COLOR yellow][B]•2.9.8[/B] Change categories GT/NF.[/COLOR]
@@ -226,7 +226,7 @@
 
 <addon id="plugin.video.mediaexplorer"
        name="MediaExplorer"
-       version="1.1.2.201905022154"
+       version="1.1.2.201905131854"
        provider-name="MediaExplorer">
     <requires>
         <import addon="xbmc.python" version="2.24.0"/>
@@ -292,7 +292,7 @@
 	</extension>
 </addon>
 
-<addon id="skin.estuary.uMod" version="2.9.9" name="Estuary uMod" provider-name="darkozma, devalls, phil65, Ichabod Fletchman">
+<addon id="skin.estuary.uMod" version="3.0.0" name="Estuary uMod" provider-name="darkozma, devalls, phil65, Ichabod Fletchman">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0"/>
 	</requires>
@@ -331,7 +331,8 @@
 			<screenshot>resources/screenshot-09.png</screenshot>
 		</assets>
 		<news>[COLOR blue][B]Skin Estuary uMod[/B][/COLOR]
-[COLOR green][B]•2.9.9[/B] Add icon in sidemenu.[/COLOR]
+[COLOR green][B]•3.0.0[/B] Changed items menu.[/COLOR]
+[COLOR yellow][B]•2.9.9[/B] Add icon in sidemenu.[/COLOR]
 [COLOR yellow][B]•2.9.8[/B] Change categories GT/NF.[/COLOR]
 [COLOR yellow][B]•2.9.0[/B] Change categories PM and update Screenshot.[/COLOR]
 [COLOR yellow][B]•2.8.9[/B] Update languages.[/COLOR]
@@ -458,7 +459,7 @@
 	</extension>
 </addon>
 
-<addon id="resource.images.skinbackgrounds.clearMod" name="Skin Backgrounds - Clear Design Mod" version="1.0.3" provider-name="Orna Post, Benny Buchnik, devalls">
+<addon id="resource.images.skinbackgrounds.clearMod" name="Skin Backgrounds - Clear Design Mod" version="1.0.4" provider-name="Orna Post, Benny Buchnik, devalls">
 	<extension point="kodi.resource.images" compile="false" type="skinbackgrounds" />
 	<requires>
 		<import addon="kodi.resource" version="1.0.0"/>
