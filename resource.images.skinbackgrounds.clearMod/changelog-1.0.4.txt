@@ -1,5 +1,0 @@
-1.0.4
-Added more addon fanart
-1.0.1
-Remove forbidden background
-Added addon fanart
