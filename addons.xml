@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="skin.estuary.uMod2" version="3.0.6" name="Estuary uMod2" provider-name="darkozma, devalls, phil65, Ichabod Fletchman">
+<addon id="skin.estuary.uMod2" version="3.0.7" name="Estuary uMod2" provider-name="darkozma, devalls, phil65, Ichabod Fletchman">
 	<requires>
 		<import addon="xbmc.gui" version="5.14.0"/>
-		<import addon="resource.images.skinbackgrounds.clearMod" version="1.0.3"/>
+                <import addon="resource.images.skinbackgrounds.clearMod" version="1.0.6"/>
+                <import addon="resource.images.weatherfanart.faded" optional="true"/>
+                <import addon="resource.images.moviegenrefanart.wall-grey" optional="true"/>
 	</requires>
 	<extension point="xbmc.gui.skin" debugging="false">
 		<res width="1920" height="1440" aspect="4:3" default="false" folder="xml" />
@@ -43,7 +45,8 @@
 			<screenshot>resources/screenshot-09.png</screenshot>
 		</assets>
 		<news>[COLOR blue][B]Skin Estuary uMod2[/B][/COLOR]
-[COLOR green][B]•3.0.6[/B] Minor bug fix.[/COLOR]
+[COLOR green][B]•3.0.7[/B] Add requires.[/COLOR]
+[COLOR yellow][B]•3.0.6[/B] Minor bug fix.[/COLOR]
 [COLOR yellow][B]•3.0.0[/B] Skin uMod adapted to Kodi 18.[/COLOR]
 [COLOR yellow][B]•2.9.9[/B] Add icon in sidemenu.[/COLOR]
 [COLOR yellow][B]•2.9.8[/B] Change categories GT/NF.[/COLOR]
@@ -109,6 +112,32 @@
   <extension point='xbmc.python.module'/>
 </addon>
 
+<addon id="plugin.video.tvalacarta"
+    name="tvalacarta"
+    version="4.1.2"
+    provider-name="tvalacarta">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="es">Televisión a la carta</summary>
+    <description lang="es">Para ver la televisión por Internet, a la carta y desde tu media center</description>
+    <summary lang="en">TV on demand (Spanish)</summary>
+    <description lang="en">Watch on demand spanish TV on your media center</description>
+    <platform>all</platform>
+    <license>GNU GPL v3</license>
+    <forum>http://www.mimediacenter.info/foro</forum>
+    <website>http://blog.tvalacarta.info/plugin-xbmc/tvalacarta</website>
+    <email>tvalacarta@gmail.com</email>
+    <source>https://github.com/tvalacarta/tvalacarta</source>
+  </extension>
+  <extension point="xbmc.service" library="service.py" start="login|startup">
+  </extension>
+</addon>
+
 <addon id="script.video.F4mProxy" name="F4mProxy" version="2.8.7" provider-name="Shani">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0"/>
@@ -123,6 +152,21 @@
 		<summary lang="en">Proxy for f4m</summary>
 		<description lang="en">Use this addon to play F4m v1 and v2 streams</description>
 	</extension>
+</addon>
+
+
+<addon id="repository.tacones" name="[COLOR red]Repositorio Tacones[/COLOR] " version="1.0" provider-name="La Mala de la Novela">
+    <extension point="xbmc.addon.repository" name="Repositorio Tacones">
+        <info>https://raw.githubusercontent.com/lamalanovela/Repo/master/Repositorio/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/lamalanovela/Repo/master/Repositorio/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/lamalanovela/Repo/master/Repositorio/</datadir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Repositorio para Tacones</summary>
+        <description></description>
+        <disclaimer></disclaimer>
+        <platform>all</platform>
+    </extension>
 </addon>
 
     <addon id="repository.guilouz" name="Guilouz Repository" version="1.0.3" provider-name="Guilouz">
@@ -196,9 +240,12 @@
     </extension>
 </addon>
 
-<addon id="skin.estuary.uModPrimit" version="3.0.3" name="Estuary uMod Primit" provider-name="darkozma, devalls, phil65, Ichabod Fletchman">
+<addon id="skin.estuary.uModPrimit" version="3.0.5" name="Estuary uMod Primit" provider-name="darkozma, devalls, phil65, Ichabod Fletchman">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0"/>
+                <import addon="resource.images.skinbackgrounds.clearMod" version="1.0.6"/>
+                <import addon="resource.images.weatherfanart.faded" optional="true"/>
+                <import addon="resource.images.moviegenrefanart.wall-grey" optional="true"/>
 	</requires>
 	<extension point="xbmc.gui.skin" debugging="false">
 		<res width="1920" height="1440" aspect="4:3" default="false" folder="xml" />
@@ -235,7 +282,8 @@
 			<screenshot>resources/screenshot-09.png</screenshot>
 		</assets>
 		<news>[COLOR blue][B]Skin Estuary uMod Primit[/B][/COLOR]
-[COLOR green][B]•3.0.3[/B] Mod based on Skin Estuary uMod 2.9.8[/COLOR]
+[COLOR green][B]•3.0.5[/B] Add requires.[/COLOR]
+[COLOR yellow][B]•3.0.3[/B] Mod based on Skin Estuary uMod 2.9.8[/COLOR]
 [COLOR yellow][B]•2.9.8[/B] Skin Estuary uMod. Change categories GT/NF.[/COLOR]
 </news>
 	</extension>
@@ -274,7 +322,7 @@
 
 <addon id="plugin.video.mediaexplorer"
        name="MediaExplorer"
-       version="1.1.5.201909251833"
+       version="1.1.5.201910041907"
        provider-name="MediaExplorer">
     <requires>
         <import addon="xbmc.python" version="2.24.0"/>
@@ -341,9 +389,12 @@
 	</extension>
 </addon>
 
-<addon id="skin.estuary.uMod" version="3.0.3" name="Estuary uMod" provider-name="darkozma, devalls, phil65, Ichabod Fletchman">
+<addon id="skin.estuary.uMod" version="3.0.5" name="Estuary uMod" provider-name="darkozma, devalls, phil65, Ichabod Fletchman">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0"/>
+                <import addon="resource.images.skinbackgrounds.clearMod" version="1.0.6"/>
+                <import addon="resource.images.weatherfanart.faded" optional="true"/>
+                <import addon="resource.images.moviegenrefanart.wall-grey" optional="true"/>
 	</requires>
 	<extension point="xbmc.gui.skin" debugging="false">
 		<res width="1920" height="1440" aspect="4:3" default="false" folder="xml" />
@@ -380,7 +431,8 @@
 			<screenshot>resources/screenshot-09.png</screenshot>
 		</assets>
 		<news>[COLOR blue][B]Skin Estuary uMod[/B][/COLOR]
-[COLOR green][B]•3.0.3[/B] Minor bug fix.[/COLOR]
+[COLOR green][B]•3.0.5[/B] Add requires.[/COLOR]
+[COLOR yellow][B]•3.0.3[/B] Minor bug fix.[/COLOR]
 [COLOR yellow][B]•3.0.0[/B] Changed items menu.[/COLOR]
 [COLOR yellow][B]•2.9.9[/B] Add icon in sidemenu.[/COLOR]
 [COLOR yellow][B]•2.9.8[/B] Change categories GT/NF.[/COLOR]
@@ -464,9 +516,12 @@
 
 <addon id="repository.elementum" name="Elementum Repository" version="0.0.61" provider-name="elgatito"><requires></requires><extension point="xbmc.addon.repository" name="Elementum Repository"><info compressed="false">http://127.0.0.1:65220/repository/elgatito/plugin.video.elementum/addons.xml</info><checksum>http://127.0.0.1:65220/repository/elgatito/plugin.video.elementum/addons.xml.md5</checksum><datadir zip="true">http://127.0.0.1:65220/repository/elgatito/</datadir></extension><extension point="xbmc.addon.metadata"><platform>all</platform><summary lang="en">GitHub repository for Elementum updates</summary></extension></addon>
 
-<addon id="skin.estuary.uModCarol" version="3.0.2" name="Estuary uMod Carol" provider-name="darkozma, devalls, phil65, Ichabod Fletchman">
+<addon id="skin.estuary.uModCarol" version="3.0.5" name="Estuary uMod Carol" provider-name="darkozma, devalls, phil65, Ichabod Fletchman">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0"/>
+                <import addon="resource.images.skinbackgrounds.clearMod" version="1.0.6"/>
+                <import addon="resource.images.weatherfanart.faded" optional="true"/>
+                <import addon="resource.images.moviegenrefanart.wall-grey" optional="true"/>
 	</requires>
 	<extension point="xbmc.gui.skin" debugging="false">
 		<res width="1920" height="1440" aspect="4:3" default="false" folder="xml" />
@@ -503,10 +558,59 @@
 			<screenshot>resources/screenshot-09.png</screenshot>
 		</assets>
 		<news>[COLOR blue][B]Skin Estuary uMod Carol[/B][/COLOR]
-[COLOR green][B]•3.0.2[/B] Mod based on Skin Estuary uMod 2.9.8[/COLOR]
+[COLOR green][B]•3.0.5[/B] Add requires.[/COLOR]
+[COLOR yellow][B]•3.0.2[/B] Mod based on Skin Estuary uMod 2.9.8[/COLOR]
 [COLOR yellow][B]•2.9.8[/B] Skin Estuary uMod. Change categories GT/NF.[/COLOR]
 </news>
 	</extension>
+</addon>
+
+<addon id="plugin.video.kodispaintv"
+       name="[COLOR red]Kodi[/COLOR][COLOR yellow]Spain[/COLOR][COLOR red]Tv[/COLOR]"
+       version="2.6"
+       provider-name="joheos11">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.liveresolver" version="0.1.24" optional="true"/>
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" optional="true" />
+    <import addon="script.module.urlresolver" optional="true"/>
+    <import addon="script.module.simplejson" />
+    <import addon="script.module.livestreamer" optional="true"/>
+    <import addon="script.module.pyamf" optional="true"/>
+  </requires>
+
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+
+  <extension point="xbmc.addon.repository" name="KodiSpain repository">
+	<info compressed="false">https://raw.githubusercontent.com/joheos11/repository.kodispain/master/addons.xml</info>
+	<checksum>https://raw.githubusercontent.com/joheos11/repository.kodispain/master/addons.xml.md5</checksum>
+	<datadir zip="true">https://raw.githubusercontent.com/joheos11/repository.kodispain/master/</datadir>
+  </extension>
+
+  <extension point="xbmc.addon.metadata">
+		<summary>Canales de la Television Española y más...</summary>
+		<description>
+Complemento de video basado en LiveStreamsPro
+Puedes seguirme en https://t.me/kodispain y http://konectas.es
+
+AVISO LEGAL:
+
+Este complemento no aloja ningun contenido mostrado.
+Todo el contenido se encuentra libremente en internet.
+No se acepta ninguna responsabilidad por el uso de este addon.
+
+¡Disfruta!
+		</description>
+		<platform>all</platform>
+  </extension>
 </addon>
 
 <addon id="resource.images.skinbackgrounds.clearMod" name="Skin Backgrounds - Clear Design Mod" version="1.0.6" provider-name="Orna Post, Benny Buchnik, devalls">

@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.estuary.uMod2" version="3.0.6" name="Estuary uMod2" provider-name="darkozma, devalls, phil65, Ichabod Fletchman">
+<addon id="skin.estuary.uMod2" version="3.0.7" name="Estuary uMod2" provider-name="darkozma, devalls, phil65, Ichabod Fletchman">
 	<requires>
 		<import addon="xbmc.gui" version="5.14.0"/>
-		<import addon="resource.images.skinbackgrounds.clearMod" version="1.0.3"/>
+                <import addon="resource.images.skinbackgrounds.clearMod" version="1.0.6"/>    
+                <import addon="resource.images.weatherfanart.faded" optional="true"/>
+                <import addon="resource.images.moviegenrefanart.wall-grey" optional="true"/>
 	</requires>
 	<extension point="xbmc.gui.skin" debugging="false">
 		<res width="1920" height="1440" aspect="4:3" default="false" folder="xml" />
@@ -42,7 +44,8 @@
 			<screenshot>resources/screenshot-09.png</screenshot>
 		</assets>
 		<news>[COLOR blue][B]Skin Estuary uMod2[/B][/COLOR]
-[COLOR green][B]•3.0.6[/B] Minor bug fix.[/COLOR]
+[COLOR green][B]•3.0.7[/B] Add requires.[/COLOR]
+[COLOR yellow][B]•3.0.6[/B] Minor bug fix.[/COLOR]
 [COLOR yellow][B]•3.0.0[/B] Skin uMod adapted to Kodi 18.[/COLOR]
 [COLOR yellow][B]•2.9.9[/B] Add icon in sidemenu.[/COLOR]
 [COLOR yellow][B]•2.9.8[/B] Change categories GT/NF.[/COLOR]

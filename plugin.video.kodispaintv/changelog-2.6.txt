@@ -1,0 +1,23 @@
+version 2.6
+Incluido repositorio
+
+version 2.5
+Cambio Logo (icon.png)
+
+version 2.4
+Cambio Source
+
+version 2.3
+Cambios internos en default.py
+
+version 2.2
+Cambios internos en default.py
+
+version 2.1
+Cambios internos en default.py
+
+version 2.0
+Primera version basada en LSP
+
+Version 1.0
+Version inicial basada en ecuafulltotal

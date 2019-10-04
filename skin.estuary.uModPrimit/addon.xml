@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.estuary.uModPrimit" version="3.0.3" name="Estuary uMod Primit" provider-name="darkozma, devalls, phil65, Ichabod Fletchman">
+<addon id="skin.estuary.uModPrimit" version="3.0.5" name="Estuary uMod Primit" provider-name="darkozma, devalls, phil65, Ichabod Fletchman">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0"/>
+                <import addon="resource.images.skinbackgrounds.clearMod" version="1.0.6"/>    
+                <import addon="resource.images.weatherfanart.faded" optional="true"/>
+                <import addon="resource.images.moviegenrefanart.wall-grey" optional="true"/>
 	</requires>
 	<extension point="xbmc.gui.skin" debugging="false">
 		<res width="1920" height="1440" aspect="4:3" default="false" folder="xml" />
@@ -38,7 +41,8 @@
 			<screenshot>resources/screenshot-09.png</screenshot>
 		</assets>
 		<news>[COLOR blue][B]Skin Estuary uMod Primit[/B][/COLOR]
-[COLOR green][B]•3.0.3[/B] Mod based on Skin Estuary uMod 2.9.8[/COLOR]
+[COLOR green][B]•3.0.5[/B] Add requires.[/COLOR]
+[COLOR yellow][B]•3.0.3[/B] Mod based on Skin Estuary uMod 2.9.8[/COLOR]
 [COLOR yellow][B]•2.9.8[/B] Skin Estuary uMod. Change categories GT/NF.[/COLOR]
 </news>
 	</extension>
