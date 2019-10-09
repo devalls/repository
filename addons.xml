@@ -138,6 +138,44 @@
   </extension>
 </addon>
 
+<addon id="plugin.video.elementum" name="Elementum" version="0.1.41" provider-name="elgatito">
+    <requires>
+        <import addon="xbmc.addon" version="16.0.0" />
+        <import addon="xbmc.python" version="2.24.0" />
+        <import addon="repository.elementum" optional="true" />
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="navigation.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.service" library="service.py" start="startup" />
+    <extension point="xbmc.python.module" library="resources/site-packages" />
+    <extension point="xbmc.subtitle.module" library="navigation.py" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Elementum: Media streaming</summary>
+        <summary lang="hr">Elementum: Medijsko strujanje</summary>
+         <summary lang="es">Elementum: Transmisión de medios</summary>
+        <description lang="en">Elementum is a torrent finding and streaming engine. It doesn't go on torrent websites for legal reasons. However, it calls specially crafted add-ons (called providers) that are installed separately.[CR]This project is a fork of the well known, but no longer maintained Pulsar/Quasar projects from steeve and scakemyer.</description>
+        <description lang="hr">Elementum je pogon pretraživanja i strujanja. Ne posjećuje torrent web stranice iz pravnih razloga. Ipak, koristi posebno napravljene dodatke (nazvane pružatelji usluge) koji su instalirani odvojeno.[CR]Ovaj projekt je ogranak dobro poznatih, ali više ne održavanih Pulsar/Quasar projekata od autora steevea i scakemyera.</description>
+        <description lang="es">Elementum es un motor de búsqueda y transmisión torrent. No navega por sitios web torrent por razones legales. Sin embargo, llama a complementos especialmente diseñados para ello (denominados providers o proveedores) que se instalan por separado.[CR]Este proyecto es un fork de los bien conocidos, pero ya sin soporte proyectos Pulsar/Quasar de steeve y scakemyer.[CR]</description>
+        <disclaimer lang="en">The author does not own or host any content found within this Addon. The author is not connected to or in any other way affiliated with Kodi, Team Kodi, or the XBMC Foundation.</disclaimer>
+        <disclaimer lang="hr">Autor ovog dodatka ne posjeduje i ne distribuira bilo kakav sadržaj koji je pronađen. Autor nije povezan sa ili na bilo koji drugi način bilo sa Kodijem, Team Kodijem ili XBMC fundacijom.</disclaimer>
+        <disclaimer lang="es">El autor no posee ni aloja ningún contenido que se encuentre a través de este complemento. El autor no está unido ni relacionado de ninguna manera con Kodi, Team Kodi, o XBMC Foundation.</disclaimer>
+        <language>en el es de fi fr he hr it nl pt ro sk</language>
+        <platform>all</platform>
+        <website>http://elementum.surge.sh/</website>
+        <source>https://github.com/elgatito/plugin.video.elementum</source>
+        <forum></forum>
+        <license>Non commercial. See https://github.com/elgatito/plugin.video.elementum/blob/master/LICENSE</license>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.png</fanart>
+            <screenshot>resources/screenshots/home.png</screenshot>
+            <screenshot>resources/screenshots/movies.png</screenshot>
+            <screenshot>resources/screenshots/webui.png</screenshot>
+        </assets>
+    </extension>
+</addon>
+
 <addon id="script.video.F4mProxy" name="F4mProxy" version="2.8.7" provider-name="Shani">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0"/>
@@ -240,6 +278,30 @@
     </extension>
 </addon>
 
+<addon id="script.module.streamlink.base" name="Streamlink Library" version="2019.06.23" provider-name="Streamlink Devs, Twilight0">
+  <requires>
+      <import addon="xbmc.python" version="2.24.0"/>
+      <import addon="script.module.requests" version="2.12.4"/>
+      <import addon="script.module.futures" version="2.2.0"/>
+      <import addon="script.module.cryptolib" version="1.0.0"/>
+  </requires>
+  <extension point="xbmc.python.module" library="resources/lib/"/>
+  <extension point="xbmc.addon.metadata">
+      <summary>Streamlink Library for Kodi</summary>
+      <description>Streamlink Library for Kodi. It is a collection of plugins to help resolve web page urls into streamable links. Known issue: Does not work on Xbox, specifically throws exception when trying to import something from ctypes module.</description>
+      <platform>all</platform>
+      <license>Simplified BSD</license>
+      <source>https://github.com/Twilight0/script.module.streamlink.base/</source>
+      <language>en</language>
+      <assets>
+          <icon>icon.png</icon>
+      </assets>
+      <news>+2019.06.23
+- Changed crypto module addon id
+- Updated description</news>
+  </extension>
+</addon>
+
 <addon id="skin.estuary.uModPrimit" version="3.0.5" name="Estuary uMod Primit" provider-name="darkozma, devalls, phil65, Ichabod Fletchman">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0"/>
@@ -258,9 +320,9 @@
 		<summary lang="ca_ES">Aparença Estuary uMod (només per Ubuntu i scripts) per darkozma, devalls, phil65 i Piers.</summary>
 		<summary lang="en_GB">Estuary uMod skin (only for Ubuntu and scripts) by darkozma, devalls, phil65 and Piers.</summary>
 		<summary lang="es_ES">Skin Estuary uMod (solo para Ubuntu y scripts), creado por darkozma, devalls, phil65 and Piers.</summary>
-		<description lang="ca_ES">Estuary uMod és una modificació de l'aparença predeterminada de Kodi 17.0 i posteriors (només per Ubuntu mes scripts).</description>
-		<description lang="en_GB">Estuary uMod is a mod of the default skin for Kodi 17.0 and above (only for Ubuntu with scripts).</description>
-		<description lang="es_ES">Estuary uMod es un mod del skin por defecto para Kodi 17.0 o superior (solo para Ubuntu mas scripts).</description>
+		<description lang="ca_ES">Estuary uMod és una modificació de l'aparença predeterminada de Kodi 17.0 (només per Ubuntu mes scripts).</description>
+		<description lang="en_GB">Estuary uMod is a mod of the default skin for Kodi 17.0 (only for Ubuntu with scripts).</description>
+		<description lang="es_ES">Estuary uMod es un mod del skin por defecto para Kodi 17.0 (solo para Ubuntu mas scripts).</description>
 		<disclaimer lang="ca_ES">[COLOR red]Estuary uMod és una aparença modificada per a Kodi. Només funciona a Ubuntu i requereix scripts adicionals o podria provocar problemes.[/COLOR]</disclaimer>
 		<disclaimer lang="en_GB">[COLOR red]Estuary uMod is a mod skin for Kodi. Only work on Ubuntu and require addicional scripts or it may cause issues.[/COLOR]</disclaimer>
 		<disclaimer lang="es_ES">[COLOR red]Estuary uMod es una modificación del skin para Kodi. Solo funciona en Ubuntu y requiere scripts adicionales o podría causar problemas.[/COLOR]</disclaimer>
@@ -289,12 +351,12 @@
 	</extension>
 </addon>
 
-<addon id="plugin.video.sport365.live" name="Sport365" version="2.6.3.1" provider-name="Bugatsinho">
+<addon id="plugin.video.sport365.live" name="Sport365" version="2.6.4" provider-name="Bugatsinho">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
         <import addon="script.module.requests" version="2.19.1"/>
-        <import addon="plugin.video.f4mTester" />
-        <import addon="script.module.streamlink.base" />
+        <import addon="plugin.video.f4mTester" version="2.7.2"/>
+        <import addon="script.module.streamlink.base" version="2019.06.23"/>
         <import addon="script.module.pyxbmct" version="1.2.0"/>
     </requires>
     <extension point="xbmc.python.pluginsource" library="main.py">
@@ -313,16 +375,16 @@
     <icon>icon.png</icon>
     <fanart>fanart.png</fanart>
   </assets>
-  <news>2.6.3 09-09-2019
+  <news>2.6.4 08-10-2019
 - Add new Alternative source
 - Default playback method INPUTSTREAM and F4M for older kodi versions
-- Auto enable-install inputstream addons</news>
+- Fix regex for the events and get key for decrypt website streams</news>
   </extension>
 </addon>
 
 <addon id="plugin.video.mediaexplorer"
        name="MediaExplorer"
-       version="1.1.5.201910041907"
+       version="1.1.6.201910091720"
        provider-name="MediaExplorer">
     <requires>
         <import addon="xbmc.python" version="2.24.0"/>
@@ -483,11 +545,28 @@
     </extension>
 </addon>
 
-<addon id="repository.devalls" name="devalls' Repository" version="2.0.2" provider-name="devalls">
+<addon id="repository.devalls" name="devalls' Repository" version="2.1.0" provider-name="devalls">
     <extension point="xbmc.addon.repository" name="devalls' Repository">
         <info compressed="false">https://raw.githubusercontent.com/devalls/repository/master/addons.xml</info>
         <checksum>https://raw.githubusercontent.com/devalls/repository/master/addons.xml.md5</checksum>
         <datadir zip="true">https://raw.githubusercontent.com/devalls/repository/master</datadir>
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/bugatsinho/bugatsinho.github.io/master/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/bugatsinho/bugatsinho.github.io/master/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/bugatsinho/bugatsinho.github.io/master/_zips</datadir>
+            <hashes>false</hashes>
+        </dir>
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/</datadir>
+            <hashes>false</hashes>
+        </dir>
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/Twilight0/repo.twilight0.libs/master/_zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/Twilight0/repo.twilight0.libs/master/_zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/Twilight0/repo.twilight0.libs/master/_zips/</datadir>
+        </dir>
     </extension>
     <extension point="xbmc.addon.metadata">
     <summary lang="ca_ES">Repositori devalls</summary>
@@ -506,15 +585,14 @@
 		<screenshot>resources/screenshot-03.jpg</screenshot>
 	</assets>
 	<news>[COLOR blue][B]Official devalls' repository[/B][/COLOR]
-[COLOR green][B]•2.0.2[/B] Cleaning code.[/COLOR]
+[COLOR green][B]•2.1.0[/B] Add dir.[/COLOR]
+[COLOR yellow][B]•2.0.2[/B] Cleaning code.[/COLOR]
 [COLOR yellow][B]•2.0.1[/B] Minor bug fix.[/COLOR]
 [COLOR yellow][B]•2.0.0[/B] First public release.[/COLOR]
 [COLOR yellow][B]•1.8.0[/B] Final Beta release.[/COLOR]
 [COLOR yellow][B]•1.0.0[/B] Initial release.[/COLOR]</news>
     </extension>
 </addon>
-
-<addon id="repository.elementum" name="Elementum Repository" version="0.0.61" provider-name="elgatito"><requires></requires><extension point="xbmc.addon.repository" name="Elementum Repository"><info compressed="false">http://127.0.0.1:65220/repository/elgatito/plugin.video.elementum/addons.xml</info><checksum>http://127.0.0.1:65220/repository/elgatito/plugin.video.elementum/addons.xml.md5</checksum><datadir zip="true">http://127.0.0.1:65220/repository/elgatito/</datadir></extension><extension point="xbmc.addon.metadata"><platform>all</platform><summary lang="en">GitHub repository for Elementum updates</summary></extension></addon>
 
 <addon id="skin.estuary.uModCarol" version="3.0.5" name="Estuary uMod Carol" provider-name="darkozma, devalls, phil65, Ichabod Fletchman">
 	<requires>
@@ -534,9 +612,9 @@
 		<summary lang="ca_ES">Aparença Estuary uMod (només per Ubuntu i scripts) per darkozma, devalls, phil65 i Piers.</summary>
 		<summary lang="en_GB">Estuary uMod skin (only for Ubuntu and scripts) by darkozma, devalls, phil65 and Piers.</summary>
 		<summary lang="es_ES">Skin Estuary uMod (solo para Ubuntu y scripts), creado por darkozma, devalls, phil65 and Piers.</summary>
-		<description lang="ca_ES">Estuary uMod és una modificació de l'aparença predeterminada de Kodi 17.0 i posteriors (només per Ubuntu mes scripts).</description>
-		<description lang="en_GB">Estuary uMod is a mod of the default skin for Kodi 17.0 and above (only for Ubuntu with scripts).</description>
-		<description lang="es_ES">Estuary uMod es un mod del skin por defecto para Kodi 17.0 o superior (solo para Ubuntu mas scripts).</description>
+		<description lang="ca_ES">Estuary uMod és una modificació de l'aparença predeterminada de Kodi 17.0 (només per Ubuntu mes scripts).</description>
+		<description lang="en_GB">Estuary uMod is a mod of the default skin for Kodi 17.0 (only for Ubuntu with scripts).</description>
+		<description lang="es_ES">Estuary uMod es un mod del skin por defecto para Kodi 17.0 (solo para Ubuntu mas scripts).</description>
 		<disclaimer lang="ca_ES">[COLOR red]Estuary uMod és una aparença modificada per a Kodi. Només funciona a Ubuntu i requereix scripts adicionals o podria provocar problemes.[/COLOR]</disclaimer>
 		<disclaimer lang="en_GB">[COLOR red]Estuary uMod is a mod skin for Kodi. Only work on Ubuntu and require addicional scripts or it may cause issues.[/COLOR]</disclaimer>
 		<disclaimer lang="es_ES">[COLOR red]Estuary uMod es una modificación del skin para Kodi. Solo funciona en Ubuntu y requiere scripts adicionales o podría causar problemas.[/COLOR]</disclaimer>
@@ -613,10 +691,11 @@ No se acepta ninguna responsabilidad por el uso de este addon.
   </extension>
 </addon>
 
-<addon id="resource.images.skinbackgrounds.clearMod" name="Skin Backgrounds - Clear Design Mod" version="1.0.6" provider-name="Orna Post, Benny Buchnik, devalls">
+<addon id="resource.images.skinbackgrounds.clearMod" name="Skin Backgrounds - Clear Design Mod" version="1.0.7" provider-name="Orna Post, Benny Buchnik, devalls">
 	<extension point="kodi.resource.images" compile="false" type="skinbackgrounds" />
 	<requires>
-		<import addon="kodi.resource" version="1.0.0"/>
+		<import addon="skin.estuary.uMod"/>
+                <import addon="kodi.resource" version="1.0.0"/>
 	</requires>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Skin backgrounds Pack - Clear Design Mod</summary>
