@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.estuary.uModCarol" version="3.0.6" name="Estuary uMod Carol" provider-name="darkozma, devalls, phil65, Ichabod Fletchman">
+<addon id="skin.estuary.uModCarol" version="3.0.7" name="Estuary uMod Carol" provider-name="darkozma, devalls, phil65, Ichabod Fletchman">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0"/>
                 <import addon="resource.images.skinbackgrounds.clearMod" version="1.0.8"/>    
@@ -41,7 +41,7 @@
 			<screenshot>resources/screenshot-09.png</screenshot>
 		</assets>
 		<news>[COLOR blue][B]Skin Estuary uMod Carol[/B][/COLOR]
-[COLOR green][B]•3.0.6[/B] Add support Halloween external logos.[/COLOR]
+[COLOR green][B]•3.0.7[/B] Add support Halloween external logos.[/COLOR]
 [COLOR yellow][B]•3.0.5[/B] Add requires.[/COLOR]
 [COLOR yellow][B]•3.0.2[/B] Mod based on Skin Estuary uMod 2.9.8[/COLOR]
 [COLOR yellow][B]•2.9.8[/B] Skin Estuary uMod. Change categories GT/NF.[/COLOR]
