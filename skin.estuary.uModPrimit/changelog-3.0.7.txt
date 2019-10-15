@@ -1,5 +1,0 @@
-[COLOR blue][B]Skin Estuary uMod Primit.[/B][/COLOR]
-[COLOR green][B]•3.0.7[/B] Add support Halloween external logos.[/COLOR]
-[COLOR yellow][B]•3.0.5[/B] Add requires.[/COLOR]
-[COLOR yellow][B]•3.0.3[/B] Mod based on Skin Estuary uMod 2.9.8[/COLOR]
-[COLOR yellow][B]•2.9.8[/B] Skin Estuary uMod. Change categories GT/NF.[/COLOR]
