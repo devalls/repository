@@ -1,0 +1,6 @@
+[COLOR blue][B]Skin Estuary uMod Carol.[/B][/COLOR]
+[COLOR green][B]•3.1.1[/B] Add more Halloween and Xmas logos.[/COLOR]
+[COLOR yellow][B]•3.1.0[/B] Add support Halloween and Xmas logos.[/COLOR]
+[COLOR yellow][B]•3.0.5[/B] Add requires.[/COLOR]
+[COLOR yellow][B]•3.0.2[/B] Mod based on Skin Estuary uMod 2.9.8[/COLOR]
+[COLOR yellow][B]•2.9.8[/B] Skin Estuary uMod. Change categories GT/NF.[/COLOR]
