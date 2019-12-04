@@ -433,7 +433,7 @@
 	</extension>
 </addon>
 
-<addon id="plugin.video.sport365.live" name="Sport365" version="2.6.4" provider-name="Bugatsinho">
+<addon id="plugin.video.sport365.live" name="Sport365" version="2.6.7" provider-name="Bugatsinho">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
         <import addon="script.module.requests" version="2.19.1"/>
@@ -457,16 +457,14 @@
     <icon>icon.png</icon>
     <fanart>fanart.png</fanart>
   </assets>
-  <news>2.6.4 08-10-2019
-- Add new Alternative source
-- Default playback method INPUTSTREAM and F4M for older kodi versions
-- Fix regex for the events and get key for decrypt website streams</news>
+  <news>2.6.7 02-12-2019
+- Fix Key error</news>
   </extension>
 </addon>
 
 <addon id="plugin.video.mediaexplorer"
        name="MediaExplorer"
-       version="1.1.7.201910201905"
+       version="1.2.201912041905"
        provider-name="MediaExplorer">
     <requires>
         <import addon="xbmc.python" version="2.24.0"/>
