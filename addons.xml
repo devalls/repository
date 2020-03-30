@@ -464,7 +464,7 @@
 
 <addon id="plugin.video.mediaexplorer"
        name="MediaExplorer"
-       version="2.0.202003301713"
+       version="2.0.202003301745"
        provider-name="MediaExplorer">
     <requires>
         <import addon="xbmc.python" version="2.24.0"/>
