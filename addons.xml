@@ -464,7 +464,7 @@
 
 <addon id="plugin.video.mediaexplorer"
        name="MediaExplorer"
-       version="2.0.202001301830"
+       version="2.0.202003301015"
        provider-name="MediaExplorer">
     <requires>
         <import addon="xbmc.python" version="2.24.0"/>
@@ -628,11 +628,16 @@
     </extension>
 </addon>
 
-<addon id="repository.devalls" name="devalls' Repository" version="2.1.0" provider-name="devalls">
+<addon id="repository.devalls" name="devalls' Repository" version="2.1.1" provider-name="devalls">
     <extension point="xbmc.addon.repository" name="devalls' Repository">
         <info compressed="false">https://raw.githubusercontent.com/devalls/repository/master/addons.xml</info>
         <checksum>https://raw.githubusercontent.com/devalls/repository/master/addons.xml.md5</checksum>
         <datadir zip="true">https://raw.githubusercontent.com/devalls/repository/master</datadir>
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/lamalanovela/Repo/master/Repositorio/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/lamalanovela/Repo/master/Repositorio/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/lamalanovela/Repo/master/Repositorio/</datadir>
+        </dir>
         <dir>
             <info compressed="false">https://raw.githubusercontent.com/bugatsinho/bugatsinho.github.io/master/addons.xml</info>
             <checksum>https://raw.githubusercontent.com/bugatsinho/bugatsinho.github.io/master/addons.xml.md5</checksum>
@@ -640,15 +645,19 @@
             <hashes>false</hashes>
         </dir>
         <dir>
-            <info compressed="false">https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/addons.xml</info>
-            <checksum>https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/addons.xml.md5</checksum>
-            <datadir zip="true">https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/</datadir>
-            <hashes>false</hashes>
+            <info compressed="false">https://raw.githubusercontent.com/joheos11/repository.kodispain/master/addons.xml</info>
+	    <checksum>https://raw.githubusercontent.com/joheos11/repository.kodispain/master/addons.xml.md5</checksum>
+	    <datadir zip="true">https://raw.githubusercontent.com/joheos11/repository.kodispain/master/</datadir>
         </dir>
         <dir>
-            <info compressed="false">https://raw.githubusercontent.com/Twilight0/repo.twilight0.libs/master/_zips/addons.xml</info>
-            <checksum>https://raw.githubusercontent.com/Twilight0/repo.twilight0.libs/master/_zips/addons.xml.md5</checksum>
-            <datadir zip="true">https://raw.githubusercontent.com/Twilight0/repo.twilight0.libs/master/_zips/</datadir>
+            <info compressed="false">https://balandro.tk/repo/addons.xml</info>
+            <checksum>https://balandro.tk/repo/addons.xml.md5</checksum>
+            <datadir zip="true">https://balandro.tk/repo</datadir>
+        </dir>
+        <dir>
+            <info compressed="false">https://github.com/alfa-addon/alfa-repo/raw/master/addons.xml</info>
+            <checksum>https://github.com/alfa-addon/alfa-repo/raw/master/addons.xml.md5</checksum>
+            <datadir zip="true">https://github.com/alfa-addon/alfa-repo/raw/master</datadir>
         </dir>
     </extension>
     <extension point="xbmc.addon.metadata">
@@ -668,7 +677,8 @@
 		<screenshot>resources/screenshot-03.jpg</screenshot>
 	</assets>
 	<news>[COLOR blue][B]Official devalls' repository[/B][/COLOR]
-[COLOR green][B]•2.1.0[/B] Add dir.[/COLOR]
+[COLOR green][B]•2.1.1[/B] Change dir.[/COLOR]
+[COLOR yellow][B]•2.1.0[/B] Add dir.[/COLOR]
 [COLOR yellow][B]•2.0.2[/B] Cleaning code.[/COLOR]
 [COLOR yellow][B]•2.0.1[/B] Minor bug fix.[/COLOR]
 [COLOR yellow][B]•2.0.0[/B] First public release.[/COLOR]
