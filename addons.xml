@@ -1,79 +1,55 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="skin.estuary.uMod2Local" version="3.1.3" name="Estuary uMod2 Local" provider-name="darkozma, devalls, phil65, Ichabod Fletchman">
-	<requires>
-		<import addon="xbmc.gui" version="5.14.0"/>
-                <import addon="resource.images.skinbackgrounds.clearMod" version="1.0.8"/>
-                <import addon="resource.images.weatherfanart.faded" optional="true"/>
-                <import addon="resource.images.moviegenrefanart.wall-grey" optional="true"/>
-	</requires>
-	<extension point="xbmc.gui.skin" debugging="false">
-		<res width="1920" height="1440" aspect="4:3" default="false" folder="xml" />
-		<res width="1920" height="1280" aspect="3:2" default="false" folder="xml" />
-		<res width="1920" height="1200" aspect="16:10" default="false" folder="xml" />
-		<res width="2040" height="1080" aspect="17:9" default="false" folder="xml" />
-		<res width="1920" height="1080" aspect="16:9" default="true" folder="xml" />
-		<res width="2560" height="1080" aspect="21:9" default="false" folder="xml" />
-		<res width="2338" height="1080" aspect="19.5:9" default="false" folder="xml" />
-		<res width="2160" height="1080" aspect="18:9" default="false" folder="xml" />
+
+<addon id="repository.tacones" name="[COLOR red]Repositorio Tacones[/COLOR] " version="1.0" provider-name="La Mala de la Novela">
+    <extension point="xbmc.addon.repository" name="Repositorio Tacones">
+        <info>https://raw.githubusercontent.com/lamalanovela/Repo/master/Repositorio/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/lamalanovela/Repo/master/Repositorio/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/lamalanovela/Repo/master/Repositorio/</datadir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Repositorio para Tacones</summary>
+        <description></description>
+        <disclaimer></disclaimer>
+        <platform>all</platform>
+    </extension>
+</addon>
+
+<addon id="plugin.video.xbmctorrent" name="XBMCtorrent" version="0.7.3.ru" provider-name="steeve, nightik">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.repository" name="XBMCtorrent (RU) Autoupdate Repository">
+        <info compressed="false">http://afedchin.github.io/repository/addons.xml</info>
+        <checksum>http://afedchin.github.io/repository/addons.xml.md5</checksum>
+        <datadir zip="true">http://afedchin.github.io/repository/</datadir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <website><![CDATA[http://j.mp/xbmctorrent]]></website>
+        <forum><![CDATA[http://j.mp/xbmctorrent]]></forum>
+        <source><![CDATA[https://github.com/steeve/xbmctorrent]]></source>
+        <language></language>
+        <license><![CDATA[GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007]]></license>
+        <summary><![CDATA[XBMCtorrent: Torrent streaming for XBMC.]]></summary>
+        <description><![CDATA[Watch torrents directly from XBMC, without waiting.]]></description>
+    </extension>
+</addon>
+
+<addon id="repository.marcelveldt" version="1.0.1" name="Marcelveldt's BETA repository" provider-name="marcelveldt">
+
+	<extension point="xbmc.addon.repository" name="Marcelveldt's BETA repository">
+		<info compressed="false">https://raw.githubusercontent.com/marcelveldt/repository.marcelveldt/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/marcelveldt/repository.marcelveldt/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/marcelveldt/repository.marcelveldt/master/</datadir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
-		<summary lang="ca_ES">Aparença Estuary uMod (només per Ubuntu i scripts) per darkozma, devalls, phil65 i Piers.</summary>
-		<summary lang="en_GB">Estuary uMod skin (only for Ubuntu and scripts) by darkozma, devalls, phil65 and Piers.</summary>
-		<summary lang="es_ES">Skin Estuary uMod (solo para Ubuntu y scripts), creado por darkozma, devalls, phil65 and Piers.</summary>
-		<description lang="ca_ES">Estuary uMod és una modificació de l'aparença predeterminada de Kodi 18.0 (només per Ubuntu mes scripts).</description>
-		<description lang="en_GB">Estuary uMod is a mod of the default skin for Kodi 18.0 (only for Ubuntu with scripts).</description>
-		<description lang="es_ES">Estuary uMod es un mod del skin por defecto para Kodi 18.0 (solo para Ubuntu mas scripts).</description>
-		<disclaimer lang="ca_ES">[COLOR red]Estuary uMod és una aparença modificada per a Kodi. Només funciona a Ubuntu i requereix scripts adicionals o podria provocar problemes.[/COLOR]</disclaimer>
-		<disclaimer lang="en_GB">[COLOR red]Estuary uMod is a mod skin for Kodi. Only work on Ubuntu and require addicional scripts or it may cause issues.[/COLOR]</disclaimer>
-		<disclaimer lang="es_ES">[COLOR red]Estuary uMod es una modificación del skin para Kodi. Solo funciona en Ubuntu y requiere scripts adicionales o podría causar problemas.[/COLOR]</disclaimer>
-		<platform>linux</platform>
-		<license>CC BY-SA 4.0, GNU GENERAL PUBLIC LICENSE Version 2.0</license>
-		<forum>https://github.com/devalls/skin-mod/issues/new</forum>
-		<source>https://github.com/devalls/skin-mod</source>
-		<assets>
-			<icon>resources/icon.png</icon>
-			<fanart>resources/fanart.jpg</fanart>
-			<screenshot>resources/screenshot-01.png</screenshot>
-			<screenshot>resources/screenshot-02.png</screenshot>
-			<screenshot>resources/screenshot-03.png</screenshot>
-			<screenshot>resources/screenshot-04.png</screenshot>
-			<screenshot>resources/screenshot-05.png</screenshot>
-			<screenshot>resources/screenshot-06.png</screenshot>
-			<screenshot>resources/screenshot-07.png</screenshot>
-			<screenshot>resources/screenshot-08.png</screenshot>
-			<screenshot>resources/screenshot-09.png</screenshot>
-		</assets>
-		<news>[COLOR blue][B]Skin Estuary uMod2[/B][/COLOR]
-[COLOR green][B]•3.1.3[/B] Add MC icon.[/COLOR]
-[COLOR yellow][B]•3.1.2[/B] Minor bug fix.[/COLOR]
-[COLOR yellow][B]•3.1.1[/B] Add more Halloween and Xmas logos.[/COLOR]
-[COLOR yellow][B]•3.1.0[/B] Add support Halloween and Xmas logos.[/COLOR]
-[COLOR yellow][B]•3.0.7[/B] Add requires.[/COLOR]
-[COLOR yellow][B]•3.0.6[/B] Minor bug fix.[/COLOR]
-[COLOR yellow][B]•3.0.0[/B] Skin uMod adapted to Kodi 18.[/COLOR]
-[COLOR yellow][B]•2.9.9[/B] Add icon in sidemenu.[/COLOR]
-[COLOR yellow][B]•2.9.8[/B] Change categories GT/NF.[/COLOR]
-[COLOR yellow][B]•2.9.0[/B] Change categories PM and update Screenshot.[/COLOR]
-[COLOR yellow][B]•2.8.9[/B] Update languages.[/COLOR]
-[COLOR yellow][B]•2.8.8[/B] Change homescreen links.[/COLOR]
-[COLOR yellow][B]•2.8.6[/B] Minor bug fix.[/COLOR]
-[COLOR yellow][B]•2.8.5[/B] Variables modded.[/COLOR]
-[COLOR yellow][B]•2.8.2[/B] Add new code and icon FibracatTV.[/COLOR]
-[COLOR yellow][B]•2.8.0[/B] Update code.[/COLOR]
-[COLOR yellow][B]•2.7.9[/B] Cleaning code.[/COLOR]
-[COLOR yellow][B]•2.7.8[/B] Update resources.[/COLOR]
-[COLOR yellow][B]•2.7.6[/B] Minor bug fix.[/COLOR]
-[COLOR yellow][B]•2.7.5[/B] Home fix.[/COLOR]
-[COLOR yellow][B]•2.7.0[/B] Platform fix.[/COLOR]
-[COLOR yellow][B]•2.5.0[/B] Bug fix.[/COLOR]
-[COLOR yellow][B]•2.3.3[/B] Minor fix.[/COLOR]
-[COLOR yellow][B]•2.2.8[/B] Initial beta test.[/COLOR]
-[COLOR yellow][B]•2.2.5[/B] Initial beta.[/COLOR]
-[COLOR yellow][B]•2.0.2[/B] Home modded.[/COLOR]
-[COLOR yellow][B]•1.4.2[/B] DialogButtonMenu modded.[/COLOR]
-[COLOR yellow][B]•0.2.1[/B] Initial alpha.[/COLOR]
-[COLOR yellow][B]•0.0.1[/B] Mod Estuary (0.8.5) for Ubuntu + Scripts.[/COLOR]</news>
+		<summary lang="en">Kodi repository for beta/test versions of Marcelveldt's addons</summary>
+		<description lang="en">Kodi repository for beta/test versions of Marcelveldt's addons, for stable versions please just use the official Kodi repository. This repo is for test/beta versions of my work only</description>
+		<platform>all</platform>
 	</extension>
 </addon>
 
@@ -154,233 +130,149 @@
 	</extension>
 </addon>
 
-<addon id="repository.balandro" name="Balandro Repo" version="1.0.3" provider-name="Balandro">
-	<requires>
-		<import addon="xbmc.addon" version="12.0.0"/>
-	</requires>
-
-    <extension point="xbmc.addon.repository" name="Balandro Repo">
-        <info>https://balandro.tk/repo/addons.xml</info>
-        <checksum>https://balandro.tk/repo/addons.xml.md5</checksum>
-        <datadir zip="true">https://balandro.tk/repo</datadir>
+<addon id="plugin.video.sport365.live" name="Sport365" version="2.6.9" provider-name="Bugatsinho">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="script.module.requests" version="2.19.1"/>
+        <import addon="plugin.video.f4mTester" version="2.7.2"/>
+        <import addon="script.module.streamlink.base" version="2019.06.23"/>
+        <import addon="script.module.pyxbmct" version="1.2.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="main.py">
+        <provides>video</provides>
     </extension>
-
-    <extension point="xbmc.addon.metadata">
-        <summary>Repositorio para Balandro</summary>
-        <description>Balandro es un navegador para webs con vídeos de películas y series.</description>
-        <disclaimer>The owners and submitters to this repository do not host or distribute any of the content displayed by these addons nor do they have any affiliation with the content providers.</disclaimer>
-        <platform>all</platform>
-    </extension>
-
-</addon>
-
-<addon id='script.module.libtorrent' version='1.1.1g' name='python-libtorrent' provider-name='DiMartino, srg70, RussakHH, aisman, inpos'>
-  <requires>
-    <import addon='xbmc.python' version='2.1.0'/>
-  </requires>
-  <extension point="xbmc.python.script" library="default.py">
-    <provides>executable</provides>
-  </extension>
-  <extension point="xbmc.python.module" library="python_libtorrent"/>
-  <extension point='xbmc.addon.metadata'>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Sport365 originally made by GalAnonim</summary>
+    <description lang="en">Fork version 1.0 by GalAnonim!Kindly note that Sport365 Live is not an official part of the media player you are running, and therefore not to be mentioned within official support channels, this addon has nothing to do with the media player itself, nor it’s intended use, it is simply a third party plugin which has been added to your system.</description>
+    <disclaimer lang="en">Sport365 Live does not provide any streams of its own. Stream quality, content and copyright are responsibility of the ad-financed source web site.</disclaimer>
+    <language>en</language>
     <platform>all</platform>
-    <summary lang='en'>script.module.libtorrent is a Kodi module that makes easy import of python-libtorrent for you.</summary>
-    <summary lang='ru'>script.module.libtorrent - модуль Kodi, который упрощает импорт библиотеки python-libtorrent.</summary>
-    <summary lang='es'>script.module.libtorrent es un módulo de Kodi que facilita la importación de la librería python-libtorrent.</summary>
-    <license>MIT License</license>
-    <source>https://github.com/DiMartinoXBMC/script.module.libtorrent</source>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <website>https://bugatsinho.github.io</website>
+    <twitter>@bugatsinho</twitter>
+  <assets>
+    <icon>icon.png</icon>
+    <fanart>fanart.png</fanart>
+  </assets>
+  <news>2.6.9 09-12-2019
+- Fix GitHub URL on NEWS Tab</news>
   </extension>
-  <extension point='xbmc.python.module'/>
 </addon>
 
-<addon id="plugin.video.tvalacarta"
-    name="tvalacarta"
-    version="4.1.2"
-    provider-name="tvalacarta">
+<addon id="plugin.video.kodispaintv"
+       name="[COLOR red]Kodi[/COLOR][COLOR yellow]Spain[/COLOR][COLOR red]Tv[/COLOR]"
+       version="2.6"
+       provider-name="joheos11">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.liveresolver" version="0.1.24" optional="true"/>
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" optional="true" />
+    <import addon="script.module.urlresolver" optional="true"/>
+    <import addon="script.module.simplejson" />
+    <import addon="script.module.livestreamer" optional="true"/>
+    <import addon="script.module.pyamf" optional="true"/>
   </requires>
+
   <extension point="xbmc.python.pluginsource" library="default.py">
     <provides>video</provides>
   </extension>
+
+  <extension point="xbmc.addon.repository" name="KodiSpain repository">
+	<info compressed="false">https://raw.githubusercontent.com/joheos11/repository.kodispain/master/addons.xml</info>
+	<checksum>https://raw.githubusercontent.com/joheos11/repository.kodispain/master/addons.xml.md5</checksum>
+	<datadir zip="true">https://raw.githubusercontent.com/joheos11/repository.kodispain/master/</datadir>
+  </extension>
+
   <extension point="xbmc.addon.metadata">
-    <summary lang="es">Televisión a la carta</summary>
-    <description lang="es">Para ver la televisión por Internet, a la carta y desde tu media center</description>
-    <summary lang="en">TV on demand (Spanish)</summary>
-    <description lang="en">Watch on demand spanish TV on your media center</description>
-    <platform>all</platform>
-    <license>GNU GPL v3</license>
-    <forum>http://www.mimediacenter.info/foro</forum>
-    <website>http://blog.tvalacarta.info/plugin-xbmc/tvalacarta</website>
-    <email>tvalacarta@gmail.com</email>
-    <source>https://github.com/tvalacarta/tvalacarta</source>
-  </extension>
-  <extension point="xbmc.service" library="service.py" start="login|startup">
+		<summary>Canales de la Television Española y más...</summary>
+		<description>
+Complemento de video basado en LiveStreamsPro
+Puedes seguirme en https://t.me/kodispain y http://konectas.es
+
+AVISO LEGAL:
+
+Este complemento no aloja ningun contenido mostrado.
+Todo el contenido se encuentra libremente en internet.
+No se acepta ninguna responsabilidad por el uso de este addon.
+
+¡Disfruta!
+		</description>
+		<platform>all</platform>
   </extension>
 </addon>
 
-<addon id="plugin.video.elementum" name="Elementum" version="0.1.41" provider-name="elgatito">
-    <requires>
-        <import addon="xbmc.addon" version="16.0.0" />
-        <import addon="xbmc.python" version="2.24.0" />
-        <import addon="repository.elementum" optional="true" />
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="navigation.py">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.service" library="service.py" start="startup" />
-    <extension point="xbmc.python.module" library="resources/site-packages" />
-    <extension point="xbmc.subtitle.module" library="navigation.py" />
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en">Elementum: Media streaming</summary>
-        <summary lang="hr">Elementum: Medijsko strujanje</summary>
-         <summary lang="es">Elementum: Transmisión de medios</summary>
-        <description lang="en">Elementum is a torrent finding and streaming engine. It doesn't go on torrent websites for legal reasons. However, it calls specially crafted add-ons (called providers) that are installed separately.[CR]This project is a fork of the well known, but no longer maintained Pulsar/Quasar projects from steeve and scakemyer.</description>
-        <description lang="hr">Elementum je pogon pretraživanja i strujanja. Ne posjećuje torrent web stranice iz pravnih razloga. Ipak, koristi posebno napravljene dodatke (nazvane pružatelji usluge) koji su instalirani odvojeno.[CR]Ovaj projekt je ogranak dobro poznatih, ali više ne održavanih Pulsar/Quasar projekata od autora steevea i scakemyera.</description>
-        <description lang="es">Elementum es un motor de búsqueda y transmisión torrent. No navega por sitios web torrent por razones legales. Sin embargo, llama a complementos especialmente diseñados para ello (denominados providers o proveedores) que se instalan por separado.[CR]Este proyecto es un fork de los bien conocidos, pero ya sin soporte proyectos Pulsar/Quasar de steeve y scakemyer.[CR]</description>
-        <disclaimer lang="en">The author does not own or host any content found within this Addon. The author is not connected to or in any other way affiliated with Kodi, Team Kodi, or the XBMC Foundation.</disclaimer>
-        <disclaimer lang="hr">Autor ovog dodatka ne posjeduje i ne distribuira bilo kakav sadržaj koji je pronađen. Autor nije povezan sa ili na bilo koji drugi način bilo sa Kodijem, Team Kodijem ili XBMC fundacijom.</disclaimer>
-        <disclaimer lang="es">El autor no posee ni aloja ningún contenido que se encuentre a través de este complemento. El autor no está unido ni relacionado de ninguna manera con Kodi, Team Kodi, o XBMC Foundation.</disclaimer>
-        <language>en el es de fi fr he hr it nl pt ro sk</language>
-        <platform>all</platform>
-        <website>http://elementum.surge.sh/</website>
-        <source>https://github.com/elgatito/plugin.video.elementum</source>
-        <forum></forum>
-        <license>Non commercial. See https://github.com/elgatito/plugin.video.elementum/blob/master/LICENSE</license>
-        <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.png</fanart>
-            <screenshot>resources/screenshots/home.png</screenshot>
-            <screenshot>resources/screenshots/movies.png</screenshot>
-            <screenshot>resources/screenshots/webui.png</screenshot>
-        </assets>
-    </extension>
-</addon>
-
-<addon id="script.video.F4mProxy" name="F4mProxy" version="2.8.7" provider-name="Shani">
+<addon id="skin.estuary.uModCarol" version="3.1.4" name="Estuary uMod Carol" provider-name="darkozma, devalls, phil65, Ichabod Fletchman">
 	<requires>
-		<import addon="xbmc.python" version="2.1.0"/>
-		<import addon="script.module.requests"/>
+		<import addon="xbmc.gui" version="5.12.0"/>
+                <import addon="resource.images.skinbackgrounds.clearMod" version="1.0.8"/>
+                <import addon="resource.images.weatherfanart.faded" optional="true"/>
+                <import addon="resource.images.moviegenrefanart.wall-grey" optional="true"/>
 	</requires>
-	<extension point="xbmc.python.module" library="lib"/>
-		<extension point="xbmc.python.pluginsource" library="addon.py">
-		<provides>executable</provides>
+	<extension point="xbmc.gui.skin" debugging="false">
+		<res width="1920" height="1440" aspect="4:3" default="false" folder="xml" />
+		<res width="1920" height="1280" aspect="3:2" default="false" folder="xml" />
+		<res width="1920" height="1200" aspect="16:10" default="false" folder="xml" />
+		<res width="1920" height="1080" aspect="16:9" default="true" folder="xml" />
+		<res width="2560" height="1080" aspect="21:9" default="false" folder="xml" />
 	</extension>
 	<extension point="xbmc.addon.metadata">
-		<platform>all</platform>
-		<summary lang="en">Proxy for f4m</summary>
-		<description lang="en">Use this addon to play F4m v1 and v2 streams</description>
+		<summary lang="ca_ES">Aparença Estuary uMod (només per Ubuntu i scripts) per darkozma, devalls, phil65 i Piers.</summary>
+		<summary lang="en_GB">Estuary uMod skin (only for Ubuntu and scripts) by darkozma, devalls, phil65 and Piers.</summary>
+		<summary lang="es_ES">Skin Estuary uMod (solo para Ubuntu y scripts), creado por darkozma, devalls, phil65 and Piers.</summary>
+		<description lang="ca_ES">Estuary uMod és una modificació de l'aparença predeterminada de Kodi 17.0 (només per Ubuntu mes scripts).</description>
+		<description lang="en_GB">Estuary uMod is a mod of the default skin for Kodi 17.0 (only for Ubuntu with scripts).</description>
+		<description lang="es_ES">Estuary uMod es un mod del skin por defecto para Kodi 17.0 (solo para Ubuntu mas scripts).</description>
+		<disclaimer lang="ca_ES">[COLOR red]Estuary uMod és una aparença modificada per a Kodi. Només funciona a Ubuntu i requereix scripts adicionals o podria provocar problemes.[/COLOR]</disclaimer>
+		<disclaimer lang="en_GB">[COLOR red]Estuary uMod is a mod skin for Kodi. Only work on Ubuntu and require addicional scripts or it may cause issues.[/COLOR]</disclaimer>
+		<disclaimer lang="es_ES">[COLOR red]Estuary uMod es una modificación del skin para Kodi. Solo funciona en Ubuntu y requiere scripts adicionales o podría causar problemas.[/COLOR]</disclaimer>
+		<platform>linux</platform>
+		<license>CC BY-SA 4.0, GNU GENERAL PUBLIC LICENSE Version 2.0</license>
+		<forum>https://github.com/devalls/skin-mod/issues/new</forum>
+		<source>https://github.com/devalls/skin-mod</source>
+		<assets>
+			<icon>resources/icon.png</icon>
+			<fanart>resources/fanart.jpg</fanart>
+			<screenshot>resources/screenshot-01.png</screenshot>
+			<screenshot>resources/screenshot-02.png</screenshot>
+			<screenshot>resources/screenshot-03.png</screenshot>
+			<screenshot>resources/screenshot-04.png</screenshot>
+			<screenshot>resources/screenshot-05.png</screenshot>
+			<screenshot>resources/screenshot-06.png</screenshot>
+			<screenshot>resources/screenshot-07.png</screenshot>
+			<screenshot>resources/screenshot-08.png</screenshot>
+			<screenshot>resources/screenshot-09.png</screenshot>
+		</assets>
+		<news>[COLOR blue][B]Skin Estuary uMod Carol[/B][/COLOR]
+[COLOR green][B]•3.1.4[/B] Add MC icon.[/COLOR]
+[COLOR yellow][B]•3.1.3[/B] Minor bug fix.[/COLOR]
+[COLOR yellow][B]•3.1.1[/B] Add more Halloween and Xmas logos.[/COLOR]
+[COLOR yellow][B]•3.1.0[/B] Add support Halloween and Xmas logos.[/COLOR]
+[COLOR yellow][B]•3.0.5[/B] Add requires.[/COLOR]
+[COLOR yellow][B]•3.0.2[/B] Mod based on Skin Estuary uMod 2.9.8[/COLOR]
+[COLOR yellow][B]•2.9.8[/B] Skin Estuary uMod. Change categories GT/NF.[/COLOR]
+</news>
 	</extension>
 </addon>
 
-
-<addon id="repository.tacones" name="[COLOR red]Repositorio Tacones[/COLOR] " version="1.0" provider-name="La Mala de la Novela">
-    <extension point="xbmc.addon.repository" name="Repositorio Tacones">
-        <info>https://raw.githubusercontent.com/lamalanovela/Repo/master/Repositorio/addons.xml</info>
-        <checksum>https://raw.githubusercontent.com/lamalanovela/Repo/master/Repositorio/addons.xml.md5</checksum>
-        <datadir zip="true">https://raw.githubusercontent.com/lamalanovela/Repo/master/Repositorio/</datadir>
+<addon id="plugin.video.f4mTester" name="f4mTester" version="2.7.2" provider-name="Shani">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="script.video.F4mProxy" version="2.7.1"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
     </extension>
     <extension point="xbmc.addon.metadata">
-        <summary>Repositorio para Tacones</summary>
+        <summary>f4mTester</summary>
         <description></description>
-        <disclaimer></disclaimer>
         <platform>all</platform>
     </extension>
-</addon>
-
-    <addon id="repository.guilouz" name="Guilouz Repository" version="1.0.3" provider-name="Guilouz">
-        <requires>
-            <import addon="xbmc.addon" version="12.0.0"/>
-        </requires>
-        <extension point="xbmc.addon.repository" name="Guilouz Repository">
-                <info compressed="false">https://raw.githubusercontent.com/Guilouz/repository.guilouz/master/_repo/addons.xml</info>
-                <checksum>https://raw.githubusercontent.com/Guilouz/repository.guilouz/master/_repo/addons.xml.md5</checksum>
-                <datadir zip="true">https://github.com/Guilouz/repository.guilouz/raw/master/_repo</datadir>
-                <hashes>false</hashes>
-        </extension>
-        <extension point="xbmc.addon.metadata">
-            <summary lang="en">Guilouz's addons repository</summary>
-            <summary lang="fr">Extensions du dépôt de Guilouz.</summary>
-            <description lang="en">Download and install Guilouz's addons repository.</description>
-            <description lang="fr">Téléchargez et installez les extensions du dépôt de Guilouz.</description>
-            <platform>all</platform>
-            <assets>
- 			   <icon>resources/icon.png</icon>
- 			   <fanart>resources/fanart.jpg</fanart>
- 			   <screenshot>resources/screenshot-01.jpg</screenshot>
- 			   <screenshot>resources/screenshot-02.jpg</screenshot>
- 			   <screenshot>resources/screenshot-03.jpg</screenshot>
- 		    </assets>
-            <news>[B]1.0.3[/B][CR]• Changes for Kodi Krypton[CR][CR][B]1.0.2[/B][CR]• Fixes[CR][CR][B]1.0.1[/B][CR]• Changes for Kodi Krypton[CR][CR][B]1.0.0[/B][CR]• Initial release</news>
-    </extension>
-</addon>
-
-<addon id="repository.alfa-addon" name="[COLOR red]Alfa-Addon[/COLOR] Repo" version="1.0.3" provider-name="Alfa Addon">
-    <extension point="xbmc.addon.repository" name="Alfa-Addon Repo">
-        <info>https://github.com/alfa-addon/alfa-repo/raw/master/addons.xml</info>
-        <checksum>https://github.com/alfa-addon/alfa-repo/raw/master/addons.xml.md5</checksum>
-        <datadir zip="true">https://github.com/alfa-addon/alfa-repo/raw/master</datadir>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary>Repositorio para Alfa-Addon</summary>
-        <description>Descarga e instala Alfa desde este repo.</description>
-        <disclaimer>The owners and submitters to this repository do not host or distribute any of the content displayed by these addons nor do they have any affiliation with the content providers.</disclaimer>
-        <platform>all</platform>
-    </extension>
-</addon>
-
-<addon id="repository.bugatsinho" name=" Bugatsinho repository" version="2.3" provider-name="Bugatsinho">
-    <extension point="xbmc.addon.repository" name="Bugatsinho repository">
-        <info compressed="false">https://raw.githubusercontent.com/bugatsinho/bugatsinho.github.io/master/addons.xml</info>
-        <checksum>https://raw.githubusercontent.com/bugatsinho/bugatsinho.github.io/master/addons.xml.md5</checksum>
-        <datadir zip="true">https://raw.githubusercontent.com/bugatsinho/bugatsinho.github.io/master/_zips</datadir>
-        <hashes>false</hashes>
-        <dir>
-            <info compressed="false">https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/addons.xml</info>
-            <checksum>https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/addons.xml.md5</checksum>
-            <datadir zip="true">https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/</datadir>
-            <hashes>false</hashes>
-        </dir>
-        <dir>
-            <info compressed="false">https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml</info>
-            <checksum>https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml.md5</checksum>
-            <datadir zip="true">https://raw.githubusercontent.com/jsergio123/zips/master/</datadir>
-        </dir>
-        <dir>
-            <info compressed="false">https://raw.githubusercontent.com/Twilight0/repo.twilight0.libs/master/_zips/addons.xml</info>
-            <checksum>https://raw.githubusercontent.com/Twilight0/repo.twilight0.libs/master/_zips/addons.xml.md5</checksum>
-            <datadir zip="true">https://raw.githubusercontent.com/Twilight0/repo.twilight0.libs/master/_zips/</datadir>
-        </dir>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary>Bugatsinho repository</summary>
-        <description>This repository contains Greek, Spanish and other addons!Read first each addon's description!</description>
-        <platform>all</platform>
-    </extension>
-</addon>
-
-<addon id="script.module.streamlink.base" name="Streamlink Library" version="2019.06.23" provider-name="Streamlink Devs, Twilight0">
-  <requires>
-      <import addon="xbmc.python" version="2.24.0"/>
-      <import addon="script.module.requests" version="2.12.4"/>
-      <import addon="script.module.futures" version="2.2.0"/>
-      <import addon="script.module.cryptolib" version="1.0.0"/>
-  </requires>
-  <extension point="xbmc.python.module" library="resources/lib/"/>
-  <extension point="xbmc.addon.metadata">
-      <summary>Streamlink Library for Kodi</summary>
-      <description>Streamlink Library for Kodi. It is a collection of plugins to help resolve web page urls into streamable links. Known issue: Does not work on Xbox, specifically throws exception when trying to import something from ctypes module.</description>
-      <platform>all</platform>
-      <license>Simplified BSD</license>
-      <source>https://github.com/Twilight0/script.module.streamlink.base/</source>
-      <language>en</language>
-      <assets>
-          <icon>icon.png</icon>
-      </assets>
-      <news>+2019.06.23
-- Changed crypto module addon id
-- Updated description</news>
-  </extension>
 </addon>
 
 <addon id="skin.estuary.uModPrimit" version="3.1.4" name="Estuary uMod Primit" provider-name="darkozma, devalls, phil65, Ichabod Fletchman">
@@ -436,38 +328,321 @@
 	</extension>
 </addon>
 
-<addon id="plugin.video.sport365.live" name="Sport365" version="2.6.9" provider-name="Bugatsinho">
-    <requires>
-        <import addon="xbmc.python" version="2.1.0"/>
-        <import addon="script.module.requests" version="2.19.1"/>
-        <import addon="plugin.video.f4mTester" version="2.7.2"/>
-        <import addon="script.module.streamlink.base" version="2019.06.23"/>
-        <import addon="script.module.pyxbmct" version="1.2.0"/>
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="main.py">
-        <provides>video</provides>
+<addon id="script.video.F4mProxy" name="F4mProxy" version="2.8.7" provider-name="Shani">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0"/>
+		<import addon="script.module.requests"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib"/>
+		<extension point="xbmc.python.pluginsource" library="addon.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en">Proxy for f4m</summary>
+		<description lang="en">Use this addon to play F4m v1 and v2 streams</description>
+	</extension>
+</addon>
+
+<addon id="repository.bugatsinho" name=" Bugatsinho repository" version="2.3" provider-name="Bugatsinho">
+    <extension point="xbmc.addon.repository" name="Bugatsinho repository">
+        <info compressed="false">https://raw.githubusercontent.com/bugatsinho/bugatsinho.github.io/master/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/bugatsinho/bugatsinho.github.io/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/bugatsinho/bugatsinho.github.io/master/_zips</datadir>
+        <hashes>false</hashes>
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/</datadir>
+            <hashes>false</hashes>
+        </dir>
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/jsergio123/zips/master/</datadir>
+        </dir>
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/Twilight0/repo.twilight0.libs/master/_zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/Twilight0/repo.twilight0.libs/master/_zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/Twilight0/repo.twilight0.libs/master/_zips/</datadir>
+        </dir>
     </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Bugatsinho repository</summary>
+        <description>This repository contains Greek, Spanish and other addons!Read first each addon's description!</description>
+        <platform>all</platform>
+    </extension>
+</addon>
+
+<addon id="skin.estuary.uMod2Local" version="3.1.3" name="Estuary uMod2 Local" provider-name="darkozma, devalls, phil65, Ichabod Fletchman">
+	<requires>
+		<import addon="xbmc.gui" version="5.14.0"/>
+                <import addon="resource.images.skinbackgrounds.clearMod" version="1.0.8"/>
+                <import addon="resource.images.weatherfanart.faded" optional="true"/>
+                <import addon="resource.images.moviegenrefanart.wall-grey" optional="true"/>
+	</requires>
+	<extension point="xbmc.gui.skin" debugging="false">
+		<res width="1920" height="1440" aspect="4:3" default="false" folder="xml" />
+		<res width="1920" height="1280" aspect="3:2" default="false" folder="xml" />
+		<res width="1920" height="1200" aspect="16:10" default="false" folder="xml" />
+		<res width="2040" height="1080" aspect="17:9" default="false" folder="xml" />
+		<res width="1920" height="1080" aspect="16:9" default="true" folder="xml" />
+		<res width="2560" height="1080" aspect="21:9" default="false" folder="xml" />
+		<res width="2338" height="1080" aspect="19.5:9" default="false" folder="xml" />
+		<res width="2160" height="1080" aspect="18:9" default="false" folder="xml" />
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="ca_ES">Aparença Estuary uMod (només per Ubuntu i scripts) per darkozma, devalls, phil65 i Piers.</summary>
+		<summary lang="en_GB">Estuary uMod skin (only for Ubuntu and scripts) by darkozma, devalls, phil65 and Piers.</summary>
+		<summary lang="es_ES">Skin Estuary uMod (solo para Ubuntu y scripts), creado por darkozma, devalls, phil65 and Piers.</summary>
+		<description lang="ca_ES">Estuary uMod és una modificació de l'aparença predeterminada de Kodi 18.0 (només per Ubuntu mes scripts).</description>
+		<description lang="en_GB">Estuary uMod is a mod of the default skin for Kodi 18.0 (only for Ubuntu with scripts).</description>
+		<description lang="es_ES">Estuary uMod es un mod del skin por defecto para Kodi 18.0 (solo para Ubuntu mas scripts).</description>
+		<disclaimer lang="ca_ES">[COLOR red]Estuary uMod és una aparença modificada per a Kodi. Només funciona a Ubuntu i requereix scripts adicionals o podria provocar problemes.[/COLOR]</disclaimer>
+		<disclaimer lang="en_GB">[COLOR red]Estuary uMod is a mod skin for Kodi. Only work on Ubuntu and require addicional scripts or it may cause issues.[/COLOR]</disclaimer>
+		<disclaimer lang="es_ES">[COLOR red]Estuary uMod es una modificación del skin para Kodi. Solo funciona en Ubuntu y requiere scripts adicionales o podría causar problemas.[/COLOR]</disclaimer>
+		<platform>linux</platform>
+		<license>CC BY-SA 4.0, GNU GENERAL PUBLIC LICENSE Version 2.0</license>
+		<forum>https://github.com/devalls/skin-mod/issues/new</forum>
+		<source>https://github.com/devalls/skin-mod</source>
+		<assets>
+			<icon>resources/icon.png</icon>
+			<fanart>resources/fanart.jpg</fanart>
+			<screenshot>resources/screenshot-01.png</screenshot>
+			<screenshot>resources/screenshot-02.png</screenshot>
+			<screenshot>resources/screenshot-03.png</screenshot>
+			<screenshot>resources/screenshot-04.png</screenshot>
+			<screenshot>resources/screenshot-05.png</screenshot>
+			<screenshot>resources/screenshot-06.png</screenshot>
+			<screenshot>resources/screenshot-07.png</screenshot>
+			<screenshot>resources/screenshot-08.png</screenshot>
+			<screenshot>resources/screenshot-09.png</screenshot>
+		</assets>
+		<news>[COLOR blue][B]Skin Estuary uMod2[/B][/COLOR]
+[COLOR green][B]•3.1.3[/B] Add MC icon.[/COLOR]
+[COLOR yellow][B]•3.1.2[/B] Minor bug fix.[/COLOR]
+[COLOR yellow][B]•3.1.1[/B] Add more Halloween and Xmas logos.[/COLOR]
+[COLOR yellow][B]•3.1.0[/B] Add support Halloween and Xmas logos.[/COLOR]
+[COLOR yellow][B]•3.0.7[/B] Add requires.[/COLOR]
+[COLOR yellow][B]•3.0.6[/B] Minor bug fix.[/COLOR]
+[COLOR yellow][B]•3.0.0[/B] Skin uMod adapted to Kodi 18.[/COLOR]
+[COLOR yellow][B]•2.9.9[/B] Add icon in sidemenu.[/COLOR]
+[COLOR yellow][B]•2.9.8[/B] Change categories GT/NF.[/COLOR]
+[COLOR yellow][B]•2.9.0[/B] Change categories PM and update Screenshot.[/COLOR]
+[COLOR yellow][B]•2.8.9[/B] Update languages.[/COLOR]
+[COLOR yellow][B]•2.8.8[/B] Change homescreen links.[/COLOR]
+[COLOR yellow][B]•2.8.6[/B] Minor bug fix.[/COLOR]
+[COLOR yellow][B]•2.8.5[/B] Variables modded.[/COLOR]
+[COLOR yellow][B]•2.8.2[/B] Add new code and icon FibracatTV.[/COLOR]
+[COLOR yellow][B]•2.8.0[/B] Update code.[/COLOR]
+[COLOR yellow][B]•2.7.9[/B] Cleaning code.[/COLOR]
+[COLOR yellow][B]•2.7.8[/B] Update resources.[/COLOR]
+[COLOR yellow][B]•2.7.6[/B] Minor bug fix.[/COLOR]
+[COLOR yellow][B]•2.7.5[/B] Home fix.[/COLOR]
+[COLOR yellow][B]•2.7.0[/B] Platform fix.[/COLOR]
+[COLOR yellow][B]•2.5.0[/B] Bug fix.[/COLOR]
+[COLOR yellow][B]•2.3.3[/B] Minor fix.[/COLOR]
+[COLOR yellow][B]•2.2.8[/B] Initial beta test.[/COLOR]
+[COLOR yellow][B]•2.2.5[/B] Initial beta.[/COLOR]
+[COLOR yellow][B]•2.0.2[/B] Home modded.[/COLOR]
+[COLOR yellow][B]•1.4.2[/B] DialogButtonMenu modded.[/COLOR]
+[COLOR yellow][B]•0.2.1[/B] Initial alpha.[/COLOR]
+[COLOR yellow][B]•0.0.1[/B] Mod Estuary (0.8.5) for Ubuntu + Scripts.[/COLOR]</news>
+	</extension>
+</addon>
+
+<addon id="repository.balandro" name="Balandro Repo" version="1.0.3" provider-name="Balandro">
+	<requires>
+		<import addon="xbmc.addon" version="12.0.0"/>
+	</requires>
+
+    <extension point="xbmc.addon.repository" name="Balandro Repo">
+        <info>https://balandro.tk/repo/addons.xml</info>
+        <checksum>https://balandro.tk/repo/addons.xml.md5</checksum>
+        <datadir zip="true">https://balandro.tk/repo</datadir>
+    </extension>
+
+    <extension point="xbmc.addon.metadata">
+        <summary>Repositorio para Balandro</summary>
+        <description>Balandro es un navegador para webs con vídeos de películas y series.</description>
+        <disclaimer>The owners and submitters to this repository do not host or distribute any of the content displayed by these addons nor do they have any affiliation with the content providers.</disclaimer>
+        <platform>all</platform>
+    </extension>
+
+</addon>
+
+<addon id="repository.devalls" name="devalls' Repository" version="2.1.1" provider-name="devalls">
+    <extension point="xbmc.addon.repository" name="devalls' Repository">
+        <info compressed="false">https://raw.githubusercontent.com/devalls/repository/master/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/devalls/repository/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/devalls/repository/master</datadir>
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/lamalanovela/Repo/master/Repositorio/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/lamalanovela/Repo/master/Repositorio/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/lamalanovela/Repo/master/Repositorio/</datadir>
+        </dir>
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/bugatsinho/bugatsinho.github.io/master/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/bugatsinho/bugatsinho.github.io/master/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/bugatsinho/bugatsinho.github.io/master/_zips</datadir>
+            <hashes>false</hashes>
+        </dir>
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/joheos11/repository.kodispain/master/addons.xml</info>
+	    <checksum>https://raw.githubusercontent.com/joheos11/repository.kodispain/master/addons.xml.md5</checksum>
+	    <datadir zip="true">https://raw.githubusercontent.com/joheos11/repository.kodispain/master/</datadir>
+        </dir>
+        <dir>
+            <info compressed="false">https://balandro.tk/repo/addons.xml</info>
+            <checksum>https://balandro.tk/repo/addons.xml.md5</checksum>
+            <datadir zip="true">https://balandro.tk/repo</datadir>
+        </dir>
+        <dir>
+            <info compressed="false">https://github.com/alfa-addon/alfa-repo/raw/master/addons.xml</info>
+            <checksum>https://github.com/alfa-addon/alfa-repo/raw/master/addons.xml.md5</checksum>
+            <datadir zip="true">https://github.com/alfa-addon/alfa-repo/raw/master</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+    <summary lang="ca_ES">Repositori devalls</summary>
+	<summary lang="es_ES">Repositorio devalls</summary>
+	<summary lang="en_GB">devalls' repository</summary>
+        <description lang="ca_ES">Descarrega i instal·la complements des del repositori devalls</description>
+	<description lang="es_ES">Descarga e instala addons desde el repositorio devalls</description>
+	<description lang="en_GB">Download and install addons fron devalls' repository</description>
+        <disclaimer>[COLOR red]The owners and submitters to this repository do not host or distribute any of the content displayed by these addons nor do they have any affiliation with the content providers.[/COLOR]</disclaimer>
+        <platform>all</platform>
+	<assets>
+		<icon>resources/icon.png</icon>
+		<fanart>resources/fanart.jpg</fanart>
+		<screenshot>resources/screenshot-01.jpg</screenshot>
+		<screenshot>resources/screenshot-02.jpg</screenshot>
+		<screenshot>resources/screenshot-03.jpg</screenshot>
+	</assets>
+	<news>[COLOR blue][B]Official devalls' repository[/B][/COLOR]
+[COLOR green][B]•2.1.1[/B] Change dir.[/COLOR]
+[COLOR yellow][B]•2.1.0[/B] Add dir.[/COLOR]
+[COLOR yellow][B]•2.0.2[/B] Cleaning code.[/COLOR]
+[COLOR yellow][B]•2.0.1[/B] Minor bug fix.[/COLOR]
+[COLOR yellow][B]•2.0.0[/B] First public release.[/COLOR]
+[COLOR yellow][B]•1.8.0[/B] Final Beta release.[/COLOR]
+[COLOR yellow][B]•1.0.0[/B] Initial release.[/COLOR]</news>
+    </extension>
+</addon>
+
+<addon id="script.module.streamlink.base" name="Streamlink Library" version="2019.06.23" provider-name="Streamlink Devs, Twilight0">
+  <requires>
+      <import addon="xbmc.python" version="2.24.0"/>
+      <import addon="script.module.requests" version="2.12.4"/>
+      <import addon="script.module.futures" version="2.2.0"/>
+      <import addon="script.module.cryptolib" version="1.0.0"/>
+  </requires>
+  <extension point="xbmc.python.module" library="resources/lib/"/>
   <extension point="xbmc.addon.metadata">
-    <summary lang="en">Sport365 originally made by GalAnonim</summary>
-    <description lang="en">Fork version 1.0 by GalAnonim!Kindly note that Sport365 Live is not an official part of the media player you are running, and therefore not to be mentioned within official support channels, this addon has nothing to do with the media player itself, nor it’s intended use, it is simply a third party plugin which has been added to your system.</description>
-    <disclaimer lang="en">Sport365 Live does not provide any streams of its own. Stream quality, content and copyright are responsibility of the ad-financed source web site.</disclaimer>
-    <language>en</language>
-    <platform>all</platform>
-    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-    <website>https://bugatsinho.github.io</website>
-    <twitter>@bugatsinho</twitter>
-  <assets>
-    <icon>icon.png</icon>
-    <fanart>fanart.png</fanart>
-  </assets>
-  <news>2.6.9 09-12-2019
-- Fix GitHub URL on NEWS Tab</news>
+      <summary>Streamlink Library for Kodi</summary>
+      <description>Streamlink Library for Kodi. It is a collection of plugins to help resolve web page urls into streamable links. Known issue: Does not work on Xbox, specifically throws exception when trying to import something from ctypes module.</description>
+      <platform>all</platform>
+      <license>Simplified BSD</license>
+      <source>https://github.com/Twilight0/script.module.streamlink.base/</source>
+      <language>en</language>
+      <assets>
+          <icon>icon.png</icon>
+      </assets>
+      <news>+2019.06.23
+- Changed crypto module addon id
+- Updated description</news>
   </extension>
+</addon>
+
+<addon id="repository.alfa-addon" name="[COLOR red]Alfa-Addon[/COLOR] Repo" version="1.0.3" provider-name="Alfa Addon">
+    <extension point="xbmc.addon.repository" name="Alfa-Addon Repo">
+        <info>https://github.com/alfa-addon/alfa-repo/raw/master/addons.xml</info>
+        <checksum>https://github.com/alfa-addon/alfa-repo/raw/master/addons.xml.md5</checksum>
+        <datadir zip="true">https://github.com/alfa-addon/alfa-repo/raw/master</datadir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Repositorio para Alfa-Addon</summary>
+        <description>Descarga e instala Alfa desde este repo.</description>
+        <disclaimer>The owners and submitters to this repository do not host or distribute any of the content displayed by these addons nor do they have any affiliation with the content providers.</disclaimer>
+        <platform>all</platform>
+    </extension>
+</addon>
+
+    <addon id="repository.guilouz" name="Guilouz Repository" version="1.0.3" provider-name="Guilouz">
+        <requires>
+            <import addon="xbmc.addon" version="12.0.0"/>
+        </requires>
+        <extension point="xbmc.addon.repository" name="Guilouz Repository">
+                <info compressed="false">https://raw.githubusercontent.com/Guilouz/repository.guilouz/master/_repo/addons.xml</info>
+                <checksum>https://raw.githubusercontent.com/Guilouz/repository.guilouz/master/_repo/addons.xml.md5</checksum>
+                <datadir zip="true">https://github.com/Guilouz/repository.guilouz/raw/master/_repo</datadir>
+                <hashes>false</hashes>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+            <summary lang="en">Guilouz's addons repository</summary>
+            <summary lang="fr">Extensions du dépôt de Guilouz.</summary>
+            <description lang="en">Download and install Guilouz's addons repository.</description>
+            <description lang="fr">Téléchargez et installez les extensions du dépôt de Guilouz.</description>
+            <platform>all</platform>
+            <assets>
+ 			   <icon>resources/icon.png</icon>
+ 			   <fanart>resources/fanart.jpg</fanart>
+ 			   <screenshot>resources/screenshot-01.jpg</screenshot>
+ 			   <screenshot>resources/screenshot-02.jpg</screenshot>
+ 			   <screenshot>resources/screenshot-03.jpg</screenshot>
+ 		    </assets>
+            <news>[B]1.0.3[/B][CR]• Changes for Kodi Krypton[CR][CR][B]1.0.2[/B][CR]• Fixes[CR][CR][B]1.0.1[/B][CR]• Changes for Kodi Krypton[CR][CR][B]1.0.0[/B][CR]• Initial release</news>
+    </extension>
+</addon>
+
+<addon id="plugin.video.tvalacarta"
+    name="tvalacarta"
+    version="4.1.2"
+    provider-name="tvalacarta">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="es">Televisión a la carta</summary>
+    <description lang="es">Para ver la televisión por Internet, a la carta y desde tu media center</description>
+    <summary lang="en">TV on demand (Spanish)</summary>
+    <description lang="en">Watch on demand spanish TV on your media center</description>
+    <platform>all</platform>
+    <license>GNU GPL v3</license>
+    <forum>http://www.mimediacenter.info/foro</forum>
+    <website>http://blog.tvalacarta.info/plugin-xbmc/tvalacarta</website>
+    <email>tvalacarta@gmail.com</email>
+    <source>https://github.com/tvalacarta/tvalacarta</source>
+  </extension>
+  <extension point="xbmc.service" library="service.py" start="login|startup">
+  </extension>
+</addon>
+
+<addon id='script.module.libtorrent' version='1.1.1g' name='python-libtorrent' provider-name='DiMartino, srg70, RussakHH, aisman, inpos'>
+  <requires>
+    <import addon='xbmc.python' version='2.1.0'/>
+  </requires>
+  <extension point="xbmc.python.script" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.python.module" library="python_libtorrent"/>
+  <extension point='xbmc.addon.metadata'>
+    <platform>all</platform>
+    <summary lang='en'>script.module.libtorrent is a Kodi module that makes easy import of python-libtorrent for you.</summary>
+    <summary lang='ru'>script.module.libtorrent - модуль Kodi, который упрощает импорт библиотеки python-libtorrent.</summary>
+    <summary lang='es'>script.module.libtorrent es un módulo de Kodi que facilita la importación de la librería python-libtorrent.</summary>
+    <license>MIT License</license>
+    <source>https://github.com/DiMartinoXBMC/script.module.libtorrent</source>
+  </extension>
+  <extension point='xbmc.python.module'/>
 </addon>
 
 <addon id="plugin.video.mediaexplorer"
        name="MediaExplorer"
-       version="2.1.0.202005051908"
+       version="2.1.0.202005091609"
        provider-name="MediaExplorer">
     <requires>
         <!--import addon="xbmc.python" version="2.24.0" optional="true"/>
@@ -504,6 +679,56 @@
     <extension point="xbmc.service" library="services.py" start="login|startup"/>
 </addon>
 
+<addon id="resource.images.skinbackgrounds.clearMod" name="Skin Backgrounds - Clear Design Mod" version="1.1.0" provider-name="Orna Post, Benny Buchnik, devalls">
+	<extension point="kodi.resource.images" compile="false" type="skinbackgrounds" />
+	<requires>
+		<import addon="kodi.resource" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Skin backgrounds Pack - Clear Design Mod</summary>
+		<description lang="en">Skin backgrounds Pack - Clear Design Mod</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="plugin.video.elementum" name="Elementum" version="0.1.41" provider-name="elgatito">
+    <requires>
+        <import addon="xbmc.addon" version="16.0.0" />
+        <import addon="xbmc.python" version="2.24.0" />
+        <import addon="repository.elementum" optional="true" />
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="navigation.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.service" library="service.py" start="startup" />
+    <extension point="xbmc.python.module" library="resources/site-packages" />
+    <extension point="xbmc.subtitle.module" library="navigation.py" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Elementum: Media streaming</summary>
+        <summary lang="hr">Elementum: Medijsko strujanje</summary>
+         <summary lang="es">Elementum: Transmisión de medios</summary>
+        <description lang="en">Elementum is a torrent finding and streaming engine. It doesn't go on torrent websites for legal reasons. However, it calls specially crafted add-ons (called providers) that are installed separately.[CR]This project is a fork of the well known, but no longer maintained Pulsar/Quasar projects from steeve and scakemyer.</description>
+        <description lang="hr">Elementum je pogon pretraživanja i strujanja. Ne posjećuje torrent web stranice iz pravnih razloga. Ipak, koristi posebno napravljene dodatke (nazvane pružatelji usluge) koji su instalirani odvojeno.[CR]Ovaj projekt je ogranak dobro poznatih, ali više ne održavanih Pulsar/Quasar projekata od autora steevea i scakemyera.</description>
+        <description lang="es">Elementum es un motor de búsqueda y transmisión torrent. No navega por sitios web torrent por razones legales. Sin embargo, llama a complementos especialmente diseñados para ello (denominados providers o proveedores) que se instalan por separado.[CR]Este proyecto es un fork de los bien conocidos, pero ya sin soporte proyectos Pulsar/Quasar de steeve y scakemyer.[CR]</description>
+        <disclaimer lang="en">The author does not own or host any content found within this Addon. The author is not connected to or in any other way affiliated with Kodi, Team Kodi, or the XBMC Foundation.</disclaimer>
+        <disclaimer lang="hr">Autor ovog dodatka ne posjeduje i ne distribuira bilo kakav sadržaj koji je pronađen. Autor nije povezan sa ili na bilo koji drugi način bilo sa Kodijem, Team Kodijem ili XBMC fundacijom.</disclaimer>
+        <disclaimer lang="es">El autor no posee ni aloja ningún contenido que se encuentre a través de este complemento. El autor no está unido ni relacionado de ninguna manera con Kodi, Team Kodi, o XBMC Foundation.</disclaimer>
+        <language>en el es de fi fr he hr it nl pt ro sk</language>
+        <platform>all</platform>
+        <website>http://elementum.surge.sh/</website>
+        <source>https://github.com/elgatito/plugin.video.elementum</source>
+        <forum></forum>
+        <license>Non commercial. See https://github.com/elgatito/plugin.video.elementum/blob/master/LICENSE</license>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.png</fanart>
+            <screenshot>resources/screenshots/home.png</screenshot>
+            <screenshot>resources/screenshots/movies.png</screenshot>
+            <screenshot>resources/screenshots/webui.png</screenshot>
+        </assets>
+    </extension>
+</addon>
+
 <addon id="plugin.program.simply.launcher"
     name="Simply Launcher" version="1.0.1" provider-name="Tocinillo">
   <requires>
@@ -519,20 +744,6 @@
     <description lang="es">Simply Launcher es un fork de Executor. En él, al lanzarse un programa externo, el audio de Kodi es deshabilitado, los sonidos de la interfaz deshabilitados y Lirc congelado. Al cerrarse la aplicación externa, el sonido se activa automáticamente, igual que Lirc.</description>
     <platform>linux</platform>
   </extension>
-</addon>
-
-<addon id="repository.marcelveldt" version="1.0.1" name="Marcelveldt's BETA repository" provider-name="marcelveldt">
-
-	<extension point="xbmc.addon.repository" name="Marcelveldt's BETA repository">
-		<info compressed="false">https://raw.githubusercontent.com/marcelveldt/repository.marcelveldt/master/addons.xml</info>
-		<checksum>https://raw.githubusercontent.com/marcelveldt/repository.marcelveldt/master/addons.xml.md5</checksum>
-		<datadir zip="true">https://raw.githubusercontent.com/marcelveldt/repository.marcelveldt/master/</datadir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Kodi repository for beta/test versions of Marcelveldt's addons</summary>
-		<description lang="en">Kodi repository for beta/test versions of Marcelveldt's addons, for stable versions please just use the official Kodi repository. This repo is for test/beta versions of my work only</description>
-		<platform>all</platform>
-	</extension>
 </addon>
 
 <addon id="skin.estuary.uMod" version="3.1.4" name="Estuary uMod" provider-name="darkozma, devalls, phil65, Ichabod Fletchman">
@@ -607,216 +818,5 @@
 [COLOR yellow][B]•0.2.1[/B] Initial alpha.[/COLOR]
 [COLOR yellow][B]•0.0.1[/B] Mod Estuary (0.8.5) for Ubuntu + Scripts.[/COLOR]</news>
 	</extension>
-</addon>
-
-<addon id="plugin.video.xbmctorrent" name="XBMCtorrent" version="0.7.3.ru" provider-name="steeve, nightik">
-    <requires>
-        <import addon="xbmc.python" version="2.1.0"/>
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="addon.py">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.addon.repository" name="XBMCtorrent (RU) Autoupdate Repository">
-        <info compressed="false">http://afedchin.github.io/repository/addons.xml</info>
-        <checksum>http://afedchin.github.io/repository/addons.xml.md5</checksum>
-        <datadir zip="true">http://afedchin.github.io/repository/</datadir>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <platform>all</platform>
-        <website><![CDATA[http://j.mp/xbmctorrent]]></website>
-        <forum><![CDATA[http://j.mp/xbmctorrent]]></forum>
-        <source><![CDATA[https://github.com/steeve/xbmctorrent]]></source>
-        <language></language>
-        <license><![CDATA[GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007]]></license>
-        <summary><![CDATA[XBMCtorrent: Torrent streaming for XBMC.]]></summary>
-        <description><![CDATA[Watch torrents directly from XBMC, without waiting.]]></description>
-    </extension>
-</addon>
-
-<addon id="repository.devalls" name="devalls' Repository" version="2.1.1" provider-name="devalls">
-    <extension point="xbmc.addon.repository" name="devalls' Repository">
-        <info compressed="false">https://raw.githubusercontent.com/devalls/repository/master/addons.xml</info>
-        <checksum>https://raw.githubusercontent.com/devalls/repository/master/addons.xml.md5</checksum>
-        <datadir zip="true">https://raw.githubusercontent.com/devalls/repository/master</datadir>
-        <dir>
-            <info compressed="false">https://raw.githubusercontent.com/lamalanovela/Repo/master/Repositorio/addons.xml</info>
-            <checksum>https://raw.githubusercontent.com/lamalanovela/Repo/master/Repositorio/addons.xml.md5</checksum>
-            <datadir zip="true">https://raw.githubusercontent.com/lamalanovela/Repo/master/Repositorio/</datadir>
-        </dir>
-        <dir>
-            <info compressed="false">https://raw.githubusercontent.com/bugatsinho/bugatsinho.github.io/master/addons.xml</info>
-            <checksum>https://raw.githubusercontent.com/bugatsinho/bugatsinho.github.io/master/addons.xml.md5</checksum>
-            <datadir zip="true">https://raw.githubusercontent.com/bugatsinho/bugatsinho.github.io/master/_zips</datadir>
-            <hashes>false</hashes>
-        </dir>
-        <dir>
-            <info compressed="false">https://raw.githubusercontent.com/joheos11/repository.kodispain/master/addons.xml</info>
-	    <checksum>https://raw.githubusercontent.com/joheos11/repository.kodispain/master/addons.xml.md5</checksum>
-	    <datadir zip="true">https://raw.githubusercontent.com/joheos11/repository.kodispain/master/</datadir>
-        </dir>
-        <dir>
-            <info compressed="false">https://balandro.tk/repo/addons.xml</info>
-            <checksum>https://balandro.tk/repo/addons.xml.md5</checksum>
-            <datadir zip="true">https://balandro.tk/repo</datadir>
-        </dir>
-        <dir>
-            <info compressed="false">https://github.com/alfa-addon/alfa-repo/raw/master/addons.xml</info>
-            <checksum>https://github.com/alfa-addon/alfa-repo/raw/master/addons.xml.md5</checksum>
-            <datadir zip="true">https://github.com/alfa-addon/alfa-repo/raw/master</datadir>
-        </dir>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-    <summary lang="ca_ES">Repositori devalls</summary>
-	<summary lang="es_ES">Repositorio devalls</summary>
-	<summary lang="en_GB">devalls' repository</summary>
-        <description lang="ca_ES">Descarrega i instal·la complements des del repositori devalls</description>
-	<description lang="es_ES">Descarga e instala addons desde el repositorio devalls</description>
-	<description lang="en_GB">Download and install addons fron devalls' repository</description>
-        <disclaimer>[COLOR red]The owners and submitters to this repository do not host or distribute any of the content displayed by these addons nor do they have any affiliation with the content providers.[/COLOR]</disclaimer>
-        <platform>all</platform>
-	<assets>
-		<icon>resources/icon.png</icon>
-		<fanart>resources/fanart.jpg</fanart>
-		<screenshot>resources/screenshot-01.jpg</screenshot>
-		<screenshot>resources/screenshot-02.jpg</screenshot>
-		<screenshot>resources/screenshot-03.jpg</screenshot>
-	</assets>
-	<news>[COLOR blue][B]Official devalls' repository[/B][/COLOR]
-[COLOR green][B]•2.1.1[/B] Change dir.[/COLOR]
-[COLOR yellow][B]•2.1.0[/B] Add dir.[/COLOR]
-[COLOR yellow][B]•2.0.2[/B] Cleaning code.[/COLOR]
-[COLOR yellow][B]•2.0.1[/B] Minor bug fix.[/COLOR]
-[COLOR yellow][B]•2.0.0[/B] First public release.[/COLOR]
-[COLOR yellow][B]•1.8.0[/B] Final Beta release.[/COLOR]
-[COLOR yellow][B]•1.0.0[/B] Initial release.[/COLOR]</news>
-    </extension>
-</addon>
-
-<addon id="skin.estuary.uModCarol" version="3.1.4" name="Estuary uMod Carol" provider-name="darkozma, devalls, phil65, Ichabod Fletchman">
-	<requires>
-		<import addon="xbmc.gui" version="5.12.0"/>
-                <import addon="resource.images.skinbackgrounds.clearMod" version="1.0.8"/>
-                <import addon="resource.images.weatherfanart.faded" optional="true"/>
-                <import addon="resource.images.moviegenrefanart.wall-grey" optional="true"/>
-	</requires>
-	<extension point="xbmc.gui.skin" debugging="false">
-		<res width="1920" height="1440" aspect="4:3" default="false" folder="xml" />
-		<res width="1920" height="1280" aspect="3:2" default="false" folder="xml" />
-		<res width="1920" height="1200" aspect="16:10" default="false" folder="xml" />
-		<res width="1920" height="1080" aspect="16:9" default="true" folder="xml" />
-		<res width="2560" height="1080" aspect="21:9" default="false" folder="xml" />
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary lang="ca_ES">Aparença Estuary uMod (només per Ubuntu i scripts) per darkozma, devalls, phil65 i Piers.</summary>
-		<summary lang="en_GB">Estuary uMod skin (only for Ubuntu and scripts) by darkozma, devalls, phil65 and Piers.</summary>
-		<summary lang="es_ES">Skin Estuary uMod (solo para Ubuntu y scripts), creado por darkozma, devalls, phil65 and Piers.</summary>
-		<description lang="ca_ES">Estuary uMod és una modificació de l'aparença predeterminada de Kodi 17.0 (només per Ubuntu mes scripts).</description>
-		<description lang="en_GB">Estuary uMod is a mod of the default skin for Kodi 17.0 (only for Ubuntu with scripts).</description>
-		<description lang="es_ES">Estuary uMod es un mod del skin por defecto para Kodi 17.0 (solo para Ubuntu mas scripts).</description>
-		<disclaimer lang="ca_ES">[COLOR red]Estuary uMod és una aparença modificada per a Kodi. Només funciona a Ubuntu i requereix scripts adicionals o podria provocar problemes.[/COLOR]</disclaimer>
-		<disclaimer lang="en_GB">[COLOR red]Estuary uMod is a mod skin for Kodi. Only work on Ubuntu and require addicional scripts or it may cause issues.[/COLOR]</disclaimer>
-		<disclaimer lang="es_ES">[COLOR red]Estuary uMod es una modificación del skin para Kodi. Solo funciona en Ubuntu y requiere scripts adicionales o podría causar problemas.[/COLOR]</disclaimer>
-		<platform>linux</platform>
-		<license>CC BY-SA 4.0, GNU GENERAL PUBLIC LICENSE Version 2.0</license>
-		<forum>https://github.com/devalls/skin-mod/issues/new</forum>
-		<source>https://github.com/devalls/skin-mod</source>
-		<assets>
-			<icon>resources/icon.png</icon>
-			<fanart>resources/fanart.jpg</fanart>
-			<screenshot>resources/screenshot-01.png</screenshot>
-			<screenshot>resources/screenshot-02.png</screenshot>
-			<screenshot>resources/screenshot-03.png</screenshot>
-			<screenshot>resources/screenshot-04.png</screenshot>
-			<screenshot>resources/screenshot-05.png</screenshot>
-			<screenshot>resources/screenshot-06.png</screenshot>
-			<screenshot>resources/screenshot-07.png</screenshot>
-			<screenshot>resources/screenshot-08.png</screenshot>
-			<screenshot>resources/screenshot-09.png</screenshot>
-		</assets>
-		<news>[COLOR blue][B]Skin Estuary uMod Carol[/B][/COLOR]
-[COLOR green][B]•3.1.4[/B] Add MC icon.[/COLOR]
-[COLOR yellow][B]•3.1.3[/B] Minor bug fix.[/COLOR]
-[COLOR yellow][B]•3.1.1[/B] Add more Halloween and Xmas logos.[/COLOR]
-[COLOR yellow][B]•3.1.0[/B] Add support Halloween and Xmas logos.[/COLOR]
-[COLOR yellow][B]•3.0.5[/B] Add requires.[/COLOR]
-[COLOR yellow][B]•3.0.2[/B] Mod based on Skin Estuary uMod 2.9.8[/COLOR]
-[COLOR yellow][B]•2.9.8[/B] Skin Estuary uMod. Change categories GT/NF.[/COLOR]
-</news>
-	</extension>
-</addon>
-
-<addon id="plugin.video.kodispaintv"
-       name="[COLOR red]Kodi[/COLOR][COLOR yellow]Spain[/COLOR][COLOR red]Tv[/COLOR]"
-       version="2.6"
-       provider-name="joheos11">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.beautifulsoup" version="3.2.1"/>
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
-    <import addon="script.module.beautifulsoup4" />
-    <import addon="script.module.requests" />
-    <import addon="script.module.httplib2" />
-    <import addon="script.module.liveresolver" version="0.1.24" optional="true"/>
-    <import addon="script.module.youtube.dl" optional="true"/>
-    <import addon="plugin.video.youtube" optional="true" />
-    <import addon="script.module.urlresolver" optional="true"/>
-    <import addon="script.module.simplejson" />
-    <import addon="script.module.livestreamer" optional="true"/>
-    <import addon="script.module.pyamf" optional="true"/>
-  </requires>
-
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-
-  <extension point="xbmc.addon.repository" name="KodiSpain repository">
-	<info compressed="false">https://raw.githubusercontent.com/joheos11/repository.kodispain/master/addons.xml</info>
-	<checksum>https://raw.githubusercontent.com/joheos11/repository.kodispain/master/addons.xml.md5</checksum>
-	<datadir zip="true">https://raw.githubusercontent.com/joheos11/repository.kodispain/master/</datadir>
-  </extension>
-
-  <extension point="xbmc.addon.metadata">
-		<summary>Canales de la Television Española y más...</summary>
-		<description>
-Complemento de video basado en LiveStreamsPro
-Puedes seguirme en https://t.me/kodispain y http://konectas.es
-
-AVISO LEGAL:
-
-Este complemento no aloja ningun contenido mostrado.
-Todo el contenido se encuentra libremente en internet.
-No se acepta ninguna responsabilidad por el uso de este addon.
-
-¡Disfruta!
-		</description>
-		<platform>all</platform>
-  </extension>
-</addon>
-
-<addon id="resource.images.skinbackgrounds.clearMod" name="Skin Backgrounds - Clear Design Mod" version="1.1.0" provider-name="Orna Post, Benny Buchnik, devalls">
-	<extension point="kodi.resource.images" compile="false" type="skinbackgrounds" />
-	<requires>
-		<import addon="kodi.resource" version="1.0.0"/>
-	</requires>
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Skin backgrounds Pack - Clear Design Mod</summary>
-		<description lang="en">Skin backgrounds Pack - Clear Design Mod</description>
-		<platform>all</platform>
-	</extension>
-</addon>
-
-<addon id="plugin.video.f4mTester" name="f4mTester" version="2.7.2" provider-name="Shani">
-    <requires>
-        <import addon="xbmc.python" version="2.1.0"/>
-        <import addon="script.video.F4mProxy" version="2.7.1"/>
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary>f4mTester</summary>
-        <description></description>
-        <platform>all</platform>
-    </extension>
 </addon>
 </addons>
