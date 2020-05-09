@@ -1,9 +1,0 @@
-1.1.0
-Add MC fanart
-1.0.9
-Mod fanart
-1.0.6
-Added more addon fanart
-1.0.1
-Remove forbidden background
-Added addon fanart
