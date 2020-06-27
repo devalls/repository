@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.devalls" name="devalls' Repository" version="2.1.1" provider-name="devalls">
+<addon id="repository.devalls" name="devalls' Repository" version="2.1.2" provider-name="devalls">
     <extension point="xbmc.addon.repository" name="devalls' Repository">
         <info compressed="false">https://raw.githubusercontent.com/devalls/repository/master/addons.xml</info>
         <checksum>https://raw.githubusercontent.com/devalls/repository/master/addons.xml.md5</checksum>
@@ -8,12 +8,6 @@
             <info compressed="false">https://raw.githubusercontent.com/lamalanovela/Repo/master/Repositorio/addons.xml</info>
             <checksum>https://raw.githubusercontent.com/lamalanovela/Repo/master/Repositorio/addons.xml.md5</checksum>
             <datadir zip="true">https://raw.githubusercontent.com/lamalanovela/Repo/master/Repositorio/</datadir>
-        </dir>
-        <dir>
-            <info compressed="false">https://raw.githubusercontent.com/bugatsinho/bugatsinho.github.io/master/addons.xml</info>
-            <checksum>https://raw.githubusercontent.com/bugatsinho/bugatsinho.github.io/master/addons.xml.md5</checksum>
-            <datadir zip="true">https://raw.githubusercontent.com/bugatsinho/bugatsinho.github.io/master/_zips</datadir>
-            <hashes>false</hashes>
         </dir>
         <dir>
             <info compressed="false">https://raw.githubusercontent.com/joheos11/repository.kodispain/master/addons.xml</info>
@@ -48,7 +42,8 @@
 		<screenshot>resources/screenshot-03.jpg</screenshot>
 	</assets>
 	<news>[COLOR blue][B]Official devalls' repository[/B][/COLOR]
-[COLOR green][B]•2.1.1[/B] Change dir.[/COLOR]
+[COLOR green][B]•2.1.2[/B] Del one dir.[/COLOR]
+[COLOR yellow][B]•2.1.1[/B] Change dir.[/COLOR]
 [COLOR yellow][B]•2.1.0[/B] Add dir.[/COLOR]
 [COLOR yellow][B]•2.0.2[/B] Cleaning code.[/COLOR]
 [COLOR yellow][B]•2.0.1[/B] Minor bug fix.[/COLOR]
