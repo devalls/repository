@@ -130,7 +130,7 @@
 	</extension>
 </addon>
 
-<addon id="plugin.video.sport365.live" name="Sport365" version="2.6.9" provider-name="Bugatsinho">
+<addon id="plugin.video.sport365.live" name="Sport365" version="2.6.10.1" provider-name="Bugatsinho">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
         <import addon="script.module.requests" version="2.19.1"/>
@@ -154,8 +154,8 @@
     <icon>icon.png</icon>
     <fanart>fanart.png</fanart>
   </assets>
-  <news>2.6.9 09-12-2019
-- Fix GitHub URL on NEWS Tab</news>
+  <news>2.6.10 18-01-2020
+- Just fix regex issues.Streams could not play!</news>
   </extension>
 </addon>
 
@@ -344,6 +344,88 @@ No se acepta ninguna responsabilidad por el uso de este addon.
 	</extension>
 </addon>
 
+<addon id="plugin.program.indigo" version="4.0.18" name="Indigo" provider-name="tvaddons">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0"/>
+	</requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video executable</provides>
+    </extension>
+    <extension point="xbmc.service" library="service.py" start="startup"/>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Indigo is your gateway to the world of unofficial Kodi addons!</summary>
+        <description lang="en">Indigo is your gateway to the world of unofficial Kodi addons! Please visit www.tvaddons.co for support.</description>
+        <disclaimer lang="en">Kodi is a registered trademark of the XBMC Foundation. We are not connected to or in any other way affiliated with Kodi, Team Kodi, or the XBMC Foundation. Furthermore, any software, addons, or products offered by us will receive no support in official Kodi channels, including the Kodi forums and various social networks.</disclaimer>
+        <language>en</language>
+        <platform>all</platform>
+        <forum>https://www.tvaddons.co/forums</forum>
+        <website>https://www.tvaddons.co</website>
+        <source>https://github.com/tvaddonsco/plugin.program.indigo</source>
+    </extension>
+</addon>
+
+<addon id="plugin.video.cristalazul"
+       name="[B][/B][COLOR aqua]CRISTAL AZUL[/COLOR]"
+       version="0.0.9"
+       provider-name="PICAPAU, LOURDES, SUPERTOPO, LUISMA">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.simple.downloader" version="0.9.4"/>
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.httplib2" />
+    <import addon="script.module.liveresolver" version="0.1.24" optional="true"/>
+    <import addon="script.module.youtube.dl" optional="true"/>
+    <import addon="plugin.video.youtube" />
+    <import addon="script.module.urlresolver" />
+	<import addon="script.module.resolveurl" />
+    <import addon="script.module.inputstreamhelper" optional="true"/>
+    <import addon="script.module.livestreamer" optional="true"/>
+    <import addon="script.module.slproxy" optional="true"/>
+	<import addon="script.module.simplejson" />
+    <import addon="script.module.livestreamer" optional="true"/>
+    <import addon="script.module.pyamf" optional="true"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+   <extension point="xbmc.service" library="autoexec.py" start="autoexec" />
+
+   <extension point="xbmc.addon.repository" name="Mi repositorio">
+
+        <dir>
+            <info>https://raw.githubusercontent.com/picapaujulen/repositorio/master/Repositorio/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/picapaujulen/repositorio/master/Repositorio/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/picapaujulen/repositorio/master/Repositorio/</datadir>
+		</dir>
+
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/Gujal00/smrzips/master/zips/</datadir>
+		</dir>
+
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/jsergio123/zips/master/</datadir>
+		</dir>
+    </extension>
+
+
+  <extension point="xbmc.addon.metadata">
+    <summary>creado por picapau, lourdes, supertopo y luisma</summary>
+    <description>ESTE ADDON NO CONTIENE ENLACES PROPIOS,SON RECOPILACIONES DE LA RED, SOLO SE FACILITA EL ACESSO A ESAS WEBS, ESTAS WEBS SON LAS RESPONSABLES DE LOS CONTENIDOS
+	</description>ºº
+    <platform>all</platform>
+	  <assets>
+		<icon>icon.gif</icon>
+		<fanart>fanart.jpg</fanart>
+	  </assets>
+  </extension>
+</addon>
+
 <addon id="repository.bugatsinho" name=" Bugatsinho repository" version="2.3" provider-name="Bugatsinho">
     <extension point="xbmc.addon.repository" name="Bugatsinho repository">
         <info compressed="false">https://raw.githubusercontent.com/bugatsinho/bugatsinho.github.io/master/addons.xml</info>
@@ -471,7 +553,7 @@ No se acepta ninguna responsabilidad por el uso de este addon.
 
 </addon>
 
-<addon id="repository.devalls" name="devalls' Repository" version="2.1.2" provider-name="devalls">
+<addon id="repository.devalls" name="devalls' Repository" version="2.1.3" provider-name="devalls">
     <extension point="xbmc.addon.repository" name="devalls' Repository">
         <info compressed="false">https://raw.githubusercontent.com/devalls/repository/master/addons.xml</info>
         <checksum>https://raw.githubusercontent.com/devalls/repository/master/addons.xml.md5</checksum>
@@ -496,6 +578,11 @@ No se acepta ninguna responsabilidad por el uso de este addon.
             <checksum>https://github.com/alfa-addon/alfa-repo/raw/master/addons.xml.md5</checksum>
             <datadir zip="true">https://github.com/alfa-addon/alfa-repo/raw/master</datadir>
         </dir>
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/picapaujulen/repositorio/master/Repositorio/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/picapaujulen/repositorio/master/Repositorio/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/picapaujulen/repositorio/master/Repositorio/</datadir>
+	</dir>
     </extension>
     <extension point="xbmc.addon.metadata">
     <summary lang="ca_ES">Repositori devalls</summary>
@@ -514,7 +601,8 @@ No se acepta ninguna responsabilidad por el uso de este addon.
 		<screenshot>resources/screenshot-03.jpg</screenshot>
 	</assets>
 	<news>[COLOR blue][B]Official devalls' repository[/B][/COLOR]
-[COLOR green][B]•2.1.2[/B] Del one dir.[/COLOR]
+[COLOR green][B]•2.1.3[/B] Add one dir.[/COLOR]
+[COLOR yellow][B]•2.1.2[/B] Del one dir.[/COLOR]
 [COLOR yellow][B]•2.1.1[/B] Change dir.[/COLOR]
 [COLOR yellow][B]•2.1.0[/B] Add dir.[/COLOR]
 [COLOR yellow][B]•2.0.2[/B] Cleaning code.[/COLOR]
@@ -522,6 +610,35 @@ No se acepta ninguna responsabilidad por el uso de este addon.
 [COLOR yellow][B]•2.0.0[/B] First public release.[/COLOR]
 [COLOR yellow][B]•1.8.0[/B] Final Beta release.[/COLOR]
 [COLOR yellow][B]•1.0.0[/B] Initial release.[/COLOR]</news>
+    </extension>
+</addon>
+
+<addon id="script.module.resolveurl" name="ResolveURL" version="5.1.8" provider-name="gujal">
+    <requires>
+        <!-- <import addon="xbmc.python" version="3.0.0" /> -->
+        <import addon="script.module.six" version="0.0.1"/>
+        <import addon="plugin.video.youtube" optional="true" />
+        <import addon="script.module.python.twitch" optional="true" />
+        <import addon="script.module.cryptopy" version="1.2.6" optional="true" />
+        <import addon="plugin.video.gdrive" optional="true" />
+    </requires>
+    <extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.python.pluginsource" library="lib/default.py" />
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="en_GB">Resolve common video host URL's to be playable in XBMC/Kodi.</summary>
+        <summary lang="es_ES">Resolver enlaces a videos de sitios populares para poder reproducirlos en XBMC/Kodi.</summary>
+        <summary lang="hr_HR">Prilagodi najčešće URL-ove video izvora kako bi radili u XBMC/Kodiju.</summary>
+        <summary lang="el_GR">Επίλυση συνδέσμων κοινών εξυπηρετητών σε μορφή βίντεο ικανό για αναπαραγωγή στο XBMC/Kodi.</summary>
+        <description lang="en_GB">Resolve common video host URL's to be playable in XBMC/Kodi, simplify addon development of video plugins requiring multi video hosts.</description>
+        <description lang="el_GR">Επίλυση συνδέσμων κοινών εξυπηρετητών σε μορφή βίντεο ικανό για αναπαραγωγή στο XBMC/Kodi, απλοποίηση της ανάπτυξης των προσθέτων που χρησιμοποιούν πολλαπλούς εξυπηρετητές για υλικό βίντεο</description>
+        <description lang="hr_HR">Prilagodi najčešće URL-ove video izvora kako bi radili u XBMC/Kodiju, pojednostavnjuje razvoj priključaka za video dodatke koji zahtjevaju višestruke video izvore.</description>
+        <disclaimer lang="en_GB">This script only resolves video content from legitimate file lockers without prejudice. If this script is being used by 3rd parties to resolve content that you feel infringes upon your Intellectual Property then please take your complaints to the actual website or developer linking to such content and not here. This script in no way searches for any content whatsoever.</disclaimer>
+        <disclaimer lang="el_GR">Το ανωτέρο σενάριο το μόνο που κάνει είναι να επιλύει οπτικοακουστικό περιεχόμενο από νόμιμες πηγές χωρίς προκατάληψη. Εάν το ανωτέρο σενάριο χρησιμοποιηθεί από τρίτους ώστε να επιλύσει περιεχόμενο το οποίο σας προκαλεί αντίδραση ότι παραβιάζει την πνευματική σας ιδιοκτησία παρακαλώ μεταφέρετε τα παραπονά σας στον ιστότοπο τον οποίο βρίσκεται το εν λόγω περιεχόμενο η τον δημιουργό ο οποίος πραγματοποιεί την σύνδεση και όχι εδω. Το σενάριο αυτό ουδεμία περίπτωση πραγματοποιεί αναζήτηση περιεχομένου.</disclaimer>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
     </extension>
 </addon>
 
@@ -637,7 +754,7 @@ No se acepta ninguna responsabilidad por el uso de este addon.
 
 <addon id="plugin.video.mediaexplorer"
        name="MediaExplorer"
-       version="2.2.2020009082136"
+       version="2.3.202009181815"
        provider-name="MediaExplorer">
     <requires>
         <!--import addon="xbmc.python" version="2.24.0" optional="true"/>
@@ -686,7 +803,7 @@ No se acepta ninguna responsabilidad por el uso de este addon.
 	</extension>
 </addon>
 
-<addon id="plugin.video.elementum" name="Elementum" version="0.1.58" provider-name="elgatito">
+<addon id="plugin.video.elementum" name="Elementum" version="0.1.58.1" provider-name="elgatito">
     <requires>
         <import addon="xbmc.addon" version="16.0.0" />
         <import addon="repository.elementum" optional="true" />
@@ -723,6 +840,32 @@ No se acepta ninguna responsabilidad por el uso de este addon.
     </extension>
 </addon>
 
+<addon id="repository.xbmchub" name="TVADDONS.CO Add-on Repository" version="3.0.0" provider-name="tvaddons">
+	<extension point="xbmc.addon.repository" name="TVADDONS.CO Add-on Repository">
+	<dir>
+		<info compressed="false">https://github.com/tvaddonsco/tva-resolvers-repo/raw/master/addons.xml</info>
+		<checksum>https://github.com/tvaddonsco/tva-resolvers-repo/raw/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://github.com/tvaddonsco/tva-resolvers-repo/raw/master/zips/</datadir>
+	</dir>
+
+    <dir>
+		<info compressed="false">https://github.com/tvaddonsco/tva-release-repo/raw/master/addons.xml</info>
+		<checksum>https://github.com/tvaddonsco/tva-release-repo/raw/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://github.com/tvaddonsco/tva-release-repo/raw/master/</datadir>
+    </dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Unofficial Kodi Addons from TVADDONS.CO</summary>
+		<description>Unofficial Kodi Addons from the TVADDONS.CO Add-on Repository. Please visit www.tvaddons.co for support!
+
+Kodi is a registered trademark of the XBMC Foundation. We are not connected to or in any other way affiliated with Kodi, Team Kodi, or the XBMC Foundation.</description>
+         <disclaimer>TVADDONS.CO did not make all the add-ons in this repository and is not responsible for their content.</disclaimer>
+		<platform>all</platform>
+                <forum>https://www.tvaddons.co/forums</forum>
+                <website>https://www.tvaddons.co</website>
+	</extension>
+</addon>
+
 <addon id="plugin.program.simply.launcher"
     name="Simply Launcher" version="1.0.1" provider-name="Tocinillo">
   <requires>
@@ -738,6 +881,31 @@ No se acepta ninguna responsabilidad por el uso de este addon.
     <description lang="es">Simply Launcher es un fork de Executor. En él, al lanzarse un programa externo, el audio de Kodi es deshabilitado, los sonidos de la interfaz deshabilitados y Lirc congelado. Al cerrarse la aplicación externa, el sonido se activa automáticamente, igual que Lirc.</description>
     <platform>linux</platform>
   </extension>
+</addon>
+
+<addon id="script.module.urlresolver" name="URLResolver" version="5.1.8" provider-name="tvaddons">
+    <requires>
+        <!-- <import addon="xbmc.python" version="3.0.0" /> -->
+        <import addon="script.module.six" version="0.0.1"/>
+        <import addon="plugin.video.youtube" optional="true" />
+        <import addon="script.module.python.twitch" optional="true" />
+        <import addon="script.module.cryptopy" version="1.2.6" optional="true" />
+        <import addon="plugin.video.gdrive" optional="true" />
+        <import addon="plugin.program.indigo" />
+    </requires>
+    <extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.python.pluginsource" library="lib/default.py" />
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="en">Resolve common video host URL's to be playable in XBMC/Kodi.</summary>
+        <summary lang="es">Resolver enlaces a videos de sitios populares para poder reproducirlos en XBMC/Kodi.</summary>
+        <summary lang="hr">Prilagodi najčešće URL-ove video izvora kako bi radili u XBMC/Kodiju.</summary>
+        <summary lang="el">Επίλυση συνδέσμων κοινών εξυπηρετητών σε μορφή βίντεο ικανό για αναπαραγωγή στο XBMC/Kodi.</summary>
+        <description lang="en">Resolve common video host URL's to be playable in XBMC/Kodi, simplify addon development of video plugins requiring multi video hosts.</description>
+        <description lang="hr">Prilagodi najčešće URL-ove video izvora kako bi radili u XBMC/Kodiju, pojednostavnjuje razvoj priključaka za video dodatke koji zahtjevaju višestruke video izvore.</description>
+        <forum>https://www.tvaddons.co/forums</forum>
+        <website>https://www.tvaddons.co</website>
+    </extension>
 </addon>
 
 <addon id="skin.estuary.uMod" version="3.1.4" name="Estuary uMod" provider-name="darkozma, devalls, phil65, Ichabod Fletchman">

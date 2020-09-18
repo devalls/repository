@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.devalls" name="devalls' Repository" version="2.1.2" provider-name="devalls">
+<addon id="repository.devalls" name="devalls' Repository" version="2.1.3" provider-name="devalls">
     <extension point="xbmc.addon.repository" name="devalls' Repository">
         <info compressed="false">https://raw.githubusercontent.com/devalls/repository/master/addons.xml</info>
         <checksum>https://raw.githubusercontent.com/devalls/repository/master/addons.xml.md5</checksum>
@@ -24,6 +24,11 @@
             <checksum>https://github.com/alfa-addon/alfa-repo/raw/master/addons.xml.md5</checksum>
             <datadir zip="true">https://github.com/alfa-addon/alfa-repo/raw/master</datadir>
         </dir>
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/picapaujulen/repositorio/master/Repositorio/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/picapaujulen/repositorio/master/Repositorio/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/picapaujulen/repositorio/master/Repositorio/</datadir>
+	</dir>
     </extension>
     <extension point="xbmc.addon.metadata">
     <summary lang="ca_ES">Repositori devalls</summary>
@@ -42,7 +47,8 @@
 		<screenshot>resources/screenshot-03.jpg</screenshot>
 	</assets>
 	<news>[COLOR blue][B]Official devalls' repository[/B][/COLOR]
-[COLOR green][B]•2.1.2[/B] Del one dir.[/COLOR]
+[COLOR green][B]•2.1.3[/B] Add one dir.[/COLOR]
+[COLOR yellow][B]•2.1.2[/B] Del one dir.[/COLOR]
 [COLOR yellow][B]•2.1.1[/B] Change dir.[/COLOR]
 [COLOR yellow][B]•2.1.0[/B] Add dir.[/COLOR]
 [COLOR yellow][B]•2.0.2[/B] Cleaning code.[/COLOR]
