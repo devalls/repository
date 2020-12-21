@@ -1,10 +1,33 @@
+[2.4.1.202012212002] - 21/12/2020
+Canales Nuevos: -
+Canales Reparados: Seriespapaya
+Canales Eliminados: -
+Servidores Nuevos: -
+Servidores Reparados: -
+Servidores Eliminados: -
+Cambios internos:
+  - Corregir fallo en versión 2.4 que no actualizaba los ajustes de Proxy
+
+[2.4] - 13/12/2020
+Canales Nuevos: Cuevana, Aquipelis, PelisHouse, Pelis24.
+Canales Reparados: CineCalidad, Seriespapaya, DixMax, Inkaseries, Dospelis, HDFull, Beeg, Cumlouder.
+Canales Eliminados: Megadede, Newpct, Vidcorn, Mejortorrent.
+Servidores Nuevos: Aparat, MyStream, Evoload, Doodstream.
+Servidores Reparados: Netu, Jetload, Mega, Uptobox, Gamovideo, Stgreamtape, StreamZ, Netu, Upstream.
+Servidores Eliminados: UploadMP4:
+Cambios internos:
+  - Corregir problemas en Recaptcha.
+  - Añadir soporte para Kodi 19 beta1
+  - Añadir soporte para usar Web-Proxy con dos serivicios por si uno falla
+  - Detectar automáticamente cuando una url necesita usar Proxy
+
 [2.3] - 12/09/2020
 Canales Nuevos: InkaSeries
 Canales Reparados: NewPCT, MejorTorrent, Pepecine, HDFull, Dospelis, Megadede, Movidy, Repelis, Cliver, Vidcorn, PornHD, PornHub, Beeg.
 Canales Eliminados: HD-Torrents, Gnula.
 Servidores Nuevos: Stgreamtape.
 Servidores Reparados: Uptobox, Netu.tv, CLipWatching, GoUnlimited, UpStream, VidTodo, Powvideo, Streamplay, CloudVideo, Fembed, Jetload, Vidia.
-Servidores Eliminados -:
+Servidores Eliminados: -:
 Cambios internos:
   - Reparados varios fallos internos.
 
