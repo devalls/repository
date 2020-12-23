@@ -1,6 +1,6 @@
-[2.4.1 Mod] - 22/12/2020
+[2.4.1.M3] - 23/12/2020
 Canales Nuevos: -
-Canales Reparados: Seriespapaya
+Canales Reparados: Seriespapaya, Aquipelis
 Canales Eliminados: -
 Servidores Nuevos: -
 Servidores Reparados: -
