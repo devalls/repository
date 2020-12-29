@@ -1,6 +1,6 @@
-[2.4.1.6] - 28/12/2020
+[2.4.1.08] - 29/12/2020
 Canales Nuevos: -
-Canales Reparados: Seriespapaya, Aquipelis, Mejortorrent (Buscador y Novedades).
+Canales Reparados: Seriespapaya, Aquipelis, Mejortorrent.
 Canales Eliminados: -
 Servidores Nuevos: -
 Servidores Reparados: -
