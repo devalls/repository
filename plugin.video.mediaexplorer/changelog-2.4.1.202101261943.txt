@@ -1,6 +1,6 @@
-[2.4.1.21] - 09/01/2021
+[2.4.1.23] - 26/01/2021
 Canales Nuevos: -
-Canales Reparados: Aquipelis, Mejortorrent.
+Canales Reparados: Aquipelis, Mejortorrent, Pelihouse.
 Canales Eliminados: -
 Servidores Nuevos: -
 Servidores Reparados: -
