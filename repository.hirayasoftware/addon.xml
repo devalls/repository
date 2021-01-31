@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.hirayasoftware" name="Hiraya Software" version="1.0.1" provider-name="Alex303 - Hiraya Software">
+	<extension point="xbmc.addon.repository" name="Hiraya Software">
+		<info>https://hirayasoftware.github.io/addons.xml</info>
+		<checksum>https://hirayasoftware.github.io/addons.xml.md5</checksum>
+		<datadir zip="true">https://hirayasoftware.github.io/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Hiraya Software Repository</summary>
+		<description></description>
+		<disclaimer></disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>

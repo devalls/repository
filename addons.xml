@@ -15,7 +15,7 @@
     </extension>
 </addon>
 
-<addon id="plugin.video.xbmctorrent" name="XBMCtorrent" version="0.7.3.ru" provider-name="steeve, nightik">
+<addon id="plugin.video.xbmctorrent" name="XBMCtorrent" version="0.7.9.ru" provider-name="steeve, nightik">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
     </requires>
@@ -23,19 +23,17 @@
         <provides>video</provides>
     </extension>
     <extension point="xbmc.addon.repository" name="XBMCtorrent (RU) Autoupdate Repository">
-        <info compressed="false">http://afedchin.github.io/repository/addons.xml</info>
-        <checksum>http://afedchin.github.io/repository/addons.xml.md5</checksum>
-        <datadir zip="true">http://afedchin.github.io/repository/</datadir>
+        <info compressed="false">https://afedchin-repo.herokuapp.com/addons.xml</info>
+        <checksum>https://afedchin-repo.herokuapp.com/addons.xml.md5</checksum>
+        <datadir zip="true">https://afedchin-repo.herokuapp.com/</datadir>
     </extension>
     <extension point="xbmc.addon.metadata">
         <platform>all</platform>
-        <website><![CDATA[http://j.mp/xbmctorrent]]></website>
-        <forum><![CDATA[http://j.mp/xbmctorrent]]></forum>
         <source><![CDATA[https://github.com/steeve/xbmctorrent]]></source>
         <language></language>
         <license><![CDATA[GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007]]></license>
-        <summary><![CDATA[XBMCtorrent: Torrent streaming for XBMC.]]></summary>
-        <description><![CDATA[Watch torrents directly from XBMC, without waiting.]]></description>
+        <summary><![CDATA[XBMCtorrent: Torrent streaming for Kodi.]]></summary>
+        <description><![CDATA[Watch torrents directly from Kodi, without waiting.]]></description>
     </extension>
 </addon>
 
@@ -427,6 +425,39 @@ No se acepta ninguna responsabilidad por el uso de este addon.
     </extension>
 </addon>
 
+<addon id="script.luar"
+  version="0.7.0"
+  name="Luar"
+  provider-name="The Dreamers">
+  <requires>
+    <import addon="script.module.six" version="1.11.0"/>
+    <import addon="script.module.requests"/>
+    <import addon="resource.language.es_es"/>
+    <import addon="script.module.pycryptodome" optional="true"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.repository" name="Luar Repo">
+    <info>https://raw.githubusercontent.com/Masterwine/Luar/master/repor/addons.xml</info>
+    <checksum>https://raw.githubusercontent.com/Masterwine/Luar/master/repor/addons.xml.md5</checksum>
+    <datadir zip="true">https://raw.githubusercontent.com/Masterwine/Luar/master/repor/</datadir>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="es">Script instalador de complementos para Kodi.</summary>
+    <description lang="es">Selecciona, instala y disfruta.</description>
+    <disclaimer lang="es"></disclaimer>
+    <assets>
+      <icon>icon.gif</icon>
+      <fanart>fanart.jpg</fanart>
+      <screenshot>resources/screenshot000.jpg</screenshot>
+      <screenshot>resources/screenshot001.jpg</screenshot>
+      <screenshot>resources/screenshot002.jpg</screenshot>
+    </assets>
+  </extension>
+</addon>
+
 <addon id="plugin.video.cristalazul"
        name="[B][/B][COLOR aqua]CRISTAL AZUL[/COLOR]"
        version="0.0.9"
@@ -620,7 +651,21 @@ No se acepta ninguna responsabilidad por el uso de este addon.
 
 </addon>
 
-<addon id="repository.devalls" name="devalls' Repository" version="2.1.4" provider-name="devalls">
+<addon id="repository.hirayasoftware" name="Hiraya Software" version="1.0.1" provider-name="Alex303 - Hiraya Software">
+	<extension point="xbmc.addon.repository" name="Hiraya Software">
+		<info>https://hirayasoftware.github.io/addons.xml</info>
+		<checksum>https://hirayasoftware.github.io/addons.xml.md5</checksum>
+		<datadir zip="true">https://hirayasoftware.github.io/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Hiraya Software Repository</summary>
+		<description></description>
+		<disclaimer></disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="repository.devalls" name="devalls' Repository" version="2.1.5" provider-name="devalls">
     <extension point="xbmc.addon.repository" name="devalls' Repository">
         <info compressed="false">https://raw.githubusercontent.com/devalls/repository/master/addons.xml</info>
         <checksum>https://raw.githubusercontent.com/devalls/repository/master/addons.xml.md5</checksum>
@@ -655,6 +700,16 @@ No se acepta ninguna responsabilidad por el uso de este addon.
             <checksum>https://raw.githubusercontent.com/picapaujulen/repositorio/master/Repositorio/addons.xml.md5</checksum>
             <datadir zip="true">https://raw.githubusercontent.com/picapaujulen/repositorio/master/Repositorio/</datadir>
 	</dir>
+        <dir>
+            <info compressed="false">https://hirayasoftware.github.io/addons.xml</info>
+            <checksum>https://hirayasoftware.github.io/addons.xml.md5</checksum>
+            <datadir zip="true">https://hirayasoftware.github.io/</datadir>
+	</dir>
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/Masterwine/Luar/master/repor/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/Masterwine/Luar/master/repor/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/Masterwine/Luar/master/repor/</datadir>
+	</dir>
     </extension>
     <extension point="xbmc.addon.metadata">
     <summary lang="ca_ES">Repositori devalls</summary>
@@ -673,7 +728,7 @@ No se acepta ninguna responsabilidad por el uso de este addon.
 		<screenshot>resources/screenshot-03.jpg</screenshot>
 	</assets>
 	<news>[COLOR blue][B]Official devalls' repository[/B][/COLOR]
-[COLOR green][B]•2.1.4[/B] Add one dir.[/COLOR]
+[COLOR green][B]•2.1.5[/B] Add three dir.[/COLOR]
 [COLOR yellow][B]•2.1.3[/B] Add one dir.[/COLOR]
 [COLOR yellow][B]•2.1.2[/B] Del one dir.[/COLOR]
 [COLOR yellow][B]•2.1.1[/B] Change dir.[/COLOR]
@@ -782,7 +837,7 @@ No se acepta ninguna responsabilidad por el uso de este addon.
 
 <addon id="plugin.video.tvalacarta"
     name="tvalacarta"
-    version="4.1.2"
+    version="4.2.0"
     provider-name="tvalacarta">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -806,7 +861,7 @@ No se acepta ninguna responsabilidad por el uso de este addon.
   </extension>
 </addon>
 
-<addon id='script.module.libtorrent' version='1.1.1g' name='python-libtorrent' provider-name='DiMartino, srg70, RussakHH, aisman, inpos'>
+<addon id='script.module.libtorrent' version='1.1.7' name='python-libtorrent' provider-name='DiMartino, srg70, RussakHH, aisman, inpos'>
   <requires>
     <import addon='xbmc.python' version='2.1.0'/>
   </requires>
@@ -820,7 +875,7 @@ No se acepta ninguna responsabilidad por el uso de este addon.
     <summary lang='ru'>script.module.libtorrent - модуль Kodi, который упрощает импорт библиотеки python-libtorrent.</summary>
     <summary lang='es'>script.module.libtorrent es un módulo de Kodi que facilita la importación de la librería python-libtorrent.</summary>
     <license>MIT License</license>
-    <source>https://github.com/DiMartinoXBMC/script.module.libtorrent</source>
+    <source>https://github.com/inpos/script.module.libtorrent</source>
   </extension>
   <extension point='xbmc.python.module'/>
 </addon>
