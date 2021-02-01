@@ -37,12 +37,12 @@
     </extension>
 </addon>
 
-<addon id="repository.marcelveldt" version="1.0.1" name="Marcelveldt's BETA repository" provider-name="marcelveldt">
+<addon id="repository.marcelveldt" version="1.0.2" name="Marcelveldt's BETA repository" provider-name="marcelveldt, finkleandeinhorn">
 
 	<extension point="xbmc.addon.repository" name="Marcelveldt's BETA repository">
-		<info compressed="false">https://raw.githubusercontent.com/marcelveldt/repository.marcelveldt/master/addons.xml</info>
-		<checksum>https://raw.githubusercontent.com/marcelveldt/repository.marcelveldt/master/addons.xml.md5</checksum>
-		<datadir zip="true">https://raw.githubusercontent.com/marcelveldt/repository.marcelveldt/master/</datadir>
+		<info compressed="false">https://raw.githubusercontent.com/kodi-community-addons/repository.marcelveldt/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/kodi-community-addons/repository.marcelveldt/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/kodi-community-addons/repository.marcelveldt/master/</datadir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Kodi repository for beta/test versions of Marcelveldt's addons</summary>
@@ -132,7 +132,7 @@
 	</extension>
 </addon>
 
-<addon id="plugin.video.palantir2" name="[COLOR gold]Palantir 2[/COLOR]" version="2.1.0" provider-name="TierraMedia">
+<addon id="plugin.video.palantir2" name="[COLOR gold]Palantir 2[/COLOR]" version="2.1.1" provider-name="TierraMedia">
   <requires>
     <import addon="script.module.six" version="1.11.0"/>
     <import addon="script.module.resolveurl" version="5.0.00"/>
@@ -160,68 +160,85 @@
         <screenshot>resources/media/Captura4.png</screenshot>
     </assets>
     <news>
-        - Agrupar películas.
-- Agrupar temporadas y episodios.
-- Mostrar servidores disponibles y calidad en cuadro de selección.
-
-- Añadidos nuevos servidores.
-- Añadida nueva función 'Series siguiendo'.
-- Añadida nueva función 'Siguiente episodio' (Desactivable desde ajustes)
-
-- Corrección del orden en los episodios.
-- Correcciones internas.
+        - Corregidos problemas con las actualizaciones
+- Reescrita la función de seguimiento.
+- Eliminar el paso por Temporadas cuando solo existe una.
+- Añadidos nuevas opciones en ajustes.
+- Reparado servidor Zipi.
     </news>
     <forum></forum>
   </extension>
 </addon>
 
-<addon id="plugin.video.sport365.live" name="Sport365" version="2.6.10.1" provider-name="Bugatsinho">
-    <requires>
-        <import addon="xbmc.python" version="2.1.0"/>
-        <import addon="script.module.requests" version="2.19.1"/>
-        <import addon="plugin.video.f4mTester" version="2.7.2"/>
-        <import addon="script.module.streamlink.base" version="2019.06.23"/>
-        <import addon="script.module.pyxbmct" version="1.2.0"/>
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="main.py">
-        <provides>video</provides>
-    </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">Sport365 originally made by GalAnonim</summary>
-    <description lang="en">Fork version 1.0 by GalAnonim!Kindly note that Sport365 Live is not an official part of the media player you are running, and therefore not to be mentioned within official support channels, this addon has nothing to do with the media player itself, nor it’s intended use, it is simply a third party plugin which has been added to your system.</description>
-    <disclaimer lang="en">Sport365 Live does not provide any streams of its own. Stream quality, content and copyright are responsibility of the ad-financed source web site.</disclaimer>
-    <language>en</language>
-    <platform>all</platform>
-    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-    <website>https://bugatsinho.github.io</website>
-    <twitter>@bugatsinho</twitter>
-  <assets>
-    <icon>icon.png</icon>
-    <fanart>fanart.png</fanart>
-  </assets>
-  <news>2.6.10 18-01-2020
-- Just fix regex issues.Streams could not play!</news>
-  </extension>
+<addon id="skin.estuary.MaxEd" version="3.0.1" name="Estuary MaxEDITion" provider-name="darkozma, phil65, Ichabod Fletchman">
+	<requires>
+		<import addon="xbmc.gui" version="5.14.0"/>
+                <import addon="resource.images.skinbackgrounds.clearMod" optional="true"/>
+                <import addon="resource.images.weatherfanart.faded" optional="true"/>
+                <import addon="resource.images.moviegenrefanart.wall-grey" optional="true"/>
+                <import addon="script.extendedinfo" optional="true"/>
+                <import addon="plugin.video.palantir2" optional="true"/>
+	</requires>
+	<extension point="xbmc.gui.skin" debugging="false">
+		<res width="1920" height="1440" aspect="4:3" default="false" folder="xml" />
+		<res width="1920" height="1280" aspect="3:2" default="false" folder="xml" />
+		<res width="1920" height="1200" aspect="16:10" default="false" folder="xml" />
+		<res width="2040" height="1080" aspect="17:9" default="false" folder="xml" />
+		<res width="1920" height="1080" aspect="16:9" default="true" folder="xml" />
+		<res width="2560" height="1080" aspect="21:9" default="false" folder="xml" />
+		<res width="2338" height="1080" aspect="19.5:9" default="false" folder="xml" />
+		<res width="2160" height="1080" aspect="18:9" default="false" folder="xml" />
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="ca_ES">Aparença Estuary MaxEd (només per Android) per darkozma, devalls, phil65 i Ichabod Fletchman.</summary>
+		<summary lang="en_GB">Estuary MaxEd skin (only for Android) by darkozma, devalls, phil65 and Ichabod Fletchman.</summary>
+		<summary lang="es_ES">Skin Estuary MaxEd (solo para Android), creado por darkozma, devalls, phil65 and Ichabod Fletchman.</summary>
+		<description lang="ca_ES">Estuary MaxEd és una modificació de l'aparença predeterminada de Kodi 18.0 (només per Android).</description>
+		<description lang="en_GB">Estuary MaxEd is a mod of the default skin for Kodi 18.0 (only for Android).</description>
+		<description lang="es_ES">Estuary MaxEd es un mod del skin por defecto para Kodi 18.0 (solo para Android).</description>
+		<disclaimer lang="ca_ES">[COLOR red]Estuary MaxEd és una aparença modificada per a Kodi.[/COLOR]</disclaimer>
+		<disclaimer lang="en_GB">[COLOR red]Estuary MaxEd is a mod skin for Kodi.[/COLOR]</disclaimer>
+		<disclaimer lang="es_ES">[COLOR red]Estuary MaxEd es una modificación del skin para Kodi.[/COLOR]</disclaimer>
+		<platform>android</platform>
+		<license>CC BY-SA 4.0, GNU GENERAL PUBLIC LICENSE Version 2.0</license>
+		<forum>https://github.com/devalls/skin-mod/issues/new</forum>
+		<source>https://github.com/devalls/skin-mod</source>
+		<assets>
+			<icon>resources/icon.png</icon>
+			<fanart>resources/fanart.jpg</fanart>
+			<screenshot>resources/screenshot-01.png</screenshot>
+			<screenshot>resources/screenshot-02.png</screenshot>
+			<screenshot>resources/screenshot-03.png</screenshot>
+			<screenshot>resources/screenshot-04.png</screenshot>
+			<screenshot>resources/screenshot-05.png</screenshot>
+			<screenshot>resources/screenshot-06.png</screenshot>
+			<screenshot>resources/screenshot-07.png</screenshot>
+			<screenshot>resources/screenshot-08.png</screenshot>
+			<screenshot>resources/screenshot-09.png</screenshot>
+		</assets>
+		<news>[COLOR blue][B]Skin Estuary uMod2[/B][/COLOR]
+[COLOR green][B]•3.0.1[/B]MaxEDITion beta.[/COLOR]
+[COLOR yellow][B]•2.2.8[/B] Initial beta test.[/COLOR]
+[COLOR yellow][B]•2.2.5[/B] Initial beta.[/COLOR]
+[COLOR yellow][B]•2.0.2[/B] Home modded.[/COLOR]
+[COLOR yellow][B]•0.2.1[/B] Initial alpha.[/COLOR]
+[COLOR yellow][B]•0.0.1[/B] Mod Estuary (0.8.5) for Android.[/COLOR]</news>
+	</extension>
 </addon>
 
 <addon id="plugin.video.kodispaintv"
        name="[COLOR red]Kodi[/COLOR][COLOR yellow]Spain[/COLOR][COLOR red]Tv[/COLOR]"
-       version="2.6"
+       version="2.8.2"
        provider-name="joheos11">
+
   <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.beautifulsoup" version="3.2.1"/>
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
-    <import addon="script.module.beautifulsoup4" />
-    <import addon="script.module.requests" />
-    <import addon="script.module.httplib2" />
-    <import addon="script.module.liveresolver" version="0.1.24" optional="true"/>
-    <import addon="script.module.youtube.dl" optional="true"/>
-    <import addon="plugin.video.youtube" optional="true" />
+    <import addon="script.module.beautifulsoup"/>
+	<import addon="script.module.httplib2"/>
+    <import addon="script.module.requests"/>
+	<import addon="script.module.simple.downloader"/>
+    <import addon="script.module.simplejson"/>
+	<import addon="script.module.resolveurl" optional="true"/>
     <import addon="script.module.urlresolver" optional="true"/>
-    <import addon="script.module.simplejson" />
-    <import addon="script.module.livestreamer" optional="true"/>
-    <import addon="script.module.pyamf" optional="true"/>
   </requires>
 
   <extension point="xbmc.python.pluginsource" library="default.py">
@@ -389,23 +406,23 @@ No se acepta ninguna responsabilidad por el uso de este addon.
 	</extension>
 </addon>
 
-<addon id="script.video.F4mProxy" name="F4mProxy" version="2.8.7" provider-name="Shani">
-	<requires>
-		<import addon="xbmc.python" version="2.1.0"/>
-		<import addon="script.module.requests"/>
-	</requires>
-	<extension point="xbmc.python.module" library="lib"/>
-		<extension point="xbmc.python.pluginsource" library="addon.py">
-		<provides>executable</provides>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<platform>all</platform>
-		<summary lang="en">Proxy for f4m</summary>
-		<description lang="en">Use this addon to play F4m v1 and v2 streams</description>
-	</extension>
+<addon id="script.video.F4mProxy" name="F4mProxy" version="2.8.8" provider-name="Shani">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0" />
+        <import addon="script.module.requests" />
+    </requires>
+    <extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="en">Proxy for f4m</summary>
+        <description lang="en">Use this addon to play F4m v1 and v2 streams</description>
+    </extension>
 </addon>
 
-<addon id="plugin.program.indigo" version="4.0.18" name="Indigo" provider-name="tvaddons">
+<addon id="plugin.program.indigo" version="4.0.20" name="Indigo" provider-name="tvaddons">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0"/>
 	</requires>
@@ -460,7 +477,7 @@ No se acepta ninguna responsabilidad por el uso de este addon.
 
 <addon id="plugin.video.cristalazul"
        name="[B][/B][COLOR aqua]CRISTAL AZUL[/COLOR]"
-       version="0.0.9"
+       version="0.0.12"
        provider-name="PICAPAU, LOURDES, SUPERTOPO, LUISMA">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -520,7 +537,7 @@ No se acepta ninguna responsabilidad por el uso de este addon.
   </extension>
 </addon>
 
-<addon id="repository.bugatsinho" name=" Bugatsinho repository" version="2.3" provider-name="Bugatsinho">
+<addon id="repository.bugatsinho" name=" Bugatsinho repository" version="2.5" provider-name="Bugatsinho">
     <extension point="xbmc.addon.repository" name="Bugatsinho repository">
         <info compressed="false">https://raw.githubusercontent.com/bugatsinho/bugatsinho.github.io/master/addons.xml</info>
         <checksum>https://raw.githubusercontent.com/bugatsinho/bugatsinho.github.io/master/addons.xml.md5</checksum>
@@ -541,6 +558,16 @@ No se acepta ninguna responsabilidad por el uso de este addon.
             <info compressed="false">https://raw.githubusercontent.com/Twilight0/repo.twilight0.libs/master/_zips/addons.xml</info>
             <checksum>https://raw.githubusercontent.com/Twilight0/repo.twilight0.libs/master/_zips/addons.xml.md5</checksum>
             <datadir zip="true">https://raw.githubusercontent.com/Twilight0/repo.twilight0.libs/master/_zips/</datadir>
+        </dir>
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/Gujal00/smrzips/master/zips/</datadir>
+        </dir>
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/bugatsinho/python-koding/master/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/bugatsinho/python-koding/master/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/bugatsinho/python-koding/master/zips/</datadir>
         </dir>
     </extension>
     <extension point="xbmc.addon.metadata">
@@ -741,14 +768,15 @@ No se acepta ninguna responsabilidad por el uso de este addon.
     </extension>
 </addon>
 
-<addon id="script.module.resolveurl" name="ResolveURL" version="5.1.8" provider-name="gujal">
+<addon id="script.module.resolveurl" name="ResolveURL" version="5.1.23" provider-name="gujal">
     <requires>
         <!-- <import addon="xbmc.python" version="3.0.0" /> -->
-        <import addon="script.module.six" version="0.0.1"/>
+        <import addon="script.module.six" />
+        <import addon="script.module.kodi-six" />
         <import addon="plugin.video.youtube" optional="true" />
         <import addon="script.module.python.twitch" optional="true" />
         <import addon="script.module.cryptopy" version="1.2.6" optional="true" />
-        <import addon="plugin.video.gdrive" optional="true" />
+        <import addon="plugin.googledrive" optional="true" />
     </requires>
     <extension point="xbmc.python.module" library="lib" />
     <extension point="xbmc.python.pluginsource" library="lib/default.py" />
@@ -770,12 +798,12 @@ No se acepta ninguna responsabilidad por el uso de este addon.
     </extension>
 </addon>
 
-<addon id="script.module.streamlink.base" name="Streamlink Library" version="2019.06.23" provider-name="Streamlink Devs, Twilight0">
+<addon id="script.module.streamlink.base" name="Streamlink Library" version="2020.09.07.1" provider-name="Streamlink Devs, Twilight0">
   <requires>
-      <import addon="xbmc.python" version="2.24.0"/>
+      <import addon="xbmc.python" version="2.26.0"/>
       <import addon="script.module.requests" version="2.12.4"/>
-      <import addon="script.module.futures" version="2.2.0"/>
-      <import addon="script.module.cryptolib" version="1.0.0"/>
+      <import addon="script.module.futures" version="0.0.0.1"/>
+      <import addon="script.module.pycryptodome" />
   </requires>
   <extension point="xbmc.python.module" library="resources/lib/"/>
   <extension point="xbmc.addon.metadata">
@@ -788,13 +816,21 @@ No se acepta ninguna responsabilidad por el uso de este addon.
       <assets>
           <icon>icon.png</icon>
       </assets>
-      <news>+2019.06.23
-- Changed crypto module addon id
-- Updated description</news>
+      <news>+2020.09.07.1
+- Update to latest upstream commit
+- Remove on demand installation of futures module
+- Add dummy futures module for Kodi 19
+
++2020.08.09
+- Update to latest upstream commit
+- Futures module is not set to optional (on Kodi 19 it is not imported)</news>
   </extension>
 </addon>
 
-<addon id="repository.alfa-addon" name="[COLOR red]Alfa-Addon[/COLOR] Repo" version="1.0.3" provider-name="Alfa Addon">
+<addon id="repository.alfa-addon" name="[COLOR red]Alfa-Addon[/COLOR] Repo" version="1.0.6" provider-name="Alfa Addon">
+    <requires>
+        <import addon="xbmc.addon" version="12.0.0"/>
+    </requires>
     <extension point="xbmc.addon.repository" name="Alfa-Addon Repo">
         <info>https://github.com/alfa-addon/alfa-repo/raw/master/addons.xml</info>
         <checksum>https://github.com/alfa-addon/alfa-repo/raw/master/addons.xml.md5</checksum>
@@ -802,7 +838,7 @@ No se acepta ninguna responsabilidad por el uso de este addon.
     </extension>
     <extension point="xbmc.addon.metadata">
         <summary>Repositorio para Alfa-Addon</summary>
-        <description>Descarga e instala Alfa desde este repo.</description>
+        <description></description>
         <disclaimer>The owners and submitters to this repository do not host or distribute any of the content displayed by these addons nor do they have any affiliation with the content providers.</disclaimer>
         <platform>all</platform>
     </extension>
@@ -882,7 +918,7 @@ No se acepta ninguna responsabilidad por el uso de este addon.
 
 <addon id="plugin.video.mediaexplorer"
        name="MediaExplorer"
-       version="2.4.1.202101282058"
+       version="2.4.1.202101311706"
        provider-name="MediaExplorer">
     <requires>
         <!--import addon="xbmc.python" version="2.24.0" optional="true"/>
@@ -1014,26 +1050,30 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
   </extension>
 </addon>
 
-<addon id="script.module.urlresolver" name="URLResolver" version="5.1.8" provider-name="tvaddons">
+<addon id="script.module.urlresolver" name="URLResolver" version="5.1.22" provider-name="tvaddons">
     <requires>
         <!-- <import addon="xbmc.python" version="3.0.0" /> -->
-        <import addon="script.module.six" version="0.0.1"/>
+        <import addon="script.module.six" />
+        <import addon="script.module.kodi-six" />
         <import addon="plugin.video.youtube" optional="true" />
         <import addon="script.module.python.twitch" optional="true" />
         <import addon="script.module.cryptopy" version="1.2.6" optional="true" />
-        <import addon="plugin.video.gdrive" optional="true" />
+        <import addon="plugin.googledrive" optional="true" />
         <import addon="plugin.program.indigo" />
     </requires>
     <extension point="xbmc.python.module" library="lib" />
     <extension point="xbmc.python.pluginsource" library="lib/default.py" />
     <extension point="xbmc.addon.metadata">
         <platform>all</platform>
-        <summary lang="en">Resolve common video host URL's to be playable in XBMC/Kodi.</summary>
-        <summary lang="es">Resolver enlaces a videos de sitios populares para poder reproducirlos en XBMC/Kodi.</summary>
-        <summary lang="hr">Prilagodi najčešće URL-ove video izvora kako bi radili u XBMC/Kodiju.</summary>
-        <summary lang="el">Επίλυση συνδέσμων κοινών εξυπηρετητών σε μορφή βίντεο ικανό για αναπαραγωγή στο XBMC/Kodi.</summary>
-        <description lang="en">Resolve common video host URL's to be playable in XBMC/Kodi, simplify addon development of video plugins requiring multi video hosts.</description>
-        <description lang="hr">Prilagodi najčešće URL-ove video izvora kako bi radili u XBMC/Kodiju, pojednostavnjuje razvoj priključaka za video dodatke koji zahtjevaju višestruke video izvore.</description>
+        <summary lang="en_GB">Resolve common video host URL's to be playable in XBMC/Kodi.</summary>
+        <summary lang="es_ES">Resolver enlaces a videos de sitios populares para poder reproducirlos en XBMC/Kodi.</summary>
+        <summary lang="hr_HR">Prilagodi najčešće URL-ove video izvora kako bi radili u XBMC/Kodiju.</summary>
+        <summary lang="el_GR">Επίλυση συνδέσμων κοινών εξυπηρετητών σε μορφή βίντεο ικανό για αναπαραγωγή στο XBMC/Kodi.</summary>
+        <description lang="en_GB">Resolve common video host URL's to be playable in XBMC/Kodi, simplify addon development of video plugins requiring multi video hosts.</description>
+        <description lang="el_GR">Επίλυση συνδέσμων κοινών εξυπηρετητών σε μορφή βίντεο ικανό για αναπαραγωγή στο XBMC/Kodi, απλοποίηση της ανάπτυξης των προσθέτων που χρησιμοποιούν πολλαπλούς εξυπηρετητές για υλικό βίντεο</description>
+        <description lang="hr_HR">Prilagodi najčešće URL-ove video izvora kako bi radili u XBMC/Kodiju, pojednostavnjuje razvoj priključaka za video dodatke koji zahtjevaju višestruke video izvore.</description>
+        <disclaimer lang="en_GB">This script only resolves video content from legitimate file lockers without prejudice. If this script is being used by 3rd parties to resolve content that you feel infringes upon your Intellectual Property then please take your complaints to the actual website or developer linking to such content and not here. This script in no way searches for any content whatsoever.</disclaimer>
+        <disclaimer lang="el_GR">Το ανωτέρο σενάριο το μόνο που κάνει είναι να επιλύει οπτικοακουστικό περιεχόμενο από νόμιμες πηγές χωρίς προκατάληψη. Εάν το ανωτέρο σενάριο χρησιμοποιηθεί από τρίτους ώστε να επιλύσει περιεχόμενο το οποίο σας προκαλεί αντίδραση ότι παραβιάζει την πνευματική σας ιδιοκτησία παρακαλώ μεταφέρετε τα παραπονά σας στον ιστότοπο τον οποίο βρίσκεται το εν λόγω περιεχόμενο η τον δημιουργό ο οποίος πραγματοποιεί την σύνδεση και όχι εδω. Το σενάριο αυτό ουδεμία περίπτωση πραγματοποιεί αναζήτηση περιεχομένου.</disclaimer>
         <forum>https://www.tvaddons.co/forums</forum>
         <website>https://www.tvaddons.co</website>
     </extension>

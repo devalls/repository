@@ -1,0 +1,7 @@
+[COLOR blue][B]Skin Estuary uMod2[/B][/COLOR]
+[COLOR green][B]•3.0.1[/B]MaxEDITion beta.[/COLOR]
+[COLOR yellow][B]•2.2.8[/B] Initial beta test.[/COLOR]
+[COLOR yellow][B]•2.2.5[/B] Initial beta.[/COLOR]
+[COLOR yellow][B]•2.0.2[/B] Home modded.[/COLOR]
+[COLOR yellow][B]•0.2.1[/B] Initial alpha.[/COLOR]
+[COLOR yellow][B]•0.0.1[/B] Mod Estuary (0.8.5) for Android.[/COLOR]

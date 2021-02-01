@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="skin.estuary.MaxEd" version="3.0.1" name="Estuary MaxEDITion" provider-name="darkozma, phil65, Ichabod Fletchman">
+	<requires>
+		<import addon="xbmc.gui" version="5.14.0"/>
+                <import addon="resource.images.skinbackgrounds.clearMod" optional="true"/>    
+                <import addon="resource.images.weatherfanart.faded" optional="true"/>
+                <import addon="resource.images.moviegenrefanart.wall-grey" optional="true"/>
+                <import addon="script.extendedinfo" optional="true"/>
+                <import addon="plugin.video.palantir2" optional="true"/>
+	</requires>
+	<extension point="xbmc.gui.skin" debugging="false">
+		<res width="1920" height="1440" aspect="4:3" default="false" folder="xml" />
+		<res width="1920" height="1280" aspect="3:2" default="false" folder="xml" />
+		<res width="1920" height="1200" aspect="16:10" default="false" folder="xml" />
+		<res width="2040" height="1080" aspect="17:9" default="false" folder="xml" />
+		<res width="1920" height="1080" aspect="16:9" default="true" folder="xml" />
+		<res width="2560" height="1080" aspect="21:9" default="false" folder="xml" />
+		<res width="2338" height="1080" aspect="19.5:9" default="false" folder="xml" />
+		<res width="2160" height="1080" aspect="18:9" default="false" folder="xml" />
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="ca_ES">Aparença Estuary MaxEd (només per Android) per darkozma, devalls, phil65 i Ichabod Fletchman.</summary>
+		<summary lang="en_GB">Estuary MaxEd skin (only for Android) by darkozma, devalls, phil65 and Ichabod Fletchman.</summary>
+		<summary lang="es_ES">Skin Estuary MaxEd (solo para Android), creado por darkozma, devalls, phil65 and Ichabod Fletchman.</summary>
+		<description lang="ca_ES">Estuary MaxEd és una modificació de l'aparença predeterminada de Kodi 18.0 (només per Android).</description>
+		<description lang="en_GB">Estuary MaxEd is a mod of the default skin for Kodi 18.0 (only for Android).</description>
+		<description lang="es_ES">Estuary MaxEd es un mod del skin por defecto para Kodi 18.0 (solo para Android).</description>
+		<disclaimer lang="ca_ES">[COLOR red]Estuary MaxEd és una aparença modificada per a Kodi.[/COLOR]</disclaimer>
+		<disclaimer lang="en_GB">[COLOR red]Estuary MaxEd is a mod skin for Kodi.[/COLOR]</disclaimer>
+		<disclaimer lang="es_ES">[COLOR red]Estuary MaxEd es una modificación del skin para Kodi.[/COLOR]</disclaimer>
+		<platform>android</platform>
+		<license>CC BY-SA 4.0, GNU GENERAL PUBLIC LICENSE Version 2.0</license>
+		<forum>https://github.com/devalls/skin-mod/issues/new</forum>
+		<source>https://github.com/devalls/skin-mod</source>
+		<assets>
+			<icon>resources/icon.png</icon>
+			<fanart>resources/fanart.jpg</fanart>
+			<screenshot>resources/screenshot-01.png</screenshot>
+			<screenshot>resources/screenshot-02.png</screenshot>
+			<screenshot>resources/screenshot-03.png</screenshot>
+			<screenshot>resources/screenshot-04.png</screenshot>
+			<screenshot>resources/screenshot-05.png</screenshot>
+			<screenshot>resources/screenshot-06.png</screenshot>
+			<screenshot>resources/screenshot-07.png</screenshot>
+			<screenshot>resources/screenshot-08.png</screenshot>
+			<screenshot>resources/screenshot-09.png</screenshot>
+		</assets>
+		<news>[COLOR blue][B]Skin Estuary uMod2[/B][/COLOR]
+[COLOR green][B]•3.0.1[/B]MaxEDITion beta.[/COLOR]
+[COLOR yellow][B]•2.2.8[/B] Initial beta test.[/COLOR]
+[COLOR yellow][B]•2.2.5[/B] Initial beta.[/COLOR]
+[COLOR yellow][B]•2.0.2[/B] Home modded.[/COLOR]
+[COLOR yellow][B]•0.2.1[/B] Initial alpha.[/COLOR]
+[COLOR yellow][B]•0.0.1[/B] Mod Estuary (0.8.5) for Android.[/COLOR]</news>
+	</extension>
+</addon>
