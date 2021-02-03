@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.estuary.MaxEd" version="3.0.4" name="Estuary MaxEDITion" provider-name="darkozma, phil65, Ichabod Fletchman">
+<addon id="skin.estuary.MaxEd" version="3.0.5" name="Estuary MaxEDITion" provider-name="darkozma, phil65, Ichabod Fletchman">
 	<requires>
 		<import addon="xbmc.gui" version="5.14.0"/>
                 <import addon="resource.images.skinbackgrounds.clearMod"  version="1.0.9"/>    
@@ -46,7 +46,7 @@
 			<screenshot>resources/screenshot-09.png</screenshot>
 		</assets>
 		<news>[COLOR blue][B]Skin Estuary uMod2[/B][/COLOR]
-[COLOR green][B]•3.0.4[/B]MaxEDITion beta.[/COLOR]
+[COLOR green][B]•3.0.5[/B]MaxEDITion beta.[/COLOR]
 [COLOR yellow][B]•2.2.8[/B] Initial beta test.[/COLOR]
 [COLOR yellow][B]•2.2.5[/B] Initial beta.[/COLOR]
 [COLOR yellow][B]•2.0.2[/B] Home modded.[/COLOR]
