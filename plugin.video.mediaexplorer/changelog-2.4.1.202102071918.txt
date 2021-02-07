@@ -1,0 +1,207 @@
+[2.4.1] - 07/02/2021
+Canales Nuevos: - Tacones
+Canales Reparados: -
+Canales Eliminados: -
+Servidores Nuevos: -
+Servidores Reparados: -
+Servidores Eliminados: -
+Cambios internos:
+  - Corregir fallo en versión 2.4 que no actualizaba los ajustes de Proxy
+
+[2.4] - 13/12/2020
+Canales Nuevos: Cuevana, Aquipelis, PelisHouse, Pelis24.
+Canales Reparados: CineCalidad, Seriespapaya, DixMax, Inkaseries, Dospelis, HDFull, Beeg, Cumlouder.
+Canales Eliminados: Megadede, Newpct, Vidcorn, Mejortorrent.
+Servidores Nuevos: Aparat, MyStream, Evoload, Doodstream.
+Servidores Reparados: Netu, Jetload, Mega, Uptobox, Gamovideo, Stgreamtape, StreamZ, Netu, Upstream.
+Servidores Eliminados: UploadMP4:
+Cambios internos:
+  - Corregir problemas en Recaptcha.
+  - Añadir soporte para Kodi 19 beta1
+  - Añadir soporte para usar Web-Proxy con dos serivicios por si uno falla
+  - Detectar automáticamente cuando una url necesita usar Proxy
+
+[2.3] - 12/09/2020
+Canales Nuevos: InkaSeries
+Canales Reparados: NewPCT, MejorTorrent, Pepecine, HDFull, Dospelis, Megadede, Movidy, Repelis, Cliver, Vidcorn, PornHD, PornHub, Beeg.
+Canales Eliminados: HD-Torrents, Gnula.
+Servidores Nuevos: Stgreamtape.
+Servidores Reparados: Uptobox, Netu.tv, CLipWatching, GoUnlimited, UpStream, VidTodo, Powvideo, Streamplay, CloudVideo, Fembed, Jetload, Vidia.
+Servidores Eliminados: -:
+Cambios internos:
+  - Reparados varios fallos internos.
+
+[2.2] - 09/05/2020
+Canales Nuevos: Dospelis
+Canales Reparados: Movidy, Beeg, Vidcorn, PornHD, Repelis.
+Canales Eliminados: Ver-Peliculas. 
+Servidores Nuevos: -
+Servidores Reparados: Powvideo, Streamplay, Clipwatching, StreamZ, Vidtodo, Netu.tv.
+Servidores Eliminados: Flix555
+Cambios internos:
+  - Añadido soporte para usar juntamente con la 'APP MediaExplorer Tools' disponible para android para resolver reCAPTCHAs y JavaScript desde el móvil.
+	- Nuevos metodos para ejecución JavaScript:
+      - Node.JS.
+      - APP Mediaexplorer Tools.
+  - Nuevo método para solución de reCAPTCHA:
+      - APP MediaExplorer Tools.
+  - Reparado Cloudflare
+	
+[2.1] - 04/04/2020
+Canales Nuevos: Movidy, Repelis.
+Canales Reparados: HDTorrents, DixMax, SeriesBlanco, Cineonline, Vidcorn, PornHD.
+Canales Eliminados: -
+Servidores Nuevos: StreamZ, Vidia, Uqload, Vev.io.
+Servidores Reparados: Mixdrop, Streamplay, Powvideo, Gamovideo, Vidoza, Upstream, Videomega, Fembed, Upvid, CLicknupload, Thevideo.me.
+Servidores Eliminados: -
+Cambios internos:
+	- Reparar problema las subir reportes.
+	- Reparar problema en buscador (Python 3).
+	- Recordar última busqueda por categorias.
+	- Reparado Cloudflare
+	- Nuevo servicio reCaptcha: 2Captcha.com
+	- Varias mejoras internas
+
+[2.0] - 12/01/2020
+Canales Nuevos: -
+Canales Reparados: Cliver, Pepecine, HDFull, Seriesblanco, Newpct.
+Canales Eliminados: Inkaseries, Pelis123, Repelis, Wikiseries.
+Servidores Nuevos: Mixdrop, Cloudvideo.tv, Prostream, Upstream, VideoMega, Videobin, DropAPK.
+Servidores Reparados: Powvideo, Clipwatching, Vidtodo, Streamplay, Netu.tv.
+Servidores Eliminados: Jetload, onlystream.
+Cambios internos:
+	- Soporte para Python3 (Kodi 19)
+	- Recordar última búsqueda según categoría.
+	- Reparar modulo para Real-Debrid.
+	- Reparar problema que hacia que Kodi se cuelgue cuando intentas reproducir un torrent con elementum.
+
+[1.2.2] - 12/12/2019
+Solucionado fallo en listas por cambios en Friendpaste
+
+[1.2.1] - 05/12/2019
+Solucionado fallo en listas por cambios en Friendpaste
+
+[1.2] - 27/11/2019
+Reparados canales: HDFull, CineCalidad, SeriesBlanco, Inkaseries.
+Eliminados servidores (han cerrado): Verystream, Streamandgo, Openload.
+Añadidas nuevas funciones internas:
+	- Selección automática de dominio en canales que tengan varios.
+	- Permitir cambiar las DNS que usa MediaExplorer para resolver los dominios.
+	- Añadido soporte para usar proxy Socks4, Socks4a y Socks5 (solo en modo manual).
+	- Permitir elegir si los dominios se resuelven en el proxy o en MediaExplorer.
+	- Cambios en la gestión de proxy permitiendo usar proxy para todas las conexiones o solo para determinados canales / servidores.
+	- Permitir eliminar canales personales desde el menú contextual
+Reparada sección listas (cambio de proveedor de almacenamiento ya que Snipt a cerrado).
+Reparado cloudflare por cambios en el sistema.
+
+[1.1.7] - 20/10/2019
+Reparados canales: Cliver, Dilo, Dixmax, Newpct, Cumlouder, Pornhub, Pepecine, HDFull.
+Nuevo canal: Pepecine.
+Reparados servidores: Rapidgator.
+Nuevo servidor: Onlystream
+Mejoras en módulos internos.
+
+[1.1.6] - 06/10/2019
+Reparados canales: HDFull, HDTorrent, Cliver, Beeg.
+Reparados servidores: Streamplay, Poevideo.
+Mejoras en módulos internos: Cloudflare
+
+[1.1.5] - 08/09/2019
+Reparados canales: CineCalidad, GranTorrent, SeriesBlanco, WikiSeries, Dilo, MejorTorrent, SeriesPapaya, Gnula, PornHD, Cumlouder, Porntube, Beeg.
+Reparados servidores: NetuTV, Clicknupload, Flix555, Streamplay.
+Mejoras en módulos internos: Solucionado probelma de rendimiento en dispositivos mas lentos.
+
+[1.1.4] - 16/07/2019
+Reparados canales: NewPct, SeriesPapaya, Ver-Peliculas, Seriesblanco, CineCalidad, Cliver, DixMax, Beeg, Cumlouder, GranTorrent y MejorTorrent
+Nuevo canal Wikiseries
+Reparados servidores: Rapidvideo, Jetload, Vidtodo, GoogleDrive, Gamovideo, Netu.tv, Powvideo, Clipwatching, Flix555 y Upvid
+Nuevos servidores: Videofiles y VeryStream
+Mejoras en módulos internos
+Nueva funcionalidad: Servidores y canales personales
+
+[1.1.3] - 27/05/2019
+Reparados canales Gnula, Mejortorrent, Vidcorn, Cinecalidad, Cliver, Dilo, SeriesBlanco, PornHub, Inkaseries, SeriesPapaya
+Desactivados canales Repelis, Pelis123, NewPct
+Nuevo canal HDTorrents
+Reparados servidores openload, Clipwatching, Powvideo, GoogleDrive, NetuTv, Streamplay, Gamovideo
+Nuevos servidores: Flix555, UploadMp4, vidtodo, Clicknupload, Jetload
+Mejoras en modulos internos: Proxy
+
+[1.1.2] - 20/02/2019
+Reparada ejecucion de clientes externos de Torrent (kodi 18)
+Nuevo canal: PornHD
+Reparados canales Cumlouder, NewPct, Dilo, Ver-peliculas, DixMax y HdFull
+Reparados servidores Clipwatching, GoogleDrive y TheVideoMe
+
+[1.1] - 08/02/2019
+Reparados canales DixMAx, InkaSeries, Gnula, HDFull, Cineonline, CineCalidad, pelis123, Dilo, Inkaseries, MejorTorrent
+Eliminado canal Wopelis
+Reparado servidor 1ficher
+Nuevo servidor Fembed
+Mejoras en módulos internos
+
+Aunque puedan parecer pocos cambios con respecto a versiones anteriores en esta ocasión cambiamos el segundo dígito!!!
+Eso quiere decir que internamente si que han habido cambios importantes. Tan importantes como que las versiones anteriores dejaran de tener actualizaciones de canales y servidores y por ello es obligatorio que todo el mundo migre a esta nueva versión.
+
+[1.0.5] - 14/01/2019
+Reparados canales MejorTorrent, NewPct, Porntube, GranTorrent, beeg y DixMAx.
+Añadida nueva sección de peliculas al canal InkaSeries, basada en la web inkapelis.com
+Añadida nueva sección de peliculas al canal Dilo, basada en la web yape.nu
+Opción de escoger el host en el canal NewPct entre torrentlocura.com y descargas2020.com
+Cambio de credenciales usuario y contraseña por Clave en las cuentas de Anti-captcha
+Reparados servidores Netu.tv y gamovideo
+Añadido nuevo servidor upVID
+Reparadas diferentes secciones: Biblioteca, Favoritos, Buscador, Actualizaciones
+Añadidas búsqueda de películas por genero y diferentes rankings de Filmaffinity en la sección Buscador
+Mejoras en módulos internos: MediaInfo, FristRun
+Posibilidad de activar y desactivar el modo reporte manualmente durante 10 minutos.
+Posibilidad de compartir las configuraciones y los logs ocultando las contraseñas (para reportar errores)
+Posibilidad de hacer copias de seguridad de todos o partes de los settings y restaurarlos en otros dispositivos (se compartirán las contraseñas)
+
+[1.0.4] - 17/11/2018
+Nuevos canales: PornTube, Megadede, DixMax, Dilo, MejorTorrent y Newpct.
+Reparados canales varios: GranTorrent, Vidcorn, HdFull, etc...
+Reparados servidores: Vidcloud, Clipwatching, Vidoza, etc...
+Desactivar canales caidos y servidores no disponibles.
+Listas personales configurables.
+Auto-update por defecto.
+Mejoras en la gestión de reportes
+Nuevo perfil para HSK Konfluence y mejoras varias en el resto de perfiles.
+Fix varios para kodi 18.
+Reparado fallo en el buscador global a la hora de agrupar contenidos.
+
+[1.0.3] - 17/09/2018
+Nuevos canales: GranTorrent, Repelis, Cliver, Pelis123
+Nuevos servidores: Byter.tv, XDrive y Katfile (AllDebrid)
+Canales y servidores reparados.
+Desactivar canales caidos y servidores no disponibles.
+Añadido nuevo sistema Anticaptcha.
+Repadado bug en el filtrado de calidades e idiomas.
+Repadado bug en el apartado Novedades.
+Otras correcciones internas del codigo.
+
+[1.0.2] - 19/07/2018
+Nuevos canales: Inkaseries, SeriePapaya y GranTorrent
+Nuevos servers: ClipWatching
+Correcciones:
+	- Reparados varios canales y servidores
+	- Mejora en la busqueda global y en las novedades
+	- Fix Mediaserver en android
+Otros:
+	- Codigo QR en el reporte de errores y en Mi lista
+	- Añadida compatibilidad con el reproductor de torrent Elementum
+
+[1.0.1] - 15/04/2018
+Reparados todos los canales y servidores
+Añadida opcion Buscar... al menu contextual.
+Novedades: Correccion de bug con los idiomas
+Nuevos Canales: Gnula (solo peliculas), Ver-Peliculas (solo peliculas)
+Nuevo server: Vidlox
+Actualizaciones: Ocultar las no compatibles
+Añadido nuevos ajustes a "Configuracion aspecto":
+	- "Mostrar episodios directamente cuando la serie solo tenga una temporada"
+	- "Número máximo de elementos sobre los que buscar" en mediainfo.
+Añadido nuevo ajuste a "Configuracion general": En Autoplay el maximo numero de intentos por servidor ahora es configurable.
+
+[1.0] - 16/02/18
+Primera versión publicada
