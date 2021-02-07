@@ -170,7 +170,7 @@
   </extension>
 </addon>
 
-<addon id="skin.estuary.MaxEd" version="3.0.5" name="Estuary MaxEDITion" provider-name="darkozma, phil65, Ichabod Fletchman">
+<addon id="skin.estuary.MaxEd" version="3.0.7" name="Estuary MaxEDITion" provider-name="darkozma, phil65, Ichabod Fletchman">
 	<requires>
 		<import addon="xbmc.gui" version="5.14.0"/>
                 <import addon="resource.images.skinbackgrounds.clearMod"  version="1.0.9"/>
@@ -217,7 +217,8 @@
 			<screenshot>resources/screenshot-09.png</screenshot>
 		</assets>
 		<news>[COLOR blue][B]Skin Estuary uMod2[/B][/COLOR]
-[COLOR green][B]•3.0.5[/B]MaxEDITion beta.[/COLOR]
+[COLOR green][B]•3.0.7[/B]Minor changes.[/COLOR]
+[COLOR yellow][B]•3.0.5[/B]MaxEDITion beta.[/COLOR]
 [COLOR yellow][B]•2.2.8[/B] Initial beta test.[/COLOR]
 [COLOR yellow][B]•2.2.5[/B] Initial beta.[/COLOR]
 [COLOR yellow][B]•2.0.2[/B] Home modded.[/COLOR]
@@ -918,7 +919,7 @@ No se acepta ninguna responsabilidad por el uso de este addon.
 
 <addon id="plugin.video.mediaexplorer"
        name="MediaExplorer"
-       version="2.4.1.202101311706"
+       version="2.4.1.202102071344"
        provider-name="MediaExplorer">
     <requires>
         <!--import addon="xbmc.python" version="2.24.0" optional="true"/>
