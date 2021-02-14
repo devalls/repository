@@ -1,5 +1,5 @@
-[2.4.1] - 07/02/2021
-Canales Nuevos: - Tacones
+[2.4.1] - 14/02/2021
+Canales Nuevos: - Tacones.
 Canales Reparados: -
 Canales Eliminados: -
 Servidores Nuevos: -
