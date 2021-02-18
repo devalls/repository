@@ -919,7 +919,7 @@ No se acepta ninguna responsabilidad por el uso de este addon.
 
 <addon id="plugin.video.mediaexplorer"
        name="MediaExplorer"
-       version="2.4.1.202102172025"
+       version="2.4.1.202102182207"
        provider-name="MediaExplorer">
     <requires>
         <!--import addon="xbmc.python" version="2.24.0" optional="true"/>
