@@ -51,14 +51,13 @@
 	</extension>
 </addon>
 
-<addon id="skin.estuary.uMod2" version="3.1.5" name="Estuary uMod2" provider-name="darkozma, devalls, phil65, Ichabod Fletchman">
+<addon id="skin.estuary.uMod2" version="3.1.6" name="Estuary uMod2" provider-name="darkozma, devalls, phil65, Ichabod Fletchman">
 	<requires>
 		<import addon="xbmc.gui" version="5.14.0"/>
                 <import addon="resource.images.skinbackgrounds.clearMod" version="1.0.8"/>
                 <import addon="resource.images.weatherfanart.faded" optional="true"/>
                 <import addon="resource.images.moviegenrefanart.wall-grey" optional="true"/>
                 <import addon="script.extendedinfo" optional="true"/>
-                <import addon="plugin.video.palantir2" optional="true"/>
 	</requires>
 	<extension point="xbmc.gui.skin" debugging="false">
 		<res width="1920" height="1440" aspect="4:3" default="false" folder="xml" />
@@ -98,7 +97,7 @@
 			<screenshot>resources/screenshot-09.png</screenshot>
 		</assets>
 		<news>[COLOR blue][B]Skin Estuary uMod2[/B][/COLOR]
-[COLOR green][B]•3.1.5[/B] Widget Anime Added.[/COLOR]
+[COLOR green][B]•3.1.6[/B] Widget Anime Removed.[/COLOR]
 [COLOR yellow][B]•3.1.4[/B] Minor Change.[/COLOR]
 [COLOR yellow][B]•3.1.3[/B] Add MC category.[/COLOR]
 [COLOR yellow][B]•3.1.2[/B] Minor bug fix.[/COLOR]
@@ -170,14 +169,14 @@
   </extension>
 </addon>
 
-<addon id="skin.estuary.MaxEd" version="3.0.8" name="Estuary MaxEDITion" provider-name="darkozma, phil65, Ichabod Fletchman">
+<addon id="skin.estuary.MaxEd" version="3.0.9" name="Estuary MaxEDITion" provider-name="darkozma, phil65, Ichabod Fletchman">
 	<requires>
 		<import addon="xbmc.gui" version="5.14.0"/>
                 <import addon="resource.images.skinbackgrounds.clearMod"  version="1.1.4"/>
                 <import addon="resource.images.weatherfanart.faded" optional="true"/>
                 <import addon="resource.images.moviegenrefanart.wall-grey" optional="true"/>
                 <import addon="script.extendedinfo" optional="true"/>
-                <import addon="plugin.video.mediaexplorer"  version="2.4.1.202102071918"/>
+                <!-- import addon="plugin.video.mediaexplorer"  version="2.4.1.202102071918"/ -->
 	</requires>
 	<extension point="xbmc.gui.skin" debugging="false">
 		<res width="1920" height="1440" aspect="4:3" default="false" folder="xml" />
@@ -217,7 +216,7 @@
 			<screenshot>resources/screenshot-09.png</screenshot>
 		</assets>
 		<news>[COLOR blue][B]Skin Estuary uMod2[/B][/COLOR]
-[COLOR green][B]•3.0.8[/B]Minor changes.[/COLOR]
+[COLOR green][B]•3.0.9[/B]Minor changes.[/COLOR]
 [COLOR yellow][B]•3.0.5[/B]MaxEDITion beta.[/COLOR]
 [COLOR yellow][B]•2.2.8[/B] Initial beta test.[/COLOR]
 [COLOR yellow][B]•2.2.5[/B] Initial beta.[/COLOR]
@@ -603,14 +602,13 @@ No se acepta ninguna responsabilidad por el uso de este addon.
     </extension>
 </addon>
 
-<addon id="skin.estuary.uMod2Local" version="3.1.5" name="Estuary uMod2 Local" provider-name="darkozma, devalls, phil65, Ichabod Fletchman">
+<addon id="skin.estuary.uMod2Local" version="3.1.6" name="Estuary uMod2 Local" provider-name="darkozma, devalls, phil65, Ichabod Fletchman">
 	<requires>
 		<import addon="xbmc.gui" version="5.14.0"/>
                 <import addon="resource.images.skinbackgrounds.clearMod" version="1.0.8"/>
                 <import addon="resource.images.weatherfanart.faded" optional="true"/>
                 <import addon="resource.images.moviegenrefanart.wall-grey" optional="true"/>
                 <import addon="script.extendedinfo" optional="true"/>
-                <import addon="plugin.video.palantir2" optional="true"/>
 	</requires>
 	<extension point="xbmc.gui.skin" debugging="false">
 		<res width="1920" height="1440" aspect="4:3" default="false" folder="xml" />
@@ -650,7 +648,7 @@ No se acepta ninguna responsabilidad por el uso de este addon.
 			<screenshot>resources/screenshot-09.png</screenshot>
 		</assets>
 		<news>[COLOR blue][B]Skin Estuary uMod2[/B][/COLOR]
-[COLOR green][B]•3.1.5[/B] Widget Anime Added.[/COLOR]
+[COLOR green][B]•3.1.6[/B] Widget Anime Removed.[/COLOR]
 [COLOR yellow][B]•3.1.4[/B] Minor Change.[/COLOR]
 [COLOR yellow][B]•3.1.3[/B] Add MC icon.[/COLOR]
 [COLOR yellow][B]•3.1.2[/B] Minor bug fix.[/COLOR]
