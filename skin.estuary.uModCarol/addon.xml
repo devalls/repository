@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.estuary.uModCarol" version="3.1.5" name="Estuary uMod Carol" provider-name="darkozma, devalls, phil65, Ichabod Fletchman">
+<addon id="skin.estuary.uModCarol" version="3.1.6" name="Estuary uMod Carol" provider-name="darkozma, devalls, phil65, Ichabod Fletchman">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0"/>
-                <import addon="resource.images.skinbackgrounds.clearMod" version="1.0.8"/>    
+                <import addon="resource.images.skinbackgrounds.clearMod" version="1.1.5"/>
                 <import addon="resource.images.weatherfanart.faded" optional="true"/>
                 <import addon="resource.images.moviegenrefanart.wall-grey" optional="true"/>
+                <import addon="script.extendedinfo" optional="true"/>
+                <import addon="plugin.video.winner"  version="1.0.0"/>
 	</requires>
 	<extension point="xbmc.gui.skin" debugging="false">
 		<res width="1920" height="1440" aspect="4:3" default="false" folder="xml" />
@@ -41,7 +43,8 @@
 			<screenshot>resources/screenshot-09.png</screenshot>
 		</assets>
 		<news>[COLOR blue][B]Skin Estuary uMod Carol[/B][/COLOR]
-[COLOR green][B]•3.1.5[/B] Minor Change.[/COLOR]
+[COLOR green][B]•3.1.6[/B] Minor Change menu.[/COLOR]
+[COLOR yellow][B]•3.1.5[/B] Minor Change.[/COLOR]
 [COLOR yellow][B]•3.1.4[/B] Add MC icon.[/COLOR]
 [COLOR yellow][B]•3.1.3[/B] Minor bug fix.[/COLOR]
 [COLOR yellow][B]•3.1.1[/B] Add more Halloween and Xmas logos.[/COLOR]
