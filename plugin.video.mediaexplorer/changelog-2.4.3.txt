@@ -1,3 +1,14 @@
+[2.4.3] - 05/03/2021
+Canales Nuevos: - Playdede, AquiPelis, PelisHouse
+Canales Reparados: - Cliver, Repelis, GNula, PornoHD, Movidy, Beeg, Cuevana, PornoHub, HDFull, DosPelis, GranTorrent, SeriesPapaya (Solo Matrix)
+Canales Eliminados: - DixMax, CineOnline
+Servidores Nuevos: - Zplayer, MegaUp
+Servidores Reparados: - DoodDtream, StreamTape, GamoVideo
+Servidores Eliminados: - NetuTv
+Cambios internos:
+    - Mejoras en los proxies
+    - Mejora compatibilidad con Kodi 19
+
 [2.4.1] - 13/12/2020
 Canales Nuevos: -
 Canales Reparados: -

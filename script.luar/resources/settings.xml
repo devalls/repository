@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+    <category label="Backups">
+        <setting label="Ruta para las copias de seguridad:" type="folder" default=" " id="path_backups" source="auto" option="writeable"/>
+    </category>
+</settings>
