@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.devalls" name="devalls' Repository" version="2.1.6" provider-name="devalls">
+<addon id="repository.devalls" name="devalls' Repository" version="2.1.7" provider-name="devalls">
     <extension point="xbmc.addon.repository" name="devalls' Repository">
         <info compressed="false">https://raw.githubusercontent.com/devalls/repository/master/addons.xml</info>
         <checksum>https://raw.githubusercontent.com/devalls/repository/master/addons.xml.md5</checksum>
@@ -40,6 +40,11 @@
             <datadir zip="true">https://hirayasoftware.github.io/</datadir>
 	</dir>
         <dir>
+            <info>https://raw.githubusercontent.com/camaradas/camaradas.repo/master/Repositorio/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/camaradas/camaradas.repo/master/Repositorio/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/camaradas/camaradas.repo/master/Repositorio/</datadir>
+	</dir>
+        <dir>
             <info compressed="false">https://raw.githubusercontent.com/Masterwine/Luar/master/repor/addons.xml</info>
             <checksum>https://raw.githubusercontent.com/Masterwine/Luar/master/repor/addons.xml.md5</checksum>
             <datadir zip="true">https://raw.githubusercontent.com/Masterwine/Luar/master/repor/</datadir>
@@ -62,7 +67,7 @@
 		<screenshot>resources/screenshot-03.jpg</screenshot>
 	</assets>
 	<news>[COLOR blue][B]Official devalls' repository[/B][/COLOR]
-[COLOR green][B]•2.1.6[/B] One change dir.[/COLOR]
+[COLOR green][B]•2.1.7[/B] Add one dir.[/COLOR]
 [COLOR yellow][B]•2.1.5[/B] Add three dir.[/COLOR]
 [COLOR yellow][B]•2.1.3[/B] Add one dir.[/COLOR]
 [COLOR yellow][B]•2.1.2[/B] Del one dir.[/COLOR]

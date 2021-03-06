@@ -384,6 +384,52 @@ No se acepta ninguna responsabilidad por el uso de este addon.
   </extension>
 </addon>
 
+<addon id="plugin.video.winner" name="[B][/B][COLOR aqua][/COLOR]WINNER" version="1.0.1" provider-name="Camaradas">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0" />
+		<import addon="script.module.requests" version="2.9.1" />
+		<import addon="script.module.resolveurl" />
+		<import addon="plugin.video.youtube" version="5.0.0"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.repository" name="Hiraya Software Repo">
+		<info>https://raw.githubusercontent.com/camaradas/camaradas.repo/master/Repositorio/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/camaradas/camaradas.repo/master/Repositorio/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/camaradas/camaradas.repo/master/Repositorio/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">WINNER</summary>
+		<description lang="en">Live Sports Addon.
+
+Development: George, Alex303, Picapau
+Development support: Jesus, Toni
+Contributions: SuperTopo, Jesus
+Artwork: Bojbit
+Translation: Lou
+Content: Lou, Alex303, MiKeL, Chikiry, Bojbit
+Testers: Luisma, Toni, Zarat, SuperTopo, Jorge, Bojbit, MiKeL, Chikiry</description>
+		<disclaimer lang="en">WINNER Addon - Live Sports Addon</disclaimer>
+		<summary lang="es">WINNER</summary>
+		<description lang="es">Addon con eventos deportivos en directo.
+
+Desarrollo: George, Alex303, Picapau
+Soporte desarrollo: Jesus, Toni
+Aportaciones: SuperTopo, Jesus
+Artwork: Bojbit
+Traducciones: Lou
+Contenido: Lou, Alex303, MiKeL, Chikiry, Bojbit
+Testers: Luisma, Toni, Zarat, SuperTopo, Jorge, Bojbit, MiKeL, Chikiry</description>
+		<disclaimer lang="es">Addon WINNER - Eventos Deportivos en directo</disclaimer>
+		<platform>all</platform>
+		<assets>
+			<icon>icon.gif</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+	</extension>
+</addon>
+
 <addon id="skin.estuary.uModPrimit" version="3.1.5" name="Estuary uMod Primit" provider-name="darkozma, devalls, phil65, Ichabod Fletchman">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0"/>
@@ -726,7 +772,7 @@ No se acepta ninguna responsabilidad por el uso de este addon.
 	</extension>
 </addon>
 
-<addon id="repository.devalls" name="devalls' Repository" version="2.1.6" provider-name="devalls">
+<addon id="repository.devalls" name="devalls' Repository" version="2.1.7" provider-name="devalls">
     <extension point="xbmc.addon.repository" name="devalls' Repository">
         <info compressed="false">https://raw.githubusercontent.com/devalls/repository/master/addons.xml</info>
         <checksum>https://raw.githubusercontent.com/devalls/repository/master/addons.xml.md5</checksum>
@@ -767,6 +813,11 @@ No se acepta ninguna responsabilidad por el uso de este addon.
             <datadir zip="true">https://hirayasoftware.github.io/</datadir>
 	</dir>
         <dir>
+            <info>https://raw.githubusercontent.com/camaradas/camaradas.repo/master/Repositorio/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/camaradas/camaradas.repo/master/Repositorio/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/camaradas/camaradas.repo/master/Repositorio/</datadir>
+	</dir>
+        <dir>
             <info compressed="false">https://raw.githubusercontent.com/Masterwine/Luar/master/repor/addons.xml</info>
             <checksum>https://raw.githubusercontent.com/Masterwine/Luar/master/repor/addons.xml.md5</checksum>
             <datadir zip="true">https://raw.githubusercontent.com/Masterwine/Luar/master/repor/</datadir>
@@ -789,7 +840,7 @@ No se acepta ninguna responsabilidad por el uso de este addon.
 		<screenshot>resources/screenshot-03.jpg</screenshot>
 	</assets>
 	<news>[COLOR blue][B]Official devalls' repository[/B][/COLOR]
-[COLOR green][B]•2.1.6[/B] One change dir.[/COLOR]
+[COLOR green][B]•2.1.7[/B] Add one dir.[/COLOR]
 [COLOR yellow][B]•2.1.5[/B] Add three dir.[/COLOR]
 [COLOR yellow][B]•2.1.3[/B] Add one dir.[/COLOR]
 [COLOR yellow][B]•2.1.2[/B] Del one dir.[/COLOR]

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.winner" name="[B][/B][COLOR aqua][/COLOR]WINNER" version="1.0.1" provider-name="Camaradas">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0" />
+		<import addon="script.module.requests" version="2.9.1" />
+		<import addon="script.module.resolveurl" />
+		<import addon="plugin.video.youtube" version="5.0.0"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.repository" name="Hiraya Software Repo">
+		<info>https://raw.githubusercontent.com/camaradas/camaradas.repo/master/Repositorio/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/camaradas/camaradas.repo/master/Repositorio/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/camaradas/camaradas.repo/master/Repositorio/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">WINNER</summary>
+		<description lang="en">Live Sports Addon.
+
+Development: George, Alex303, Picapau
+Development support: Jesus, Toni
+Contributions: SuperTopo, Jesus
+Artwork: Bojbit
+Translation: Lou
+Content: Lou, Alex303, MiKeL, Chikiry, Bojbit
+Testers: Luisma, Toni, Zarat, SuperTopo, Jorge, Bojbit, MiKeL, Chikiry</description>
+		<disclaimer lang="en">WINNER Addon - Live Sports Addon</disclaimer>
+		<summary lang="es">WINNER</summary>
+		<description lang="es">Addon con eventos deportivos en directo.
+
+Desarrollo: George, Alex303, Picapau
+Soporte desarrollo: Jesus, Toni
+Aportaciones: SuperTopo, Jesus
+Artwork: Bojbit
+Traducciones: Lou
+Contenido: Lou, Alex303, MiKeL, Chikiry, Bojbit
+Testers: Luisma, Toni, Zarat, SuperTopo, Jorge, Bojbit, MiKeL, Chikiry</description>
+		<disclaimer lang="es">Addon WINNER - Eventos Deportivos en directo</disclaimer>
+		<platform>all</platform>
+		<assets>
+			<icon>icon.gif</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+	</extension>
+</addon>
