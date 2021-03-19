@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.discoveryplus" name="Discovery+" version="3.0.1" provider-name="Hiraya Software">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0" />
+		<import addon="script.module.requests" version="2.9.1" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.repository" name="Hiraya Software Repo">
+		<info>https://hirayasoftware.github.io/addons.xml</info>
+		<checksum>https://hirayasoftware.github.io/addons.xml.md5</checksum>
+		<datadir zip="true">https://hirayasoftware.github.io/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Discovery+</summary>
+		<description lang="en">Discovery+ Addon</description>
+		<disclaimer lang="en">Addon con la programación de Discovery+ a la carta.</disclaimer>
+		<summary lang="es">Discovery+</summary>
+		<description lang="es">Discovery+ Addon</description>
+		<disclaimer lang="es">Addon con la programación de Discovery+ a la carta.</disclaimer>
+		<platform>all</platform>
+        <website></website>
+        <video_guide></video_guide>
+	</extension>
+</addon>

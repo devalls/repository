@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.balandro" name="Balandro" version="2.0.0" provider-name="Balandro Team">
+  <requires>
+  </requires>
+
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+
+  <extension point="xbmc.addon.metadata">
+    <summary>Balandro es un navegador de páginas webs</summary>
+    <assets>
+      <icon>icon.png</icon>
+    </assets>
+    <news>[COLOR limegreen][B]Especial mención al grupo [COLOR plum][I] Checkers y Testers [/I][COLOR limegreen] por sus contribuciones, aportaciones y sugerencias [/B][/COLOR]
+
+      [COLOR darkorange][B]Media Centers soportados[COLOR plum][I] Kodi 19.x, 18.x y 17.x [/I][/B][/COLOR]
+    </news>
+    <summary>Balandro es un navegador de páginas webs</summary>
+    <description>[COLOR yellow][B]Balandro es un MOD derivado de Pelisalacarta y Alfa,[COLOR mediumaquamarine] y Tiene Como Objeto, Permitir Visualizar Películas, Series y Documentales, Todo a Través de Internet y Directamente Desde su Sistema Media Center. [COLOR orchid]Este Add-On es Tan Solo un Mero Ejercicio de Aprendizaje Del Lenguaje de Programación Python y se Distribuye Sin Ningún Contenido Multimedia Adjunto al Mismo [COLOR lightgrey][I]En Consecuencia Solo Las Webs Son Plenamente Responsables de Los Contenidos Que Publiquen.[/I][/B][/COLOR]</description>
+    <disclaimer>[COLOR tan][B]Está Prohibida su Distribución, Solo o Junto Con Contenidos Multimedia Protegidos Por Los Derechos de Autor. [COLOR chocolate]Si Este Tipo de Contenido Está Prohibido en su País, Solamente Usted Será el Responsable de su Uso. [COLOR white]La Vulneración de Estas Prohibiciones Exonerarán de Cualquier Culpa a sus Autores, [COLOR red]Siendo el Único Responsable Quien lo Haya Distribuido o Utilizado Ilegalmente.[/B][/COLOR]</disclaimer>
+    <platform>all</platform>
+    <license>GNU GPL v3</license>
+    <forum>https://www.mimediacenter.info/foro/viewforum.php?f=44</forum>
+    <website>https://balandro.tk</website>
+    <email>my@email.com</email>
+  </extension>
+  <extension point="xbmc.service" library="services.py" start="login|startup"/>
+</addon>
