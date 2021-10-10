@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.balandro" name="Balandro" version="2.0.5" provider-name="Balandro Team">
+<addon id="plugin.video.balandro" name="Balandro" version="2.1.0" provider-name="Balandro Team">
   <requires>
   </requires>
 
@@ -13,11 +13,29 @@
       <icon>icon.png</icon>
     </assets>
     <news>
-    [COLOR darkorange] Agosto 2021[/COLOR]
+    [COLOR darkorange] Octubre 2021[/COLOR]
+      Agradecimientos:
+        Mencion especial al grupo de Checkers
       Canales modificados:
-        CineLibreOnline, DonTorrents, MundoKaos, Ppeliculas
+        Beeg, Cliver, DixmaxLive, Gnula,
+        EstrenosCinesaa, GranTorrent, HdFull,
+        HdFullCom, Cuevana3, Cuevana3Video,
+        Jkanime, MegaDede2, MegaSerie,
+        MejorTorrent, MonosChinos, PornHub,
+        SeriesFlix, SeriesFlvXyz, SeriesLan,
+        SeriesYonkis, TuPeliculaTv, TorrentDivx,
+        TuPeliHd, Xvideos
+      Canales nuevos:
+        GenteClic, FullSerieHd, Gnula24,
+        GranTorrents, Kindor, PasateaTorrent,
+        PeliculasPro, PelisPlus24,
+        SeriesFlixVideo, SeriesFlvXyz,
+        YesTorrent
       Servidores modificados:
-        Evoload, FastStream
+        Bdupload, Streamsb, Streamtape, Upstream,
+        Uptobox, Zplayer
+      Servidores nuevos:
+        Nupload, Nuvid
     [COLOR darkorange][B]Media Centers soportados[COLOR plum][I] Kodi 19.X, 18.X y 17.X [/I][/B][/COLOR]
     </news>
     <summary>Balandro es un navegador de páginas webs</summary>
