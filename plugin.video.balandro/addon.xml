@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.balandro" name="Balandro" version="2.1.0" provider-name="Balandro Team">
+<addon id="plugin.video.balandro" name="Balandro" version="2.1.1" provider-name="Balandro Team">
   <requires>
   </requires>
 
@@ -17,25 +17,18 @@
       Agradecimientos:
         Mencion especial al grupo de Checkers
       Canales modificados:
-        Beeg, Cliver, DixmaxLive, Gnula,
-        EstrenosCinesaa, GranTorrent, HdFull,
-        HdFullCom, Cuevana3, Cuevana3Video,
-        Jkanime, MegaDede2, MegaSerie,
-        MejorTorrent, MonosChinos, PornHub,
-        SeriesFlix, SeriesFlvXyz, SeriesLan,
-        SeriesYonkis, TuPeliculaTv, TorrentDivx,
-        TuPeliHd, Xvideos
+        AreaDocumental, Cinecalidad, ClubCine,
+        Dilo, DixMaxlive, DonTorrents, HdFull,
+        HdFullCom, HdFullSe, MegaDede2,
+        Pelisforte, PelisPedia, PlayDede,
+        PornTube, SeriesFlix, SeriesMetro,
+        SeriesRetro, SubTorrents, TvSeries,
+        ZooWoman
       Canales nuevos:
-        GenteClic, FullSerieHd, Gnula24,
-        GranTorrents, Kindor, PasateaTorrent,
-        PeliculasPro, PelisPlus24,
-        SeriesFlixVideo, SeriesFlvXyz,
-        YesTorrent
+        EstrenosPapaya, RetroTv
       Servidores modificados:
-        Bdupload, Streamsb, Streamtape, Upstream,
-        Uptobox, Zplayer
+        Doodstream, Okru, Uptobox, Uqload
       Servidores nuevos:
-        Nupload, Nuvid
     [COLOR darkorange][B]Media Centers soportados[COLOR plum][I] Kodi 19.X, 18.X y 17.X [/I][/B][/COLOR]
     </news>
     <summary>Balandro es un navegador de páginas webs</summary>
@@ -43,9 +36,8 @@
     <disclaimer>[COLOR tan][B]Está Prohibida su Distribución, Solo o Junto Con Contenidos Multimedia Protegidos Por Los Derechos de Autor. [COLOR chocolate]Si Este Tipo de Contenido Está Prohibido en su País, Solamente Usted Será el Responsable de su Uso. [COLOR white]La Vulneración de Estas Prohibiciones Exonerarán de Cualquier Culpa a sus Autores, [COLOR red]Siendo el Único Responsable Quien lo Haya Distribuido o Utilizado Ilegalmente.[/B][/COLOR]</disclaimer>
     <platform>all</platform>
     <license>GNU GPL v3</license>
+    <source>https://balandro-tk.github.io/balandro/</source>
     <forum>https://www.mimediacenter.info/foro/viewforum.php?f=44</forum>
-    <website>https://balandro.tk</website>
-    <email>my@email.com</email>
   </extension>
   <extension point="xbmc.service" library="services.py" start="login|startup"/>
 </addon>
