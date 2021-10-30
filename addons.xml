@@ -818,7 +818,7 @@ Testers: Luisma, Toni, Zarat, SuperTopo, Jorge, Bojbit, MiKeL, Chikiry</descript
 	</extension>
 </addon>
 
-<addon id="repository.devalls" name="devalls' Repository" version="2.1.7" provider-name="devalls">
+<addon id="repository.devalls" name="devalls' Repository" version="2.1.8" provider-name="devalls">
     <extension point="xbmc.addon.repository" name="devalls' Repository">
         <info compressed="false">https://raw.githubusercontent.com/devalls/repository/master/addons.xml</info>
         <checksum>https://raw.githubusercontent.com/devalls/repository/master/addons.xml.md5</checksum>
@@ -834,9 +834,9 @@ Testers: Luisma, Toni, Zarat, SuperTopo, Jorge, Bojbit, MiKeL, Chikiry</descript
 	    <datadir zip="true">https://raw.githubusercontent.com/joheos11/repository.kodispain/master/</datadir>
         </dir>
         <dir>
-            <info compressed="false">https://balandro.tk/repo3/addons.xml</info>
-            <checksum>https://balandro.tk/repo3/addons.xml.md5</checksum>
-            <datadir zip="true">https://balandro.tk/repo3</datadir>
+            <info compressed="false">https://raw.githubusercontent.com/balandro-tk/balandro/main/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/balandro-tk/balandro/main/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/balandro-tk/balandro/main/</datadir>
         </dir>
         <dir>
             <info compressed="false">https://github.com/alfa-addon/alfa-repo/raw/master/addons.xml</info>
@@ -886,7 +886,8 @@ Testers: Luisma, Toni, Zarat, SuperTopo, Jorge, Bojbit, MiKeL, Chikiry</descript
 		<screenshot>resources/screenshot-03.jpg</screenshot>
 	</assets>
 	<news>[COLOR blue][B]Official devalls' repository[/B][/COLOR]
-[COLOR green][B]•2.1.7[/B] Add one dir.[/COLOR]
+[COLOR green][B]•2.1.8[/B] Update one dir.[/COLOR]
+[COLOR yellow][B]•2.1.7[/B] Add one dir.[/COLOR]
 [COLOR yellow][B]•2.1.5[/B] Add three dir.[/COLOR]
 [COLOR yellow][B]•2.1.3[/B] Add one dir.[/COLOR]
 [COLOR yellow][B]•2.1.2[/B] Del one dir.[/COLOR]
