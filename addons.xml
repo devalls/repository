@@ -496,7 +496,7 @@ Testers: Luisma, Toni, Zarat, SuperTopo, Jorge, Bojbit, MiKeL, Chikiry</descript
     </extension>
 </addon>
 
-<addon id="plugin.video.balandro" name="Balandro" version="2.1.1" provider-name="Balandro Team">
+<addon id="plugin.video.balandro" name="Balandro" version="2.1.2" provider-name="Balandro Team">
   <requires>
   </requires>
 
@@ -510,23 +510,27 @@ Testers: Luisma, Toni, Zarat, SuperTopo, Jorge, Bojbit, MiKeL, Chikiry</descript
       <icon>icon.png</icon>
     </assets>
     <news>
-    [COLOR darkorange] Octubre 2021[/COLOR]
+    [COLOR yellow]Octubre 2021[/COLOR]
       Agradecimientos:
         Mencion especial al grupo de Checkers
       Canales modificados:
-        AreaDocumental, Cinecalidad, ClubCine,
-        Dilo, DixMaxlive, DonTorrents, HdFull,
-        HdFullCom, HdFullSe, MegaDede2,
-        Pelisforte, PelisPedia, PlayDede,
-        PornTube, SeriesFlix, SeriesMetro,
-        SeriesRetro, SubTorrents, TvSeries,
-        ZooWoman
+        AniBox, CineCalidad, CineDeAntes,
+        CineLibreOnline, CineMatteFlix,
+        ClubCine, DixMaxLive, DocumaniaTv,
+        DonTorrents, HdFull, HdFullCom, HdFullSe,
+        MegaDede2, NewPct1, PelisMaraton,
+        PlayDede, Ppeliculas, PonnHd, PornHub,
+        Repeli24, SeriesKao, YesTorrent
+      Canales anulados:
+        PctFenix, PelisPlus24
       Canales nuevos:
-        EstrenosPapaya, RetroTv
+        Ievenn, PelisEnCastellano
       Servidores modificados:
-        Doodstream, Okru, Uptobox, Uqload
+        Fembed, Streamsb, Upstream, Uptobox,
+        Vshare, Vup
       Servidores nuevos:
-    [COLOR darkorange][B]Media Centers soportados[COLOR plum][I] Kodi 19.X, 18.X y 17.X [/I][/B][/COLOR]
+        Streamon, Vidhd
+    [COLOR darkorange]Media Centers soportados[COLOR plum][B][I] 19.X, 18.X y 17.X [/I][/B][/COLOR]
     </news>
     <summary>Balandro es un navegador de páginas webs</summary>
     <description>[COLOR yellow][B]Balandro es un MOD derivado de Pelisalacarta y Alfa,[COLOR mediumaquamarine] y Tiene Como Objeto, Permitir Visualizar Películas, Series y Documentales, Todo a Través de Internet y Directamente Desde su Sistema Media Center. [COLOR orchid]Este Add-On es Tan Solo un Mero Ejercicio de Aprendizaje Del Lenguaje de Programación Python y se Distribuye Sin Ningún Contenido Multimedia Adjunto al Mismo [COLOR lightgrey][I]En Consecuencia Solo Las Webs Son Plenamente Responsables de Los Contenidos Que Publiquen.[/I][/B][/COLOR]</description>
