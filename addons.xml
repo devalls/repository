@@ -1195,7 +1195,7 @@ Testers: Luisma, Toni, Zarat, SuperTopo, Jorge, Bojbit, MiKeL, Chikiry</descript
     <extension point="xbmc.service" library="services.py" start="login|startup"/>
 </addon>
 
-<addon id="resource.images.skinbackgrounds.clearMod" name="Skin Backgrounds - Clear Design Mod" version="1.1.8" provider-name="Orna Post, Benny Buchnik, devalls">
+<addon id="resource.images.skinbackgrounds.clearMod" name="Skin Backgrounds - Clear Design Mod" version="1.1.9" provider-name="Orna Post, Benny Buchnik, devalls">
 	<extension point="kodi.resource.images" compile="false" type="skinbackgrounds" />
 	<requires>
 		<import addon="kodi.resource" version="1.0.0"/>
