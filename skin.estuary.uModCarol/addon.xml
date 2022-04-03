@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.estuary.uModCarol" version="3.1.6" name="Estuary uMod Carol" provider-name="darkozma, devalls, phil65, Ichabod Fletchman">
+<addon id="skin.estuary.uModCarol" version="3.1.7" name="Estuary uMod Carol" provider-name="darkozma, devalls, phil65, Ichabod Fletchman">
 	<requires>
 		<import addon="xbmc.gui" version="5.12.0"/>
                 <import addon="resource.images.skinbackgrounds.clearMod" version="1.1.5"/>
@@ -43,7 +43,8 @@
 			<screenshot>resources/screenshot-09.png</screenshot>
 		</assets>
 		<news>[COLOR blue][B]Skin Estuary uMod Carol[/B][/COLOR]
-[COLOR green][B]•3.1.6[/B] Minor Change menu.[/COLOR]
+[COLOR green][B]•3.1.7[/B] Change OD menu.[/COLOR]
+[COLOR yellow][B]•3.1.6[/B] Minor Change menu.[/COLOR]
 [COLOR yellow][B]•3.1.5[/B] Minor Change.[/COLOR]
 [COLOR yellow][B]•3.1.4[/B] Add MC icon.[/COLOR]
 [COLOR yellow][B]•3.1.3[/B] Minor bug fix.[/COLOR]
