@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.balandro" name="Balandro" version="2.1.3" provider-name="Balandro Team">
+<addon id="plugin.video.balandro" name="Balandro" version="2.3.1" provider-name="Balandro Team">
   <requires>
+     <import addon="script.module.requests"/>
   </requires>
 
   <extension point="xbmc.python.pluginsource" library="default.py">
@@ -13,35 +14,15 @@
       <icon>icon.png</icon>
     </assets>
     <news>
-    [COLOR yellow]Noviembre 2021[/COLOR]
+    [COLOR yellow]Mayo 2022[/COLOR]
       Agradecimientos:
+        Cita destacada a los miembros de Team
         Mencion especial al grupo de Checkers
-      Canales modificados:
-        AnimeFlv, CineCalidad, CineDeAntes,
-        CliverSite, Cuevana3, Cuevana3Video,
-        DixMaxLive, DonTorrents, Gnula,
-        GranTorrents, HdFull, HdFullCom,
-        Kindor, MegaDede2, MejorTorrents,
-        MovidyMobi, NewPct1, PasateaTorrent,
-        PeliculasFlix, PelisEnCastellano,
-        PelisHouse, PelisMart, PelisPedia,
-        PeliSeries, PepeCinePro, PlayDede,
-        RepelisHd, RetroTv, SeriesFlixVideo,
-        SeriesFlvXyz, SeriesMetro,
-        SeriesRetro, SigloXX, SubTorrents,
-        TorrentDivx, TuPeliculaTv, TuPeliHd,
-        YesTorrent
-      Canales anulados:
-        PctFenix
-      Canales nuevos:
-        EspaPelis, MejorTorrentLa, MovidyTv,
-        PelisPedia2, TodoTorrents,
-        VerPeliculasRd
-      Servidores modificados:
-        Doodstream, Fembed, Highload, Mega,
-        Nupload, Streamsb, Streamtape, Upvideo,
-        Vidoza
-      Servidores nuevos:
+      Canales modificados: Revision generalizada
+      Canales anulados: Las Webs Cerradas
+      Canales nuevos: Sin novedades 
+      Servidores modificados: Revision generalizada
+      Servidores nuevos: Sin novedades
     [COLOR darkorange]Media Centers soportados[COLOR plum][B][I] 19.X, 18.X y 17.X [/I][/B][/COLOR]
     </news>
     <summary>Balandro es un navegador de páginas webs</summary>

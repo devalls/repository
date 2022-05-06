@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.moestv" name="Moe's TV" version="0.1.2" provider-name="La Taberna">
+<addon id="plugin.video.moestv" name="Moe's TV" version="0.1.3" provider-name="La Taberna">
   <requires>
     <import addon="script.module.six" version="1.11.0"/>
     <import addon="script.module.simplecache"/>
@@ -19,7 +19,9 @@
         <fanart>fanart.jpg</fanart>
     </assets>
     <license>[B]Este es un software gratuito[/B]</license>
-    <news> - Versión 0.1.2:
+    <news> - Versión 0.1.3:
+      * Mostrar vistos en skin embuary
+      [CR]- Versión 0.1.2:
       * Reparado fix en multi-bitrate
       [CR]- Versión 0.1.1:
       * Reparado fix MPD en Atresplayer

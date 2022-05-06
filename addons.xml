@@ -131,11 +131,63 @@
 	</extension>
 </addon>
 
-<addon id="plugin.video.palantir2" name="[COLOR gold]Palantir 2[/COLOR]" version="2.1.9" provider-name="TierraMedia">
+<addon id="script.module.inputstreamhelper" name="InputStream Helper" version="0.5.10" provider-name="emilsvennesson, dagwieers, mediaminister, horstle">
+  <requires>
+    <!--py3 compliant-->
+    <import addon="xbmc.python" version="2.25.0"/>
+    <import addon="script.module.pysocks" version="1.6.8" optional="true"/>
+  </requires>
+  <!-- This is needed to get an add-on icon -->
+  <extension point="xbmc.python.script" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.python.module" library="lib"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="de_DE">Kodi InputStream und DRM Wiedergabe einfach gemacht</summary>
+    <summary lang="el_GR">Βοηθός Inputstream για το Kodi και εύκολη αναπαραγωγή DRM</summary>
+    <summary lang="en_GB">Kodi InputStream and DRM playback made easy</summary>
+    <summary lang="es_ES">Kodi InputStream y reproducción DRM echa fácil</summary>
+    <summary lang="fr_FR">La lecture Kodi InputStream et DRM en toute simplicité</summary>
+    <summary lang="hr_HR">Kodi InputStream olakšava reprodukciju DRM zaštićenog sadržaja</summary>
+    <description lang="de_DE">Dieses einfache Kodi-Modul macht das Leben für Addon Entwickler einfacher, die auf InputStream basierte Addons und DRM Wiedergabe angewiesen sind.</description>
+    <description lang="el_GR">Μία απλή μονάδα για το Kodi η οποία διευκολύνει την ζωή των προγραμματιστών οι οποίοι εξαρτώνται από τα πρόσθετσ InputStream και αναπαραγωγή τύπου DRM.</description>
+    <description lang="en_GB">A simple Kodi module that makes life easier for add-on developers relying on InputStream based add-ons and DRM playback.</description>
+    <description lang="es_ES">Un módulo Kodi simple que hace la vida más fácil para los desarrolladores de complementos que dependen de complementos basados en InputStream y reproducción de DRM.</description>
+    <description lang="fr_FR">Un simple module Kodi qui simplifie la vie des développeurs de modules complémentaires en s’appuyant sur des modules complémentaires basés sur InputStream et sur la lecture de DRM.</description>
+    <description lang="hr_HR">Jednostavan Kodi modul koji olakšava razvijanje dodataka koji se temelje na InputStream dodatku i reprodukciji DRM zaštićenog sadržaja.</description>
+    <description lang="ru_RU">Простой модуль для Kodi, который облегчает жизнь разработчикам дополнений, с использованием InputStream дополнений и воспроизведения DRM контента.</description>
+    <news>
+v0.5.10 (2022-04-18)
+- Fix automatic submission of release
+- Update German translation
+- Fix update_frequency setting
+- Fix install_from
+- Improve/Fix Widevine extraction from Chrome OS images
+
+v0.5.9 (2022-03-22)
+- Update Croatian translation
+- Replace deprecated LooseVersion
+- Fix http_get decode error
+- Option to install Widevine from specified source
+    </news>
+    <platform>all</platform>
+    <license>MIT</license>
+    <website>https://github.com/emilsvennesson/script.module.inputstreamhelper/wiki</website>
+    <source>https://github.com/emilsvennesson/script.module.inputstreamhelper</source>
+    <assets>
+      <icon>resources/icon.png</icon>
+    </assets>
+  </extension>
+</addon>
+
+<addon id="plugin.video.palantir2" name="[COLOR gold]Palantir 2[/COLOR]" version="2.2.4" provider-name="TierraMedia">
   <requires>
     <import addon="script.module.six" version="1.11.0"/>
+    <import addon="plugin.video.duffyou" version="0.1.3" optional="true"/>
     <import addon="script.module.resolveurl" version="5.0.00" optional="true"/>
+    <import addon="script.module.inputstreamhelper" version="0.5.0"/>
     <import addon="script.module.pycryptodome"/>
+    <import addon="script.embuary.info"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
     <provides>video</provides>
@@ -146,8 +198,8 @@
         <datadir zip="true">https://raw.githubusercontent.com/Palantiraddon/repo/master/Palantir/</datadir>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <description>Visualiza el contenido de la nube, series, películas.</description>
-    <disclaimer>[B][COLOR red]Todo el contenido disponible en este Addon esta sacado de servidores gratuitos, disponible en la red para todos los usuarios.[/B][/COLOR]</disclaimer>
+    <description>Visualiza el contenido de la nube, series, películas.[CR][COLOR red]Todo el contenido disponible en este Addon esta sacado de servidores gratuitos, disponible en la red para todos los usuarios.[/COLOR]</description>
+    <disclaimer>Este es un software [COLOR red][B]gratuito[/B][/COLOR][CR][COLOR red][B]Pero no se permite[/B][/COLOR] su distribuición preinstalada en ningún tipo de dispositivo ni tampoco su inclusión total o parcial en cualquier paquete de software y/o hardware por el que el usuario final deba [COLOR red][B]pagar o hacer una donación[/B][/COLOR], por su adquisición, por su uso o por recibir asistencia.[CR]Si cree que alguna de estas normas no se está cumpliendo póngase en contacto con nosotros.</disclaimer>
     <platform>all</platform>
     <assets>
         <icon>icon.png</icon>
@@ -157,9 +209,36 @@
         <screenshot>resources/media/Captura3.png</screenshot>
         <screenshot>resources/media/Captura4.png</screenshot>
     </assets>
-    <news>- Reparar pequeños bugs
-    </news>
+    <news></news>
+    <forum>https://t.me/addon_palantir</forum>
+  </extension>
+</addon>
+
+<addon id="script.kelebek"
+       name="KELEBEK"
+       version="3.5"
+       provider-name="Iron Butterfly">
+  <requires>
+    <import addon="script.module.pyxbmct" version="1.1.4" />
+    <import addon="script.module.beautifulsoup4" />
+    <import addon="script.module.requests" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="main.py">
+	<provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary>KELEBEK V3.5</summary>
+    <description>Scan Sources searching changes and addons</description>
+    <language></language>
+    <license></license>
+    <source></source>
     <forum></forum>
+    <website></website>
+	<assets>
+		<icon>resources/icon.png</icon>
+		<fanart>resources/fanart.jpg</fanart>
+	</assets>
   </extension>
 </addon>
 
@@ -227,7 +306,7 @@
 	</extension>
 </addon>
 
-<addon id="plugin.video.duffyou" name="Duff You" version="0.1.2" provider-name="La Taberna">
+<addon id="plugin.video.duffyou" name="Duff You" version="0.1.3" provider-name="La Taberna">
     <requires>
         <import addon="script.module.six" version="1.11.0" />
         <import addon="script.module.simplecache" />
@@ -247,12 +326,12 @@
             <fanart>fanart.jpg</fanart>
         </assets>
         <license>[B]Este es un software gratuito[/B]</license>
-        <news>- Reparado bug al eliminar último item de un listado (historial o preferidos)[CR]- Añadida reproducción de una playlist completa desde el menu contextual.
+        <news>- Añadida opción de reproducción externa de playlists[CR]- Correcciones menores
         </news>
     </extension>
 </addon>
 
-<addon id="plugin.video.moestv" name="Moe's TV" version="0.1.2" provider-name="La Taberna">
+<addon id="plugin.video.moestv" name="Moe's TV" version="0.1.3" provider-name="La Taberna">
   <requires>
     <import addon="script.module.six" version="1.11.0"/>
     <import addon="script.module.simplecache"/>
@@ -272,7 +351,9 @@
         <fanart>fanart.jpg</fanart>
     </assets>
     <license>[B]Este es un software gratuito[/B]</license>
-    <news> - Versión 0.1.2:
+    <news> - Versión 0.1.3:
+      * Mostrar vistos en skin embuary
+      [CR]- Versión 0.1.2:
       * Reparado fix en multi-bitrate
       [CR]- Versión 0.1.1:
       * Reparado fix MPD en Atresplayer
@@ -391,6 +472,51 @@ No se acepta ninguna responsabilidad por el uso de este addon.
 	</extension>
 </addon>
 
+<addon id="script.module.six"
+       name="six"
+       version="1.15.0"
+       provider-name="gutworth">
+  <requires>
+    <import addon="xbmc.python"
+    		version="2.14.0"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">Python 2 and 3 compatibility utilities.</summary>
+    <description lang="en_GB">Six is a Python 2 and 3 compatibility library. It provides utility functions for smoothing over the differences between the Python versions with the goal of writing Python code that is compatible on both Python versions. See the documentation for more information on what is provided.</description>
+    <platform>all</platform>
+    <license>MIT</license>
+    <source>https://github.com/benjaminp/six</source>
+    <website>https://pypi.org/project/six/</website>
+    <assets>
+      <icon>icon.png</icon>
+    </assets>
+  </extension>
+</addon>
+
+<addon id="script.module.slproxy" name="SLProxy" version="0.4.6" provider-name="devilsport">
+  <requires>
+    <!-- <import addon="xbmc.python" version="2.24.0"/> -->
+    <import addon="script.module.requests"/>
+    <import addon="script.module.streamlink" version="1.7.0" />
+    <import addon="script.module.six" />
+  </requires>
+  <extension point="xbmc.python.module" library="lib/"/>
+  <extension point="xbmc.addon.metadata">
+    <summary>StreamLink Proxy DS</summary>
+    <description>Streamlink proxy for Kodi</description>
+    <platform>all</platform>
+    <license>Simplified BSD</license>
+    <source></source>
+    <language>en</language>
+    <assets>
+      <icon>icon.png</icon>
+    </assets>
+    <news>
+    </news>
+  </extension>
+</addon>
+
 <addon id="repository.Palantir" name="[COLOR gold]Palantir[/COLOR] Repo" version="1.0.1" provider-name="TierraMedia">
     <extension point="xbmc.addon.repository" name="Palantir Repo">
         <info>https://raw.githubusercontent.com/Palantiraddon/Repo/master/Palantir/addons.xml</info>
@@ -445,50 +571,53 @@ No se acepta ninguna responsabilidad por el uso de este addon.
   </extension>
 </addon>
 
-<addon id="plugin.video.winner" name="[B][/B][COLOR aqua][/COLOR]WINNER" version="1.0.4" provider-name="Camaradas">
-	<requires>
-		<import addon="xbmc.python" version="2.19.0" />
-		<import addon="script.module.requests" version="2.9.1" />
-		<import addon="script.module.resolveurl" />
-		<import addon="plugin.video.youtube" version="5.0.0"/>
-	</requires>
-	<extension point="xbmc.python.pluginsource" library="default.py">
-		<provides>video</provides>
-	</extension>
-	<extension point="xbmc.addon.repository" name="Hiraya Software Repo">
-		<info>https://raw.githubusercontent.com/camaradas/camaradas.repo/master/Repositorio/addons.xml</info>
+<addon id="plugin.video.winner" name="[B][/B][COLOR aqua][/COLOR]WINNER" version="1.0.7" provider-name="Camaradas">
+    <requires>
+        <import addon="script.module.requests" />
+        <import addon="script.module.pysocks" />
+        <import addon="script.module.six" />
+        <import addon="plugin.video.youtube" />
+        <import addon="script.module.horus" optional="true" />
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.repository" name="Hiraya Software Repo">
+        <info>https://raw.githubusercontent.com/camaradas/camaradas.repo/master/Repositorio/addons.xml</info>
         <checksum>https://raw.githubusercontent.com/camaradas/camaradas.repo/master/Repositorio/addons.xml.md5</checksum>
         <datadir zip="true">https://raw.githubusercontent.com/camaradas/camaradas.repo/master/Repositorio/</datadir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en">WINNER</summary>
-		<description lang="en">Live Sports Addon.
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">WINNER</summary>
+        <description lang="en">Live Sports Addon.
 
 Development: George, Alex303, Picapau
 Development support: Jesus, Toni
 Contributions: SuperTopo, Jesus
 Artwork: Bojbit
 Translation: Lou
-Content: Lou, Alex303, MiKeL, Chikiry, Bojbit
-Testers: Luisma, Toni, Zarat, SuperTopo, Jorge, Bojbit, MiKeL, Chikiry</description>
-		<disclaimer lang="en">WINNER Addon - Live Sports Addon</disclaimer>
-		<summary lang="es">WINNER</summary>
-		<description lang="es">Addon con eventos deportivos en directo.
+Content: Lou, Alex303, MiKeL, Chikiry, Bojbit, Luisma, Lucas, Nano, K0S, Manujaz, MrYayi
+Testers: Luisma, Toni, Zarat, SuperTopo, Jorge, Bojbit, MiKeL, Chikiry, Pau, Alex, Luar team
+        </description>
+        <disclaimer lang="en">WINNER Addon - Live Sports Addon</disclaimer>
+        <summary lang="es">WINNER</summary>
+        <description lang="es">Addon con eventos deportivos en directo.
 
 Desarrollo: George, Alex303, Picapau
 Soporte desarrollo: Jesus, Toni
 Aportaciones: SuperTopo, Jesus
 Artwork: Bojbit
 Traducciones: Lou
-Contenido: Lou, Alex303, MiKeL, Chikiry, Bojbit
-Testers: Luisma, Toni, Zarat, SuperTopo, Jorge, Bojbit, MiKeL, Chikiry</description>
-		<disclaimer lang="es">Addon WINNER - Eventos Deportivos en directo</disclaimer>
-		<platform>all</platform>
-		<assets>
-			<icon>icon.gif</icon>
-			<fanart>fanart.jpg</fanart>
-		</assets>
-	</extension>
+Contenido: Lou, Alex303, MiKeL, Chikiry, Bojbit, Luisma, Lucas, Nano, K0S, Manujaz, MrYayi
+Testers: Luisma, Toni, Zarat, SuperTopo, Jorge, Bojbit, MiKeL, Chikiry, Pau, Alex, equipo Luar
+        </description>
+        <disclaimer lang="es">Addon WINNER - Eventos Deportivos en directo</disclaimer>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.gif</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
 </addon>
 
 <addon id="skin.estuary.uModPrimit" version="3.1.5" name="Estuary uMod Primit" provider-name="darkozma, devalls, phil65, Ichabod Fletchman">
@@ -561,8 +690,9 @@ Testers: Luisma, Toni, Zarat, SuperTopo, Jorge, Bojbit, MiKeL, Chikiry</descript
     </extension>
 </addon>
 
-<addon id="plugin.video.balandro" name="Balandro" version="2.1.3" provider-name="Balandro Team">
+<addon id="plugin.video.balandro" name="Balandro" version="2.3.1" provider-name="Balandro Team">
   <requires>
+     <import addon="script.module.requests"/>
   </requires>
 
   <extension point="xbmc.python.pluginsource" library="default.py">
@@ -575,35 +705,15 @@ Testers: Luisma, Toni, Zarat, SuperTopo, Jorge, Bojbit, MiKeL, Chikiry</descript
       <icon>icon.png</icon>
     </assets>
     <news>
-    [COLOR yellow]Noviembre 2021[/COLOR]
+    [COLOR yellow]Mayo 2022[/COLOR]
       Agradecimientos:
+        Cita destacada a los miembros de Team
         Mencion especial al grupo de Checkers
-      Canales modificados:
-        AnimeFlv, CineCalidad, CineDeAntes,
-        CliverSite, Cuevana3, Cuevana3Video,
-        DixMaxLive, DonTorrents, Gnula,
-        GranTorrents, HdFull, HdFullCom,
-        Kindor, MegaDede2, MejorTorrents,
-        MovidyMobi, NewPct1, PasateaTorrent,
-        PeliculasFlix, PelisEnCastellano,
-        PelisHouse, PelisMart, PelisPedia,
-        PeliSeries, PepeCinePro, PlayDede,
-        RepelisHd, RetroTv, SeriesFlixVideo,
-        SeriesFlvXyz, SeriesMetro,
-        SeriesRetro, SigloXX, SubTorrents,
-        TorrentDivx, TuPeliculaTv, TuPeliHd,
-        YesTorrent
-      Canales anulados:
-        PctFenix
-      Canales nuevos:
-        EspaPelis, MejorTorrentLa, MovidyTv,
-        PelisPedia2, TodoTorrents,
-        VerPeliculasRd
-      Servidores modificados:
-        Doodstream, Fembed, Highload, Mega,
-        Nupload, Streamsb, Streamtape, Upvideo,
-        Vidoza
-      Servidores nuevos:
+      Canales modificados: Revision generalizada
+      Canales anulados: Las Webs Cerradas
+      Canales nuevos: Sin novedades
+      Servidores modificados: Revision generalizada
+      Servidores nuevos: Sin novedades
     [COLOR darkorange]Media Centers soportados[COLOR plum][B][I] 19.X, 18.X y 17.X [/I][/B][/COLOR]
     </news>
     <summary>Balandro es un navegador de páginas webs</summary>
@@ -634,6 +744,38 @@ Testers: Luisma, Toni, Zarat, SuperTopo, Jorge, Bojbit, MiKeL, Chikiry</descript
         <forum>https://www.tvaddons.co/forums</forum>
         <website>https://www.tvaddons.co</website>
         <source>https://github.com/tvaddonsco/plugin.program.indigo</source>
+    </extension>
+</addon>
+
+<addon id="repository.loonaticsasylum"
+       name="  [COLORspringgreen]L[COLORpalegreen]o[COLORlime]o[COLORred]N[COLORcrimson]a[COLORmediumpurple]t[COLORmediumorchid]i[COLORorangered]c[COLORorange]s [COLORdeepskyblue]Asylum[/COLOR] [COLORblue]Repo[/COLOR]"
+       version="22.5.2"
+       provider-name="[COLORgreen]• [COLORspringgreen]Tech [COLORpalegreen]E [COLORlime]Coyote [COLORgreen]•[/COLOR]">
+    <extension point="xbmc.addon.repository" name="Loonatics Asylum Repository">
+        <dir minversion="18.0" maxversion="18.9.0"><!--LoonaticsAsylum LEIA-->
+            <info compressed="false">https://raw.githubusercontent.com/techecoyote/LooNaticsAsylum/master/leia/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/techecoyote/LooNaticsAsylum/master/leia/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/techecoyote/LooNaticsAsylum/master/leia/zips/</datadir>
+        </dir>
+        <dir minversion="18.9.0"><!--LoonaticsAsylum MATRIX-->
+            <info compressed="false">https://raw.githubusercontent.com/techecoyote/LooNaticsAsylum/master/matrix/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/techecoyote/LooNaticsAsylum/master/matrix/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/techecoyote/LooNaticsAsylum/master/matrix/zips/</datadir>
+        </dir>
+        <dir><!--ResolveUrl-->
+            <info compressed="false">https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/Gujal00/smrzips/master/zips/</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>[COLORspringgreen]L[COLORpalegreen]o[COLORlime]o[COLORred]N[COLORcrimson]a[COLORmediumpurple]t[COLORmediumorchid]i[COLORorangered]c[COLORorange]s [COLORdeepskyblue]Asylum[/COLOR] [COLORblue]Repo[/COLOR]</summary>
+        <description>[COLORspringgreen]L[COLORpalegreen]o[COLORlime]o[COLORred]N[COLORcrimson]a[COLORmediumpurple]t[COLORmediumorchid]i[COLORorangered]c[COLORorange]s [COLORdeepskyblue]Asylum[/COLOR] [COLORblue]Repo[/COLOR]</description>
+        <platform>all</platform>
+    <assets>
+        <icon>icon.png</icon>
+        <fanart>fanart.jpg</fanart>
+    </assets>
     </extension>
 </addon>
 
@@ -772,6 +914,24 @@ Testers: Luisma, Toni, Zarat, SuperTopo, Jorge, Bojbit, MiKeL, Chikiry</descript
     </extension>
 </addon>
 
+<addon id="plugin.video.FutbolTream" name="[COLOR mediumslateblue]FutbolTream[/COLOR]" version="0.1.2" provider-name="AceTorr">
+  <requires>
+   <import addon="script.module.six" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="es">Los Mejores Eventos deportivos usando Acestream</summary>
+    <description>Todo el deporte con [COLOR red]Acestream[/COLOR].[CR][CR]Enlaces obtenidos de la página web:[CR][COLOR blue]····https://····[/COLOR][CR]La cual se ayuda del Canal de Telegram [COLOR lime]@ACEstream_Spanish[/COLOR].[CR][CR]**En Ajustes puede elegir entre usar solo [COLOR red]Motor Acestream[/COLOR] o el plugin [COLOR yellow]Horus+Acestream[/COLOR] para lanzar los enlaces p2p.</description>
+    <platform>all</platform>
+    <assets>
+        <icon>icon.png</icon>
+        <fanart>fanart.jpg</fanart>
+    </assets>
+  </extension>
+</addon>
+
 <addon id="skin.estuary.uMod2Local" version="3.1.6" name="Estuary uMod2 Local" provider-name="darkozma, devalls, phil65, Ichabod Fletchman">
 	<requires>
 		<import addon="xbmc.gui" version="5.14.0"/>
@@ -882,6 +1042,139 @@ Testers: Luisma, Toni, Zarat, SuperTopo, Jorge, Bojbit, MiKeL, Chikiry</descript
 	</extension>
 </addon>
 
+<addon
+  id="inputstream.adaptive"
+  version="2.4.8"
+  name="InputStream Adaptive"
+  provider-name="peak3d">
+  <requires>
+<import addon="kodi.binary.global.main" version="1.0.14"/>
+<import addon="kodi.binary.global.general" version="1.0.3"/>
+<import addon="kodi.binary.global.filesystem" version="1.0.2"/>
+<import addon="kodi.binary.instance.inputstream" version="2.0.8"/>
+<import addon="kodi.binary.instance.videocodec" version="1.0.1"/></requires>
+  <extension
+    point="kodi.inputstream"
+    name="adaptive"
+    extension=""
+    tags="true"
+    listitemprops="license_type|license_key|license_data|license_flags|manifest_type|server_certificate|stream_headers|manifest_update_parameter|original_audio_language|media_renewal_url|media_renewal_time|max_bandwidth|play_timeshift_buffer"
+    library_windows="inputstream.adaptive.dll"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">InputStream client for adaptive streams</summary>
+	<summary lang="es">Cliente InputStream para flujo de datos adaptativos</summary>
+    <description lang="en">InputStream client for adaptive streams</description>
+	<description lang="es">Cliente InputStream para flujo de datos adaptativos</description>
+    <platform>windows-i686</platform>
+	<news>
+v2.4.8 (2021-07-11)
+- [DASH] time and number placeholders can be used simultaneously
+- License renewal for widevine
+- [DASH] fix for minimumUpdatePeriod=0
+- [HLS] support webvtt subtitle extensions
+- [DASH] manifest_update_parameter property defaults to 'full' for SegmentTimeline
+- Fix decode failures on some Widevine content
+- [DASH] fix segmentTemplate calculation
+- [HLS] EXT-X-DISCONTINUITY-SEQUENCE support
+- Fix seeking into separate chapters/resume time
+- Fix kodi freeze by session close
+
+v2.4.7 (2021-04-10)
+- [Dash] Fix missing audio languages
+- [Dash] Correctly set timeshift_buffer (live)
+- [Dash] Fix Timing (remove publishTime and presentationTimeOffset)
+- [Dash] Append / to baseurl if required
+- [Dash] Support fpsScale in AdaptationSets
+- [Dash] Use full BaseUrl if real url inside an AdaptationSet
+- Fix for URLs starting with /
+- Use CDllHelper for opening ssd_wv
+- Move Android addon to binary addons repo
+
+v2.4.6 (2020-05-18)
+- Fix effective url if paths beginning with / provided
+- Several translations added / fixed
+- Fix webvtt subtitles for time formats without leading hour 00:
+- Fix segfault when playing PlayReady content (Android)
+
+v2.4.5 (2020-05-18)
+- Backport of Matrix features (v2.5.4 upwards)
+
+v2.4.3 (2020-02-25)
+- Backport of Matrix features (v2.5.0 upwards)
+
+v2.4.2 (2019-09-02)
+- Fix versioning
+
+v2.3.22 (2019-06-14)
+- Bento4: sample duration workaround (24/1)
+- WVDecrypter: remove sleep between decrypt calls
+
+v2.3.21 (2019-06-07)
+- [DASH] initialize segment::range_begin_ for URL segments (youtube)
+
+v2.3.20 (2019-06-07)
+- Fix parsing PR ContentProtection KID
+
+v2.3.19 (2019-06-02)
+- [widevine] remove API 8 / Add API 11
+- [TS] Signal configuration change if extra-data has changed
+- [DASH] Use PlayReady WRMHEADER to retrieve DefaultKID
+- [DASH] Allow URL_SEGMENTS + Range-Bytes
+
+v2.3.18 (2019-05-11)
+- align settings with internal resolution check
+- [HLS] support single playlists
+
+v2.3.17 (2019-04-16)
+- Fix KID's with 0 char inside
+
+v2.3.16 (2019-03-25)
+- TTML parser fix
+- [HLS] Add HEVC streams / Fix extra_data_size in ts parser
+- [HLS] effective URL for license
+
+v2.3.15 (2019-02-11)
+- Fix windows build
+
+v2.3.14 (2019-02-10)
+- Add WebM container parser
+	</news>
+  </extension>
+</addon>
+
+<addon id="repository.GTKing-Leia" name="[COLOR steelblue][B]Repo[/B][/COLOR] [COLOR azure][B]GTKing[/B][/COLOR] [COLOR limegreen][B]LEIA[/B][/COLOR]" version="2.7.6" provider-name="GTKingTEAM">
+    <extension point="xbmc.addon.repository" name="[COLOR steelblue][B]Repo[/B][/COLOR] [COLOR azure][B]GTKing[/B][/COLOR] [COLOR limegreen][B]LEIA[/B][/COLOR]">
+        <dir minversion="18.0" maxversion="18.9.0">
+            <info compressed="false">https://raw.githubusercontent.com/gtkingbuild/Repo-GTKing/master/leia/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/gtkingbuild/Repo-GTKing/master/leia/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/gtkingbuild/Repo-GTKing/master/leia/zips/</datadir>
+        </dir>
+        <dir minversion="18.9.0">
+            <info compressed="false">https://raw.githubusercontent.com/gtkingbuild/Repo-GTKing/master/matrix/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/gtkingbuild/Repo-GTKing/master/matrix/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/gtkingbuild/Repo-GTKing/master/matrix/zips/</datadir>
+        </dir>
+        <dir minversion="18.9.0">
+            <info>https://raw.githubusercontent.com/Palantiraddon/Repo/master/Palantir/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/Palantiraddon/Repo/master/Palantir/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/Palantiraddon/repo/master/Palantir/</datadir>
+        </dir>
+    </extension>
+
+    <extension point="xbmc.addon.metadata">
+        <summary>[COLOR steelblue]Repo[/COLOR] [COLOR azure]GTKing[/COLOR] [COLOR limegreen]LEIA[/COLOR]</summary>
+        <description>Repositorio de addons [COLOR dodgerblue]GTKING[/COLOR].
+[COLOR gold]Developers:[/COLOR] DavidZgZ, JoseaTEBA y GTKing TEAM</description>
+        <disclaimer>Éste repositorio sólo recoge addons válidos para Kodi 18.x LEIA.</disclaimer>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+		<source>https://github.com/gtkingbuild/Repo-GTKing/</source>
+    </extension>
+</addon>
+
 <addon id="repository.hirayasoftware" name="Hiraya Software" version="1.0.1" provider-name="Alex303 - Hiraya Software">
 	<extension point="xbmc.addon.repository" name="Hiraya Software">
 		<info>https://hirayasoftware.github.io/addons.xml</info>
@@ -894,6 +1187,20 @@ Testers: Luisma, Toni, Zarat, SuperTopo, Jorge, Bojbit, MiKeL, Chikiry</descript
 		<disclaimer></disclaimer>
 		<platform>all</platform>
 	</extension>
+</addon>
+
+<addon id="repository.Mirepor" name="[COLOR blue]REPOSITORIO[/COLOR][COLOR lime] FESTA[/COLOR]" version="1.0.1" provider-name="Yo Mismo">
+    <extension point="xbmc.addon.repository" name="Mi repositorio">
+        <info>https://raw.githubusercontent.com/picapaujulen/repositorio/master/Repositorio/addons.xml</info>
+        <checksum>https://raw.githubusercontent.com/picapaujulen/repositorio/master/Repositorio/addons.xml.md5</checksum>
+        <datadir zip="true">https://raw.githubusercontent.com/picapaujulen/repositorio/master/Repositorio/</datadir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Repositorio para Mi</summary>
+        <description></description>
+        <disclaimer></disclaimer>
+        <platform>all</platform>
+    </extension>
 </addon>
 
 <addon id="repository.devalls" name="devalls' Repository" version="2.1.8" provider-name="devalls">
@@ -1005,14 +1312,13 @@ Testers: Luisma, Toni, Zarat, SuperTopo, Jorge, Bojbit, MiKeL, Chikiry</descript
 	</extension>
 </addon>
 
-<addon id="script.module.resolveurl" name="ResolveURL" version="5.1.23" provider-name="gujal">
+<addon id="script.module.resolveurl" name="ResolveURL" version="5.1.66" provider-name="gujal">
     <requires>
         <!-- <import addon="xbmc.python" version="3.0.0" /> -->
         <import addon="script.module.six" />
         <import addon="script.module.kodi-six" />
         <import addon="plugin.video.youtube" optional="true" />
         <import addon="script.module.python.twitch" optional="true" />
-        <import addon="script.module.cryptopy" version="1.2.6" optional="true" />
         <import addon="plugin.googledrive" optional="true" />
     </requires>
     <extension point="xbmc.python.module" library="lib" />
@@ -1079,6 +1385,24 @@ Testers: Luisma, Toni, Zarat, SuperTopo, Jorge, Bojbit, MiKeL, Chikiry</descript
         <disclaimer>The owners and submitters to this repository do not host or distribute any of the content displayed by these addons nor do they have any affiliation with the content providers.</disclaimer>
         <platform>all</platform>
     </extension>
+</addon>
+
+<addon id="plugin.video.TorrentAcestream" name="[COLOR mediumslateblue]Torrents-Acestream[/COLOR]" version="0.0.2" provider-name="AceTorr">
+  <requires>
+   <import addon="script.module.six" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="es">Multitud de Peliculas Torrent con motor Acestream</summary>
+    <description>Cine de alta calidad usando [COLOR red]Acestream[/COLOR] como Motor [COLOR blue]Torrent[/COLOR].[CR]*Precisa del addon [COLOR yellow]Horus[/COLOR] para arrancar el motor Acestream.[CR][CR]Acestream tiene la particularidad de usar la memoria [COLOR green]RAM[/COLOR], por lo que al usarlo como Motor Torrent gestiona la visualización sin dejar a el equipo sin espacio de almacenamiento.[CR]Se puede usar como sustituto de Elementum en aquellos equipos que tienen Kodi 19 y Android 10 (o superior), en los que Elementum no funciona.</description>
+    <platform>all</platform>
+    <assets>
+        <icon>icon.png</icon>
+        <fanart>fanart.jpg</fanart>
+    </assets>
+  </extension>
 </addon>
 
     <addon id="repository.guilouz" name="Guilouz Repository" version="1.0.3" provider-name="Guilouz">
@@ -1276,6 +1600,29 @@ Testers: Luisma, Toni, Zarat, SuperTopo, Jorge, Bojbit, MiKeL, Chikiry</descript
     </extension>
 </addon>
 
+<addon id="script.module.kodi-six"
+       name="Kodi Six"
+       version="0.1.3"
+       provider-name="Roman V.M.">
+  <requires>
+    <import addon="xbmc.python" version="2.26.0"/>
+  </requires>
+  <extension point="xbmc.python.module" library="libs" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">Wrappers around Kodi Python API for seamless Python 2/3 compatibility</summary>
+    <description lang="en_GB">Wrappers around Kodi Python API that normalize handling of textual and byte strings in Python 2 and 3.</description>
+    <platform>all</platform>
+    <license>GPL v.3</license>
+    <forum>https://forum.kodi.tv/showthread.php?tid=327883</forum>
+    <source>https://github.com/romanvm/kodi.six</source>
+    <assets>
+      <icon>icon.png</icon>
+    </assets>
+    <news>0.1.3:
+- Fix non-UTF-8 byte string decoding in Python 2.</news>
+  </extension>
+</addon>
+
 <addon id="repository.xbmchub" name="TVADDONS.CO Add-on Repository" version="3.0.0" provider-name="tvaddons">
 	<extension point="xbmc.addon.repository" name="TVADDONS.CO Add-on Repository">
 	<dir>
@@ -1319,16 +1666,16 @@ Kodi is a registered trademark of the XBMC Foundation. We are not connected to o
   </extension>
 </addon>
 
-<addon id="script.module.urlresolver" name="URLResolver" version="5.1.22" provider-name="tvaddons">
+<addon id="script.module.urlresolver" name="URLResolver" version="6.1.02" provider-name="tvaddons">
     <requires>
         <!-- <import addon="xbmc.python" version="3.0.0" /> -->
         <import addon="script.module.six" />
         <import addon="script.module.kodi-six" />
+        <import addon="plugin.program.indigo" />
+        <import addon="repository.xbmchub" />
         <import addon="plugin.video.youtube" optional="true" />
         <import addon="script.module.python.twitch" optional="true" />
-        <import addon="script.module.cryptopy" version="1.2.6" optional="true" />
         <import addon="plugin.googledrive" optional="true" />
-        <import addon="plugin.program.indigo" />
     </requires>
     <extension point="xbmc.python.module" library="lib" />
     <extension point="xbmc.python.pluginsource" library="lib/default.py" />

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.TorrentAcestream" name="[COLOR mediumslateblue]Torrents-Acestream[/COLOR]" version="0.0.2" provider-name="AceTorr">
+  <requires>
+   <import addon="script.module.six" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="es">Multitud de Peliculas Torrent con motor Acestream</summary>
+    <description>Cine de alta calidad usando [COLOR red]Acestream[/COLOR] como Motor [COLOR blue]Torrent[/COLOR].[CR]*Precisa del addon [COLOR yellow]Horus[/COLOR] para arrancar el motor Acestream.[CR][CR]Acestream tiene la particularidad de usar la memoria [COLOR green]RAM[/COLOR], por lo que al usarlo como Motor Torrent gestiona la visualización sin dejar a el equipo sin espacio de almacenamiento.[CR]Se puede usar como sustituto de Elementum en aquellos equipos que tienen Kodi 19 y Android 10 (o superior), en los que Elementum no funciona.</description>
+    <platform>all</platform>
+    <assets>
+        <icon>icon.png</icon>
+        <fanart>fanart.jpg</fanart>
+    </assets>
+  </extension>
+</addon>
