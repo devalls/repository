@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.estuary.MaxEd" version="3.2.1" name="Estuary MaxEDITion" provider-name="darkozma, phil65, Ichabod Fletchman">
+<addon id="skin.estuary.MaxEd" version="3.2.2" name="Estuary MaxEDITion" provider-name="darkozma, phil65, Ichabod Fletchman">
 	<requires>
 		<import addon="xbmc.gui" version="5.14.0"/>
-                <import addon="resource.images.skinbackgrounds.clearMod" version="1.1.8"/>
+                <import addon="resource.images.skinbackgrounds.clearMod" version="1.1.9"/>
                 <import addon="resource.images.weatherfanart.faded" optional="true"/>
                 <import addon="resource.images.moviegenrefanart.wall-grey" optional="true"/>
                 <import addon="script.extendedinfo" optional="true"/>
-                <import addon="plugin.video.winner"  version="1.0.7"/>
-                <import addon="plugin.video.cristalazul"  version="3.0.0"/>
-                <import addon="plugin.video.moestv"  version="0.1.2"/>
-                <import addon="plugin.video.balandro"  version="2.1.1"/>
+                <import addon="plugin.video.winner"  version="2.4"/>
+                <import addon="plugin.video.cristalazul"  version="3.0.5"/>
+                <import addon="plugin.video.moestv"  version="0.1.3"/>
+                <import addon="plugin.video.balandro"  version="2.5.0"/>
 	</requires>
 	<extension point="xbmc.gui.skin" debugging="false">
 		<res width="1920" height="1440" aspect="4:3" default="false" folder="xml" />
@@ -49,7 +49,8 @@
 			<screenshot>resources/screenshot-09.png</screenshot>
 		</assets>
 		<news>[COLOR blue][B]Skin Estuary uMod2[/B][/COLOR]
-[COLOR green][B]•3.2.1[/B] Update item Menu.[/COLOR]
+[COLOR green][B]•3.2.2[/B] Update item Menu.[/COLOR]
+[COLOR yellow][B]•3.2.1[/B] Update item Menu.[/COLOR]
 [COLOR yellow][B]•3.2.0[/B] Update item Menu.[/COLOR]
 [COLOR yellow][B]•3.1.8[/B] Update Menu.[/COLOR]
 [COLOR yellow][B]•3.1.5[/B] New Menu.[/COLOR]
