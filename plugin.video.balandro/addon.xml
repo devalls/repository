@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.balandro" name="Balandro" version="2.3.1" provider-name="Balandro Team">
+<addon id="plugin.video.balandro" name="Balandro" version="2.5.0" provider-name="Balandro Team">
   <requires>
      <import addon="script.module.requests"/>
   </requires>
@@ -9,29 +9,43 @@
   </extension>
 
   <extension point="xbmc.addon.metadata">
-    <summary>Balandro es un navegador de páginas webs</summary>
+    <summary>Balandro es un Navegador de páginas Webs</summary>
     <assets>
       <icon>icon.png</icon>
     </assets>
     <news>
-    [COLOR yellow]Mayo 2022[/COLOR]
-      Agradecimientos:
-        Cita destacada a los miembros de Team
-        Mencion especial al grupo de Checkers
-      Canales modificados: Revision generalizada
-      Canales anulados: Las Webs Cerradas
-      Canales nuevos: Sin novedades 
-      Servidores modificados: Revision generalizada
-      Servidores nuevos: Sin novedades
-    [COLOR darkorange]Media Centers soportados[COLOR plum][B][I] 19.X, 18.X y 17.X [/I][/B][/COLOR]
+    [COLOR darkorange][B]Versión  [/COLOR][COLOR yellow]2.5.0[/COLOR][COLOR red]  Octubre 2022[/B][/COLOR]
+
+    [COLOR goldenrod][B]Media Centers Soportados[/COLOR][COLOR plum]  20.x,  19.x,  18.x  y  17.x[/B][/COLOR]
+
+    [COLOR springgreen][B]Fuente:[/COLOR]  [COLOR cyan]balandro-tk.github.io/balandro/[/B][/COLOR]
+
+    [COLOR limegreen][B]Contacto:[/B][/COLOR]
+        Foro  mimediacenter.info/foro/
+        Telegram  t.me/@balandro_asesor
+
+    [COLOR blue][B]Agradecimientos:[/B][/COLOR]
+        Cita destacada a los miembros de Balandro Team
+        Mención especial al grupo de Balandro Checkers
+
+    [COLOR cyan][B]Canales:[/B][/COLOR]
+        Revisión Generalizada
+        Nuevos - Sin novedades
+        Anulados - Las webs cerradas
+
+    [COLOR springgreen][B]Servidores:[/B][/COLOR]
+        Revisión Generalizada
+        Nuevos - Sin novedades
+        Anulados - Las webs cerradas
     </news>
     <summary>Balandro es un navegador de páginas webs</summary>
-    <description>[COLOR yellow][B]Balandro es un MOD derivado de Pelisalacarta y Alfa,[COLOR mediumaquamarine] y Tiene Como Objeto, Permitir Visualizar Películas, Series y Documentales, Todo a Través de Internet y Directamente Desde su Sistema Media Center. [COLOR orchid]Este Add-On es Tan Solo un Mero Ejercicio de Aprendizaje Del Lenguaje de Programación Python y se Distribuye Sin Ningún Contenido Multimedia Adjunto al Mismo [COLOR lightgrey][I]En Consecuencia Solo Las Webs Son Plenamente Responsables de Los Contenidos Que Publiquen.[/I][/B][/COLOR]</description>
-    <disclaimer>[COLOR tan][B]Está Prohibida su Distribución, Solo o Junto Con Contenidos Multimedia Protegidos Por Los Derechos de Autor. [COLOR chocolate]Si Este Tipo de Contenido Está Prohibido en su País, Solamente Usted Será el Responsable de su Uso. [COLOR white]La Vulneración de Estas Prohibiciones Exonerarán de Cualquier Culpa a sus Autores, [COLOR red]Siendo el Único Responsable Quien lo Haya Distribuido o Utilizado Ilegalmente.[/B][/COLOR]</disclaimer>
+    <description>[COLOR yellow][B]Balandro es desde el año [COLOR cyan]2018[COLOR yellow] un MOD derivado de Pelisalacarta y Alfa,[COLOR mediumaquamarine] y tiene como objeto, permitir visualizar Películas, Series y Documentales, todo a través de Internet y directamente desde su sistema Media Center. [COLOR orchid]Este Add-On es tan solo un mero Ejercicio de Aprendizaje del Lenguaje de Programación Python y se distribuye sin Ningún Contenido Multimedia adjunto al mismo [COLOR lightgrey][I]En consecuencia solo las Webs son Plenamente Responsables de los contenidos que publiquen.[/I][/B][/COLOR]</description>
+    <disclaimer>[COLOR tan][B]Está Prohibida su distribución, solo ó junto con Contenidos Multimedia Protegidos por los Derechos de Autor. [COLOR chocolate]Si este tipo de contenido está Prohibido en su País, solamente Usted será el Responsable de su uso. [COLOR white]La vulneración de estas prohibiciones Exonerarán de cualquier Culpa a sus Autores, [COLOR red]Siendo el unico Responsable quien lo haya Distribuido ó Utilizado Ilegalmente.[/B][/COLOR]</disclaimer>
     <platform>all</platform>
     <license>GNU GPL v3</license>
     <source>https://balandro-tk.github.io/balandro/</source>
-    <forum>https://www.mimediacenter.info/foro/viewforum.php?f=44</forum>
+    <forum>https://www.mimediacenter.info/foro/</forum>
   </extension>
+
   <extension point="xbmc.service" library="services.py" start="login|startup"/>
 </addon>
