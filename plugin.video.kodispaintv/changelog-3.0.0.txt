@@ -1,0 +1,32 @@
+Version 3.0.0
+Primera versión compatible con kodi 19 matrix. Versión basada en LSP3 alpha4 de Gujal.
+
+Version 2.8
+Cambio de servidor de menu principal.
+
+Version 2.7
+Actualizado a base LSP Version 2.9.6.
+
+Version 2.6
+Incluido repositorio.
+
+Version 2.5
+Cambio Logo (icon.png).
+
+Version 2.4
+Cambio Source.
+
+Version 2.3
+Cambios internos en default.py.
+
+Version 2.2
+Cambios internos en default.py.
+
+Version 2.1
+Cambios internos en default.py.
+
+Version 2.0
+Primera version basada en LiveStreamsPro de Shani.
+
+Version 1.0
+Version inicial basada en ecuafulltotal.
