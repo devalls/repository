@@ -234,7 +234,7 @@ v0.5.9 (2022-03-22)
 
 <addon id="script.kelebek"
        name="KELEBEK"
-       version="3.5"
+       version="3.6"
        provider-name="Iron Butterfly">
   <requires>
     <import addon="script.module.pyxbmct" version="1.1.4" />
@@ -246,7 +246,7 @@ v0.5.9 (2022-03-22)
   </extension>
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
-    <summary>KELEBEK V3.5</summary>
+    <summary>KELEBEK V3.6</summary>
     <description>Scan Sources searching changes and addons</description>
     <language></language>
     <license></license>
@@ -1519,7 +1519,7 @@ No se acepta ninguna responsabilidad por el uso de este addon.
 	</extension>
 </addon>
 
-<addon id="plugin.video.elementum" name="Elementum Android ARMv7" version="0.1.87" provider-name="elgatito">
+<addon id="plugin.video.elementum" name="Elementum" version="0.1.87" provider-name="elgatito">
     <requires>
         <import addon="xbmc.addon" version="16.0.0" />
         <import addon="repository.elementum" optional="true" />
@@ -1549,7 +1549,7 @@ No se acepta ninguna responsabilidad por el uso de este addon.
         <disclaimer lang="es">El autor no posee ni aloja ningún contenido que se encuentre a través de este complemento. El autor no está unido ni relacionado de ninguna manera con Kodi, Team Kodi, o XBMC Foundation.</disclaimer>
         <disclaimer lang="sv">Skaparen äger inte eller är värd av något innehåll som finns i detta tillägg. Författaren är inte ansluten till eller på något annat sätt en del av Kodi, Team Kodi eller XBMC Foundation.</disclaimer>
         <language>en el es de fi fr he hr it nl pt ro sk sv</language>
-        <platform>android</platform>
+        <platform>all</platform>
         <website>http://elementum.surge.sh/</website>
         <source>https://github.com/elgatito/plugin.video.elementum</source>
         <forum></forum>
