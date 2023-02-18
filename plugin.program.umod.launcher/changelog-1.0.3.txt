@@ -1,0 +1,5 @@
+[COLOR blue][B]uMod Launcher[/B][/COLOR]
+[COLOR green][B]•1.0.3[/B] uMod Launcher beta.[/COLOR]
+[COLOR yellow][B]•0.11.1[/B] Initial beta test.[/COLOR]
+[COLOR yellow][B]•0.10.2[/B] Initial alpha.[/COLOR]
+[COLOR yellow][B]•0.10.1[/B] Mod Launcher based on Advanced Emulator Launcher (0.10.1) for Linux.[/COLOR]

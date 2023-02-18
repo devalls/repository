@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.program.umod.launcher" name="uMod Launcher" version="1.0.3" provider-name="Wintermute0110, darkozma">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0" />
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="ca_ES">Llança scripts des de Kodi.</summary>
+        <summary lang="es_ES">Lanza scripts desde Kodi.</summary>
+        <summary lang="en_GB">Launch any scripts from Kodi.</summary>
+        <description lang="ca_ES">Mod que permet el llançament d'scripts des del menú de Kodi.</description>
+        <description lang="es_ES">Mod que permite el lanzamiento de scripts desde el menú de Kodi.</description>
+        <description lang="en_GB">Mod that allows the launch of scripts from the Kodi menu.</description>
+        <platform>android freebsd ios linux osx windows</platform>
+        <license>GPL-2.0-only</license>
+        <email>darkozma.contacte@gmail.com</email>
+        <forum>https://forum.kodi.tv/showthread.php?tid=287826</forum>
+        <website>https://github.com/Wintermute0110/plugin.program.AEL/wiki</website>
+        <source>https://github.com/Wintermute0110/plugin.program.AEL/</source>
+        <assets>
+            <icon>media/icon.png</icon>
+            <fanart>media/fanart.jpg</fanart>
+            <screenshot>media/Estuary_ROM_Launcher.jpg</screenshot>
+            <screenshot>media/Estuary_ROM_Console.jpg</screenshot>
+            <screenshot>media/Estuary_ROM_MAME.jpg</screenshot>
+        </assets>
+        <news>[COLOR blue][B]uMod Launcher[/B][/COLOR]
+[COLOR green][B]•1.0.3[/B] uMod Launcher beta.[/COLOR]
+[COLOR yellow][B]•0.11.1[/B] Initial beta test.[/COLOR]
+[COLOR yellow][B]•0.10.2[/B] Initial alpha.[/COLOR]
+[COLOR yellow][B]•0.10.1[/B] Mod Launcher based on Advanced Emulator Launcher (0.10.1) for Linux.[/COLOR]</news>
+    </extension>
+</addon>
