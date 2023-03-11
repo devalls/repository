@@ -1761,7 +1761,7 @@ No se acepta ninguna responsabilidad por el uso de este addon.
     </extension>
 </addon>
 
-<addon id="script.module.horus" name="Horus" version="1.1.8.01" provider-name="Caperucitaferoz">
+<addon id="script.module.horus" name="Horus" version="1.1.8.02" provider-name="Caperucitaferoz">
     <requires>
         <import addon="script.module.six" />
     </requires>
@@ -1786,6 +1786,7 @@ No se acepta ninguna responsabilidad por el uso de este addon.
               <screenshot>resources/media/Captura4.png</screenshot>
         </assets>
         <news>
+            - Añadido reconocimiento listas acestream en m3u
             - Añadido soporte para enlaces magnet-torrent
         </news>
         <forum>https://t.me/KodiManiac
