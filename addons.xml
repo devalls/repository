@@ -1765,7 +1765,7 @@ No se acepta ninguna responsabilidad por el uso de este addon.
     </extension>
 </addon>
 
-<addon id="script.module.horus" name="Horus" version="1.1.9.01" provider-name="Caperucitaferoz">
+<addon id="script.module.horus" name="Horus" version="1.1.9.02" provider-name="Caperucitaferoz">
     <requires>
         <import addon="script.module.six" />
     </requires>
