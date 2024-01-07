@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.balandro" name="Balandro" version="3.0.1" provider-name="Balandro Team">
+<addon id="plugin.video.balandro" name="Balandro" version="4.0.00" provider-name="Team Balandro">
   <requires>
      <import addon="script.module.requests"/>
   </requires>
@@ -14,15 +14,21 @@
       <icon>icon.png</icon>
     </assets>
     <news>
-    [COLOR darkorange][B]Versión  [/COLOR][COLOR yellow]3.0.1[/COLOR][COLOR red]  Febrero de 2023[/B][/COLOR]
+    [COLOR darkorange][B]Versión  [/COLOR][COLOR yellow]4.0.00[/COLOR][COLOR chartreuse]  Enero de 2024[/B][/COLOR]
 
-    [COLOR goldenrod][B]Media Centers Soportados[/COLOR][COLOR plum]  20.x,  19.x,  18.x  y  17.x[/B][/COLOR]
+    [COLOR goldenrod][B]Media Centers:[/B][/COLOR]
+        [COLOR tan][B]Kodi Versiones Oficiales Soportadas:[/B][/COLOR]
+        [COLOR plum][B]21.x Omega,  20.x Nexus,  19.x Matrix,[/B][/COLOR]
+        [COLOR plum][B]18.x Leia  y  17.x Krypton[/B][/COLOR]
 
-    [COLOR springgreen][B]Fuente:[/COLOR]  [COLOR cyan]balandro-tk.github.io/balandro/[/B][/COLOR]
+    [COLOR springgreen][B]Fuente[/COLOR]  [COLOR cyan]https://repobal.github.io/base/[/B][/COLOR]
+
+    [COLOR firebrick][B]Team[/COLOR]  [COLOR orange]https://github.com/repobal[/B][/COLOR]
 
     [COLOR limegreen][B]Contacto:[/B][/COLOR]
-        Foro  mimediacenter.info/foro/
+        Foro  www.mimediacenter.info/foro/
         Telegram  t.me/balandro_asesor
+        Team  t.me/Balandro_team
 
     [COLOR blue][B]Agradecimientos:[/B][/COLOR]
         Cita destacada a los miembros de Balandro Team
@@ -30,20 +36,18 @@
 
     [COLOR cyan][B]Canales:[/B][/COLOR]
         Revisión Generalizada
-        Nuevos - Sin novedades
-        Anulados - Las webs cerradas
+        Sin Novedades
 
-    [COLOR springgreen][B]Servidores:[/B][/COLOR]
+    [COLOR fuchsia][B]Servidores:[/B][/COLOR]
         Revisión Generalizada
-        Nuevos - Sin novedades
-        Anulados - Las webs cerradas
+        Sin Novedades
     </news>
-    <summary>Balandro es un navegador de páginas webs</summary>
-    <description>[COLOR yellow][B]Balandro es desde el año [COLOR cyan]2018[COLOR yellow] un MOD derivado de Pelisalacarta y Alfa,[COLOR mediumaquamarine] y tiene como objeto, permitir visualizar Películas, Series y Documentales, todo a través de Internet y directamente desde su sistema Media Center. [COLOR orchid]Este Add-On es tan solo un mero Ejercicio de Aprendizaje del Lenguaje de Programación Python y se distribuye sin Ningún Contenido Multimedia adjunto al mismo [COLOR lightgrey][I]En consecuencia solo las Webs son Plenamente Responsables de los contenidos que publiquen.[/I][/B][/COLOR]</description>
-    <disclaimer>[COLOR tan][B]Está Prohibida su distribución, solo ó junto con Contenidos Multimedia Protegidos por los Derechos de Autor. [COLOR chocolate]Si este tipo de contenido está Prohibido en su País, solamente Usted será el Responsable de su uso. [COLOR white]La vulneración de estas prohibiciones Exonerarán de cualquier Culpa a sus Autores, [COLOR red]Siendo el unico Responsable quien lo haya Distribuido ó Utilizado Ilegalmente.[/B][/COLOR]</disclaimer>
+    <summary>Balandro es un Navegador de Páginas Webs</summary>
+    <description>[COLOR moccasin][B]Navega con Kodi por Páginas Webs para poder ver sus contenidos de manera fácil. [COLOR yellow]Balandro es desde el año [COLOR cyan]2018[COLOR yellow] un MOD derivado de [COLOR yellowgreen]Pelisalacarta y Alfa[COLOR yellow],[COLOR mediumaquamarine] y tiene como objeto, permitir visualizar [COLOR deepskyblue]Películas[COLOR mediumaquamarine], [COLOR hotpink]Series[COLOR mediumaquamarine], [COLOR darkcyan]Documentales[COLOR mediumaquamarine], etc., todo a través de Internet y directamente desde su sistema Media Center. [COLOR orchid]Este Add-On es tan solo un mero Ejercicio de Aprendizaje del Lenguaje de Programación Python y se distribuye sin Ningún Contenido Multimedia adjunto al mismo [COLOR lightgrey][I]En consecuencia solo las Webs son Plenamente Responsables de los contenidos que publiquen.[/I][/B][/COLOR]</description>
+    <disclaimer>[COLOR aqua][B]Los Propietarios y Distribuidores de este Add-On no Proveen ni Distribuyen Ningún Contenido Mostrado por el Add-On, ni Tienen Afiliación alguna con los Proveedores/Webs de contenidos. [COLOR tan]Está Prohibida su distribución, solo ó junto con Contenidos Multimedia Protegidos por los Derechos de Autor. [COLOR chocolate]Si este tipo de contenido está Prohibido en su País, solamente Usted será el Responsable de su uso. [COLOR white]La vulneración de estas prohibiciones Exonerarán de cualquier Culpa a sus Autores, [COLOR red]Siendo el unico Responsable quien lo haya Distribuido ó Utilizado Ilegalmente.[/B][/COLOR]</disclaimer>
     <platform>all</platform>
     <license>GNU GPL v3</license>
-    <source>https://balandro-tk.github.io/balandro/</source>
+    <source>https://repobal.github.io/base/</source>
     <forum>https://www.mimediacenter.info/foro/</forum>
   </extension>
 

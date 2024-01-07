@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.devalls" name="devalls' Repository" version="2.2.0" provider-name="devalls">
+<addon id="repository.devalls" name="devalls' Repository" version="2.3.0" provider-name="devalls">
     <extension point="xbmc.addon.repository" name="devalls' Repository">
         <dir>
             <info compressed="false">https://raw.githubusercontent.com/devalls/repository/master/addons.xml</info>
@@ -17,9 +17,9 @@
 	    <datadir zip="true">https://raw.githubusercontent.com/joheos11/repository.kodispain/master/</datadir>
         </dir>
         <dir>
-            <info compressed="false">https://raw.githubusercontent.com/balandro-tk/balandro/main/addons.xml</info>
-            <checksum>https://raw.githubusercontent.com/balandro-tk/balandro/main/addons.xml.md5</checksum>
-            <datadir zip="true">https://raw.githubusercontent.com/balandro-tk/balandro/main/</datadir>
+            <info compressed="false">https://pastebin.com/raw/Lktm2YS0</info>
+            <checksum>https://pastebin.com/raw/asquZ060</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/repobal/base/main/</datadir>
         </dir>
         <dir>
             <info compressed="false">https://raw.githubusercontent.com/alfa-addon/alfa-repo/master/addons.xml</info>
@@ -74,7 +74,7 @@
 		<screenshot>resources/screenshot-03.jpg</screenshot>
 	</assets>
 	<news>[COLOR blue][B]Official devalls' repository[/B][/COLOR]
-[COLOR green][B]•2.2.0[/B] Update TW.[/COLOR]
+[COLOR green][B]•2.3.0[/B] Update TW.[/COLOR]
 [COLOR yellow][B]•2.1.8[/B] Update one dir.[/COLOR]
 [COLOR yellow][B]•2.1.7[/B] Add one dir.[/COLOR]
 [COLOR yellow][B]•2.1.5[/B] Add three dir.[/COLOR]
