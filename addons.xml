@@ -1389,7 +1389,7 @@ No se acepta ninguna responsabilidad por el uso de este addon.
     </extension>
 </addon>
 
-<addon id="repository.devalls" name="devalls' Repository" version="2.3.1" provider-name="devalls">
+<addon id="repository.devalls" name="devalls' Repository" version="2.3.2" provider-name="devalls">
     <extension point="xbmc.addon.repository" name="devalls' Repository">
         <dir>
             <info compressed="false">https://raw.githubusercontent.com/devalls/repository/master/addons.xml</info>
@@ -1417,7 +1417,6 @@ No se acepta ninguna responsabilidad por el uso de este addon.
             <datadir zip="true">https://raw.githubusercontent.com/alfa-addon/alfa-repo/master/</datadir>
         </dir>
         <dir>
-        <dir>
             <info compressed="false">https://raw.githubusercontent.com/picapaujulen/repositorio/master/Repositorio/addons.xml</info>
             <checksum>https://raw.githubusercontent.com/picapaujulen/repositorio/master/Repositorio/addons.xml.md5</checksum>
             <datadir zip="true">https://raw.githubusercontent.com/picapaujulen/repositorio/master/Repositorio/</datadir>
@@ -1427,7 +1426,6 @@ No se acepta ninguna responsabilidad por el uso de este addon.
             <checksum>https://raw.githubusercontent.com/hirayasoftware/hirayasoftware.github.io/master/addons.xml.md5</checksum>
             <datadir zip="true">https://raw.githubusercontent.com/hirayasoftware/hirayasoftware.github.io/master/</datadir>
 	</dir>
-        <dir>
         <dir>
             <info compressed="false">https://raw.githubusercontent.com/Masterwine/Luar/master/repor/addons.xml</info>
             <checksum>https://raw.githubusercontent.com/Masterwine/Luar/master/repor/addons.xml.md5</checksum>
@@ -1451,7 +1449,7 @@ No se acepta ninguna responsabilidad por el uso de este addon.
 		<screenshot>resources/screenshot-03.jpg</screenshot>
 	</assets>
 	<news>[COLOR blue][B]Official devalls' repository[/B][/COLOR]
-[COLOR green][B]•2.3.1[/B] Update.[/COLOR]
+[COLOR green][B]•2.3.2[/B] Update.[/COLOR]
 [COLOR yellow][B]•2.3.0[/B] Update TW.[/COLOR]
 [COLOR yellow][B]•2.1.8[/B] Update one dir.[/COLOR]
 [COLOR yellow][B]•2.1.7[/B] Add one dir.[/COLOR]
