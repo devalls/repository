@@ -1,32 +1,38 @@
-Version 3.0.0
+[B]Version 3.4.0[/B]
+ - Versión basada en LSP de Someone Like You
+ - Añadida función de paginado
+ - Añadido TMDB Scrapper
+ - Compatible con DuffYou
+
+[B]Version 3.0.0[/B]
 Primera versión compatible con kodi 19 matrix. Versión basada en LSP3 alpha4 de Gujal.
 
-Version 2.8
+[B]Version 2.8[/B]
 Cambio de servidor de menu principal.
 
-Version 2.7
+[B]Version 2.7[/B]
 Actualizado a base LSP Version 2.9.6.
 
-Version 2.6
+[B]Version 2.6[/B]
 Incluido repositorio.
 
-Version 2.5
+[B]Version 2.5[/B]
 Cambio Logo (icon.png).
 
-Version 2.4
+[B]Version 2.4[/B]
 Cambio Source.
 
-Version 2.3
+[B]Version 2.3[/B]
 Cambios internos en default.py.
 
-Version 2.2
+[B]Version 2.2[/B]
 Cambios internos en default.py.
 
-Version 2.1
+[B]Version 2.1[/B]
 Cambios internos en default.py.
 
-Version 2.0
+[B]Version 2.0[/B]
 Primera version basada en LiveStreamsPro de Shani.
 
-Version 1.0
+[B]Version 1.0[/B]
 Version inicial basada en ecuafulltotal.

@@ -1,0 +1,8 @@
+﻿<settings>
+  <category label="General">
+    <setting id="debug" type="bool" label="Modo depuración" default="false"/>
+    <setting id="pagination" type="labelenum" label="Paginado" values="5|10|20|25|30|40|50|60|70|75|80|90|100|150|200" default="50" visible="true"/>
+    <setting id="parentalblockedpin" label="Pin de bloqueo parental" type="text"  option="hidden"  default=""/>
+    <setting id="parentalblocked" label="¿Está el bloqueo parental activado?" type="bool" default="true"/>
+  </category>
+</settings>

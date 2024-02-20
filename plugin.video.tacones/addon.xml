@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.kodispaintv" name="[COLOR red]Kodi[/COLOR][COLOR yellow]Spain[/COLOR][COLOR red]Tv[/COLOR]" version="3.4.0" provider-name="joheos11">
+<addon id="plugin.video.tacones" name="[COLOR red]TACONES[/COLOR]" version="3.4.0" provider-name="La Mala de la Novela">
 	<requires>
 		<import addon="script.module.six" />
 		<import addon="script.module.kodi-six" />
@@ -19,18 +19,18 @@
 		<provides>video</provides>
 	</extension>
 	
-	<extension point="xbmc.addon.repository" name="KodiSpain repository">
+	<extension point="xbmc.addon.repository" name="Tacones repository">
 		<dir>
-			<info compressed="false">https://raw.githubusercontent.com/joheos11/repository.kodispain/master/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/joheos11/repository.kodispain/master/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/joheos11/repository.kodispain/master/</datadir>
+			<info compressed="false">https://raw.githubusercontent.com/lamalanovela/Repo/master/Repositorio/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/lamalanovela/Repo/master/Repositorio/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/lamalanovela/Repo/master/Repositorio/</datadir>
 		</dir>
     </extension>
 
 	<extension point="xbmc.addon.metadata">
-		<summary>Canales de Televisión, deportes y más...</summary>
+		<summary>Películas, Series y más...</summary>
 		<description>
-Puedes seguirme en https://t.me/kodispain_1 y http://konectas.es
+Puedes seguirme en https://t.me/kodispain_1
 
 AVISO LEGAL:
 
