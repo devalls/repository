@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.balandro" name="[COLOR aqua]Balandro[/COLOR] Repo" version="4.0.0" provider-name="Team Balandro">
+<addon id="repository.balandro" name="[COLOR aqua]Balandro[/COLOR] Repo" version="4.0.1" provider-name="Team Balandro">
 
     <extension point="xbmc.addon.repository" name="balandro repo">
         <dir>
-            <info>https://pastebin.com/raw/Lktm2YS0</info>
-            <checksum>https://pastebin.com/raw/asquZ060</checksum>
+            <info>https://raw.githubusercontent.com/repobal/base/main/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/repobal/base/main/addons.xml.md5</checksum>
             <datadir zip="true">https://raw.githubusercontent.com/repobal/base/main/</datadir>
         </dir>
     </extension>
@@ -15,7 +15,7 @@
           <icon>icon.png</icon>
        </assets>
        <news>
-       [COLOR darkorange][B]Versión  [/COLOR][COLOR yellow]4.0.0[/COLOR][COLOR red]  Enero 2024[/B][/COLOR]
+       [COLOR darkorange][B]Versión  [/COLOR][COLOR yellow]4.0.1[/COLOR][COLOR red]  Marzo 2024[/B][/COLOR]
 
        [COLOR goldenrod][B]Media Centers:[/B][/COLOR]
            [COLOR tan][B]Kodi Versiones Oficiales Soportadas:[/B][/COLOR]
