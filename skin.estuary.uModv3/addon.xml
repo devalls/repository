@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.estuary.uModv3" version="4.0.4" name="Estuary uMod v3" provider-name="phil65, Ichabod Fletchman, darkozma">
+<addon id="skin.estuary.uModv3" version="4.0.5" name="Estuary uMod v3" provider-name="phil65, Ichabod Fletchman, darkozma">
 	<requires>
 		<import addon="xbmc.gui" version="5.16.0"/>
                 <import addon="resource.images.skinbackgrounds.clearMod" version="1.0.8"/>    
@@ -45,7 +45,7 @@
 		<disclaimer lang="en_GB">[COLOR red]Estuary uMod v3 is a mod skin for Kodi. Only work on Ubuntu and require addicional scripts or it may cause issues.[/COLOR]</disclaimer>
 		<disclaimer lang="es_ES">[COLOR red]Estuary uMod v3 es una modificación del skin para Kodi. Solo funciona en Ubuntu y requiere scripts adicionales o podría causar problemas.[/COLOR]</disclaimer>
 		<news>[COLOR blue][B]Skin Estuary uMod v3[/B][/COLOR]
-[COLOR green][B]•4.0.4[/B] Menu change.[/COLOR]
+[COLOR green][B]•4.0.5[/B] Menu change.[/COLOR]
 [COLOR yellow][B]•4.0.3[/B] Minor change.[/COLOR]
 [COLOR yellow][B]•4.0.2[/B] K20 comp.[/COLOR]
 [COLOR yellow][B]•3.1.6[/B] Widget Anime Removed.[/COLOR]
