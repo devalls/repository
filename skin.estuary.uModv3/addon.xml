@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.estuary.uModv3" version="4.0.3" name="Estuary uMod v3" provider-name="phil65, Ichabod Fletchman, darkozma">
+<addon id="skin.estuary.uModv3" version="4.0.4" name="Estuary uMod v3" provider-name="phil65, Ichabod Fletchman, darkozma">
 	<requires>
 		<import addon="xbmc.gui" version="5.16.0"/>
                 <import addon="resource.images.skinbackgrounds.clearMod" version="1.0.8"/>    
