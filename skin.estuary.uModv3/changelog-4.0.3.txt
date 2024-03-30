@@ -1,5 +1,6 @@
 [COLOR blue][B]Skin Estuary uMod v3[/B][/COLOR]
-[COLOR green][B]•4.0.3[/B] Minor change.[/COLOR]
+[COLOR green][B]•4.0.4[/B] Menu change.[/COLOR]
+[COLOR yellow][B]•4.0.3[/B] Minor change.[/COLOR]
 [COLOR yellow][B]•4.0.2[/B] K20 comp.[/COLOR]
 [COLOR yellow][B]•3.1.6[/B] Widget Anime Removed.[/COLOR]
 [COLOR yellow][B]•3.1.4[/B] Minor Change.[/COLOR]
