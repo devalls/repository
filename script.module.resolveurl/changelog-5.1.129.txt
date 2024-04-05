@@ -1,18 +1,14 @@
-Version 5.1.125 (Jan 23, 2024)
+Version 5.1.129 (Mar 24, 2024)
 - Code Base Changes:
     - None
 
 - Resolvers Added:
-    - veev
+    - viralweb8
 
 - Resolvers Fixed/Updated:
-    - desiupload
-    - streamembed
-    - uploadever
-    - uploadingsite
-    - uploadraja
-    - voe
-    - waaw
+    - mixdrop
+    - vidmojo
+    - vk
 
 - Resolvers Removed
     - None
