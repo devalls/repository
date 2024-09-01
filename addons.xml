@@ -1359,7 +1359,7 @@ No se acepta ninguna responsabilidad por el uso de este addon.
 	</extension>
 </addon>
 
-<addon id="skin.estuary.uModv4" version="5.0.1" name="Estuary uModv4" provider-name="darkozma, phil65, Ichabod Fletchman">
+<addon id="skin.estuary.uModv4" version="5.0.2" name="Estuary uModv4" provider-name="darkozma, phil65, Ichabod Fletchman">
 	<requires>
 		<import addon="xbmc.gui" version="5.17.0"/>
 	</requires>
