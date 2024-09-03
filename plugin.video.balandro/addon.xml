@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.balandro" name="Balandro" version="4.0.00" provider-name="Team Balandro">
+<addon id="plugin.video.balandro" name="Balandro" version="4.0.10" provider-name="Team Balandro">
   <requires>
      <import addon="script.module.requests"/>
   </requires>
@@ -12,13 +12,18 @@
     <summary>Balandro es un Navegador de páginas Webs</summary>
     <assets>
       <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+      <screenshot>resources/screenshots/1.jpg</screenshot>
+      <screenshot>resources/screenshots/2.jpg</screenshot>
+      <screenshot>resources/screenshots/3.jpg</screenshot>
+      <screenshot>resources/screenshots/4.jpg</screenshot>
     </assets>
     <news>
-    [COLOR darkorange][B]Versión  [/COLOR][COLOR yellow]4.0.00[/COLOR][COLOR chartreuse]  Enero de 2024[/B][/COLOR]
+    [COLOR darkorange][B]Versión  [/COLOR][COLOR yellow]4.0.10[/COLOR][COLOR chartreuse]  Agosto de 2024[/B][/COLOR]
 
     [COLOR goldenrod][B]Media Centers:[/B][/COLOR]
         [COLOR tan][B]Kodi Versiones Oficiales Soportadas:[/B][/COLOR]
-        [COLOR plum][B]21.x Omega,  20.x Nexus,  19.x Matrix,[/B][/COLOR]
+        [COLOR plum][B]]22.x Piers,  21.x Omega,  20.x Nexus,  19.x Matrix,[/B][/COLOR]
         [COLOR plum][B]18.x Leia  y  17.x Krypton[/B][/COLOR]
 
     [COLOR springgreen][B]Fuente[/COLOR]  [COLOR cyan]https://repobal.github.io/base/[/B][/COLOR]
@@ -33,6 +38,10 @@
     [COLOR blue][B]Agradecimientos:[/B][/COLOR]
         Cita destacada a los miembros de Balandro Team
         Mención especial al grupo de Balandro Checkers
+
+    [COLOR yellowgreen][B]Reconocimientos:[/B][/COLOR]
+        A los creadores de Elementum,  InputStream adaptive,
+        ResolveUrl  y  YouTube plugin
 
     [COLOR cyan][B]Canales:[/B][/COLOR]
         Revisión Generalizada

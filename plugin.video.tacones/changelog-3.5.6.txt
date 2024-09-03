@@ -1,0 +1,14 @@
+[B]Version 3.0.0[/B]
+Matrix compatible version
+
+[B]Version 3.2.0[/B] - Someone Like You version
+ - Added nextpage and pagination
+ - In case is not thumbnail, the plugin will provide the original iconimage configured in the addon.xml
+
+[B]Version 3.4.0[/B] - Someone Like You version
+ - Added TMDB Scrapper
+ - Added DuffYou, thanks to Taberna
+
+[B]Version 3.4.1[/B] - Someone Like You version
+ - Fix nextpage
+ - Added BeautifulSoup library

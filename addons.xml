@@ -897,7 +897,7 @@ No se acepta ninguna responsabilidad por el uso de este addon.
     </extension>
 </addon>
 
-<addon id="plugin.video.balandro" name="Balandro" version="4.0.00" provider-name="Team Balandro">
+<addon id="plugin.video.balandro" name="Balandro" version="4.0.10" provider-name="Team Balandro">
   <requires>
      <import addon="script.module.requests"/>
   </requires>
@@ -910,13 +910,18 @@ No se acepta ninguna responsabilidad por el uso de este addon.
     <summary>Balandro es un Navegador de páginas Webs</summary>
     <assets>
       <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+      <screenshot>resources/screenshots/1.jpg</screenshot>
+      <screenshot>resources/screenshots/2.jpg</screenshot>
+      <screenshot>resources/screenshots/3.jpg</screenshot>
+      <screenshot>resources/screenshots/4.jpg</screenshot>
     </assets>
     <news>
-    [COLOR darkorange][B]Versión  [/COLOR][COLOR yellow]4.0.00[/COLOR][COLOR chartreuse]  Enero de 2024[/B][/COLOR]
+    [COLOR darkorange][B]Versión  [/COLOR][COLOR yellow]4.0.10[/COLOR][COLOR chartreuse]  Agosto de 2024[/B][/COLOR]
 
     [COLOR goldenrod][B]Media Centers:[/B][/COLOR]
         [COLOR tan][B]Kodi Versiones Oficiales Soportadas:[/B][/COLOR]
-        [COLOR plum][B]21.x Omega,  20.x Nexus,  19.x Matrix,[/B][/COLOR]
+        [COLOR plum][B]]22.x Piers,  21.x Omega,  20.x Nexus,  19.x Matrix,[/B][/COLOR]
         [COLOR plum][B]18.x Leia  y  17.x Krypton[/B][/COLOR]
 
     [COLOR springgreen][B]Fuente[/COLOR]  [COLOR cyan]https://repobal.github.io/base/[/B][/COLOR]
@@ -931,6 +936,10 @@ No se acepta ninguna responsabilidad por el uso de este addon.
     [COLOR blue][B]Agradecimientos:[/B][/COLOR]
         Cita destacada a los miembros de Balandro Team
         Mención especial al grupo de Balandro Checkers
+
+    [COLOR yellowgreen][B]Reconocimientos:[/B][/COLOR]
+        A los creadores de Elementum,  InputStream adaptive,
+        ResolveUrl  y  YouTube plugin
 
     [COLOR cyan][B]Canales:[/B][/COLOR]
         Revisión Generalizada
@@ -1085,7 +1094,7 @@ No se acepta ninguna responsabilidad por el uso de este addon.
   </extension>
 </addon>
 
-<addon id="plugin.video.cristalazul" name="[B][/B][COLOR aqua]CRISTAL AZUL 3.0.9[/COLOR]" version="3.0.9" provider-name="PICAPAU, LOURDES, SUPERTOPO, LUISMA, GEORGE">
+<addon id="plugin.video.cristalazul" name="[B][/B][COLOR aqua]CRISTAL AZUL 3.0.10[/COLOR]" version="3.0.10" provider-name="PICAPAU, LOURDES, SUPERTOPO, LUISMA, GEORGE">
     <requires>
         <import addon="script.module.simplecache"/>
         <import addon="script.module.six"/>
@@ -1305,21 +1314,23 @@ No se acepta ninguna responsabilidad por el uso de este addon.
     <extension point="xbmc.service" library="service.py" start="login|startup" />
 </addon>
 
-<addon id="plugin.video.tacones" name="[COLOR red]TACONES[/COLOR]" version="3.4.0" provider-name="La Mala de la Novela">
+<addon id="plugin.video.tacones" name="[COLOR red]TACONES[/COLOR]" version="3.5.6" provider-name="La Mala de la Novela">
 	<requires>
 		<import addon="script.module.six" />
 		<import addon="script.module.kodi-six" />
 		<import addon="script.module.requests" />
-		<import addon="script.module.dateutil" />
-		<import addon="script.module.websocket" />
-		<import addon="script.module.inputstreamhelper" optional="true"/>
+		<import addon="script.module.websocket" version="0.50.0"  optional="true"/>
 		<import addon="script.module.youtube.dl" optional="true"/>
 		<import addon="plugin.video.youtube" optional="true" />
 		<import addon="plugin.video.duffyou" optional="true" />
+		<import addon="script.module.dateutil" optional="true" />
 		<import addon="script.module.resolveurl" optional="true"/>
 		<import addon="script.module.urlresolver" optional="true"/>
 		<import addon="script.module.cloudscraper" optional="true"/>
+		<import addon="script.module.inputstreamhelper" optional="true"/>
 		<import addon="script.module.slproxy" optional="true"/>
+		<import addon="script.module.beautifulsoup4" />
+		<import addon="script.module.html5lib" />
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
 		<provides>video</provides>
@@ -1327,11 +1338,11 @@ No se acepta ninguna responsabilidad por el uso de este addon.
 
 	<extension point="xbmc.addon.repository" name="Tacones repository">
 		<dir>
-			<info compressed="false">https://raw.githubusercontent.com/lamalanovela/Repo/master/Repositorio/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/lamalanovela/Repo/master/Repositorio/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/lamalanovela/Repo/master/Repositorio/</datadir>
+			<info compressed="false">https://raw.githubusercontent.com/830NY/Tacones_Repo/main/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/830NY/Tacones_Repo/main/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/830NY/Tacones_Repo/main/</datadir>
 		</dir>
-    </extension>
+	</extension>
 
 	<extension point="xbmc.addon.metadata">
 		<summary>Películas, Series y más...</summary>
@@ -1350,12 +1361,15 @@ No se acepta ninguna responsabilidad por el uso de este addon.
 		<assets>
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
-			<screenshot>resources/media/screenshoot-1.jpg</screenshot>
-			<screenshot>resources/media/screenshoot-2.jpg</screenshot>
-			<screenshot>resources/media/screenshoot-3.jpg</screenshot>
-			<screenshot>resources/media/screenshoot-4.jpg</screenshot>
+			<screenshot>resources/media/screenshot-1.jpg</screenshot>
+			<screenshot>resources/media/screenshot-2.jpg</screenshot>
+			<screenshot>resources/media/screenshot-3.jpg</screenshot>
+			<screenshot>resources/media/screenshot-4.jpg</screenshot>
 		</assets>
-		<news>Primera versión basada en LSP Mod by Someone Like You</news>
+		<news>Segunda versión basada en LSP Mod by Someone Like You
+			- Multiples Cambios en la estructura interna.
+			- Añadidas librerías de soporte.
+		</news>
 	</extension>
 </addon>
 
@@ -1566,7 +1580,7 @@ No se acepta ninguna responsabilidad por el uso de este addon.
 	</extension>
 </addon>
 
-<addon id="script.module.resolveurl" name="ResolveURL" version="5.1.129" provider-name="gujal">
+<addon id="script.module.resolveurl" name="ResolveURL" version="5.1.146" provider-name="gujal">
     <requires>
         <!-- <import addon="xbmc.python" version="3.0.0" /> -->
         <import addon="script.module.six" />
