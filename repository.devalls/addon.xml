@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.devalls" name="devalls' Repository" version="2.3.3" provider-name="devalls">
+<addon id="repository.devalls" name="devalls' Repository" version="2.3.4" provider-name="devalls">
     <extension point="xbmc.addon.repository" name="devalls' Repository">
         <dir>
             <info compressed="false">https://raw.githubusercontent.com/devalls/repository/master/addons.xml</info>
@@ -41,6 +41,24 @@
             <checksum>https://raw.githubusercontent.com/Masterwine/Luar/master/repor/addons.xml.md5</checksum>
             <datadir zip="true">https://raw.githubusercontent.com/Masterwine/Luar/master/repor/</datadir>
 	</dir>
+        <dir>
+            <info compressed="false">https://github.com/euro2000/magellan.github.io/raw/main/addons.xml</info>
+            <checksum>https://github.com/euro2000/magellan.github.io/raw/main/addons.xml.md5</checksum>
+            <datadir zip="true">https://github.com/euro2000/magellan.github.io/raw/main</datadir>
+            <hashes>false</hashes>
+        </dir>
+        <dir minversion="16.0.0" maxversion="18.9.0">
+            <info compressed="false">https://github.com/euro2000/magellan.github.io/raw/main/leia/addons.xml</info>
+            <checksum>https://github.com/euro2000/magellan.github.io/raw/main/leia/addons.xml.md5</checksum>
+            <datadir zip="true">https://github.com/euro2000/magellan.github.io/raw/main/leia</datadir>
+            <hashes>false</hashes>
+        </dir>
+        <dir minversion="18.9.1">
+            <info compressed="false">https://github.com/euro2000/magellan.github.io/raw/main/matrix/addons.xml</info>
+            <checksum>https://github.com/euro2000/magellan.github.io/raw/main/matrix/addons.xml.md5</checksum>
+            <datadir zip="true">https://github.com/euro2000/magellan.github.io/raw/main/matrix</datadir>
+            <hashes>false</hashes>
+        </dir>
     </extension>
     <extension point="xbmc.addon.metadata">
     <summary lang="ca_ES">Repositori devalls</summary>
@@ -59,7 +77,8 @@
 		<screenshot>resources/screenshot-03.jpg</screenshot>
 	</assets>
 	<news>[COLOR blue][B]Official devalls' repository[/B][/COLOR]
-[COLOR green][B]•2.3.3[/B] Update.[/COLOR]
+[COLOR green][B]•2.3.4[/B] Update.[/COLOR]
+[COLOR yellow][B]•2.3.3[/B] Update.[/COLOR]
 [COLOR yellow][B]•2.3.0[/B] Update TW.[/COLOR]
 [COLOR yellow][B]•2.1.8[/B] Update one dir.[/COLOR]
 [COLOR yellow][B]•2.1.7[/B] Add one dir.[/COLOR]
